@@ -18,7 +18,10 @@ module.exports = function () {
 
   data.forEach((row) => {
     row.forEach((value) => {
-      if ((typeof(value) === 'string') && value.startsWith('https://wd.pulipuli.info/')) {
+      if ((typeof(value) === 'string') && 
+        (value.startsWith('https://wd.pulipuli.info/')
+          || value.startsWith('https://pulipulichen.github.io/')
+          || value.startsWith('https://blog.pulipuli.info')) ) {
         output.push(value)
       }
     })
