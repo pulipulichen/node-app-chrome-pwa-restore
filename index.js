@@ -5,18 +5,18 @@ const ReadPWA = require('./scripts/ReadPWA')
 const CreatePWAJavaScript = require('./scripts/CreatePWAJavaScript')
 
 let main = async function () {
-  // let wdbList = ReadWDB()
+  let wdbList = ReadWDB()
 
-  // for (let i = 0; i < wdbList.length; i++) {
-  //   console.log(`${i}/${wdbList.length} (${Math.round((i/wdbList.length)*100)}%)`)
-  //   await CreatePWA(wdbList[i])
-  //   // break
-  // }
+  for (let i = 0; i < wdbList.length; i++) {
+    console.log(`${i}/${wdbList.length} (${Math.round((i/wdbList.length)*100)}%)`)
+    await CreatePWA(wdbList[i])
+    // break
+  }
 
   let pwaList = ReadPWA()
   // console.log(pwaList)
   // return 
-  for (let i = 49; i < pwaList.length; i++) {
+  for (let i = 0; i < pwaList.length; i++) {
     console.log(`${i}/${pwaList.length} (${Math.round((i/pwaList.length)*100)}%)`)
     let {target, script} = pwaList[i]
     console.log(target)
