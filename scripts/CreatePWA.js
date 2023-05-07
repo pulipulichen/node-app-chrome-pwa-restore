@@ -3,7 +3,7 @@ const SendKey = require('./lib/SendKey')
 const sleep = require('./lib/sleep')
 
 module.exports = async function (url) {
-  let cmdOpenChrome = `google-chrome ${url}`
+  let cmdOpenChrome = `google-chrome "${url}"`
   await ShellSpawn(cmdOpenChrome)
   await sleep(10000)
 

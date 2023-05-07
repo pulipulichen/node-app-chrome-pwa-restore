@@ -22,6 +22,10 @@ module.exports = function () {
     }
     let target = row[3]
     let script = row[5]
+    // console.log(target)
+    if (!target || target.startsWith('http') === false) {
+      return false
+    }
     output.push({target, script})
   })
 
