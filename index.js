@@ -16,11 +16,11 @@ let main = async function () {
   let pwaList = ReadPWA()
   // console.log(pwaList)
   // return 
-  for (let i = 12; i < pwaList.length; i++) {
+  for (let i = 49; i < pwaList.length; i++) {
     console.log(`${i}/${pwaList.length} (${Math.round((i/pwaList.length)*100)}%)`)
     let {target, script} = pwaList[i]
     console.log(target)
-    console.log(script)
+    // console.log(script)
     // return
 
     await CreatePWAJavaScript(target, script)

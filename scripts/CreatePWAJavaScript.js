@@ -33,6 +33,10 @@ module.exports = async function (url, script) {
   await sleep(1000)
   await SendKey(`Escape`, 2)
   await SendKey(`Ctrl+W`)
+  await sleep(500)
+  await SendKey(`Return`)
+
+  await sleep(1000)
     
-  console.log(url)
+  // console.log(url)
 }
