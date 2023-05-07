@@ -6,6 +6,7 @@ let main = async function () {
 
   for (let i = 0; i < wdbList.length; i++) {
     await CreatePWA(wdbList[i])
+    break
   }
 }
 
