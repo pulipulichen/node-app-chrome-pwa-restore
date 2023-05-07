@@ -7,6 +7,7 @@ module.exports = async function (url) {
   await ShellSpawn(cmdOpenChrome)
   await sleep(10000)
 
+  await SendKey(`Escape`, 2)
   await SendKey(`F12`)
   await sleep(1000)
   await SendKey(`Alt+f`)
@@ -20,6 +21,7 @@ module.exports = async function (url) {
   await SendKey(`Tab`, 2)
   await SendKey(`Return`)
   await sleep(1000)
+  await SendKey(`Escape`, 2)
   await SendKey(`Ctrl+W`)
     
   console.log(url)

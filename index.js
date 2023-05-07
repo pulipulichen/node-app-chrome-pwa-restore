@@ -8,19 +8,20 @@ let main = async function () {
   // let wdbList = ReadWDB()
 
   // for (let i = 0; i < wdbList.length; i++) {
+  //   console.log(`${i}/${wdbList.length} (${Math.round((i/wdbList.length)*100)}%)`)
   //   await CreatePWA(wdbList[i])
-  //   break
+  //   // break
   // }
 
   let pwaList = ReadPWA()
-
   for (let i = 0; i < pwaList.length; i++) {
+    console.log(`${i}/${pwaList.length} (${Math.round((i/pwaList.length)*100)}%)`)
     let {target, script} = pwaList[i]
     // console.log(target)
     // console.log(script)
     // return
     await CreatePWAJavaScript(target, script)
-    break
+    // break
   }
 }
 
