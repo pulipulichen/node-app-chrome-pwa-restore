@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Refresh" content="35999; url=https://isbn.ncl.edu.tw" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<meta name="viewport"    content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<meta name="keywords"    content="全國新書資訊網,ISBN,申請ISBN,線上申請,書目下載,書目資料庫,電子書,國際標準書號,國際標準錄音錄影資料代碼,ISRC" />
+	<meta name="description" content="ISBN線上申請、書目資料庫下載與查詢" />
+
+	<title>全國新書資訊網／</title>
+
+	<link rel="shortcut icon" type="image/x-icon" href="img/ic_fav.png" />
+	<link rel="bookmark" href="img/ic_fav.png" />
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+	<!--
+	<link rel="stylesheet" href="css/docs.theme.min.css">
+	-->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/style.css?v=202001081">
+	<link rel="stylesheet" href="css/style.ttr.css">
+	<!--[if lt IE 9]>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	<script src="js/jquery.min.js"></script>
+	<!-- <script src="js/jquery.min 2.js"></script> -->
+	<link rel="stylesheet" href="css/jquery-ui.min.css">
+	<script src="js/jquery-ui.min.js"></script>
+	<!-- <script src="js/bootstrap-datepicker.js"></script> -->
+	<!--js順序有差要注意-->
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/miller_code.js"></script>
+
+	<script src="js/my_tools.1.js"></script>
+	<script src="js/menutab.js?v=2020020425"></script>
+</head>
+<noscript>您的瀏覽器不支援javascript功能，若網頁功能無法正常使用時，請開啟瀏覽器Javscript狀態。</noscript>
+<a class="skip-main" href="#mainBody"  tabindex='1' id=startlink>連往主要內容區塊</a>
+<a class="skip-main" href="main_ProcessMenuItems.php?Ptarget=333&Pact=ViewContent&Pval=333&Pfld=Ffile" tabindex='1'>網站導覽</a>
+<script>
+
+	var selall   = 1;
+	var sid	     = "";
+	var time_max = 35999;
+
+
+	function GoSearch ()
+		{
+		if (document.F1.FO_SearchValue0.value.length=='1') 
+			{
+			alert('查詢詞至少要兩個字');
+			return false;
+			}
+		document.F1.submit();
+		}
+	function ButtonClicked ( button )
+		{
+		document.F1.FB_clicked.value = button ;
+		}
+	function ConfirmActions ()
+		{
+		if (document.F1.FB_clicked.value == 'FB_開始查詢')
+			{
+			if (document.F1.FO_SearchValue0.value=='' && document.F1.FO_SearchValue1.value=='' && document.F1.FO_SearchValue2.value=='')
+				{
+				alert ('請至少輸入一組查詢字彙!');
+				return false;
+				}
+			document.getElementById('SearchButton').style.display = 'none';
+			document.getElementById('SearchMessage').innerHTML = '<input type=button value=\'&nbsp;正在查詢&nbsp;\' name=\'FX_Search\' class=\'彩繪按鈕_變寬_OUT\' onMouseOver="className=\'彩繪按鈕_變寬_OVER\'" onMouseOut="className=\'彩繪按鈕_變寬_OUT\'" disabled>';
+			}
+	
+		return true;
+		}
+	function ConfirmActions2 ()
+		{
+		return false;
+		}
+
+
+</script>
+
+<body>
+	<nav class="navbar navbar-default" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+					<span class="sr-only">選單切換</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-text">選單</span>
+				</button>
+				<button type="button" class="navbar-toggle navbar-language" onclick="document.location.href='https://isbn.ncl.edu.tw/NEW_ISBNNet.eng/';">En</button>
+				<h1 class="logo"><a class="navbar-brand" href="/NEW_ISBNNet/" tabindex='1'><img id="logoImg" alt="全國新書資訊網logo" src="img/logo.png"></a></h1>
+			</div>
+			<!-- 手機隱藏選單區 -->
+			<div class="collapse navbar-collapse navbar-ex1-collapse wrapper-menu">
+				<!-- 主選單 -->
+				<ul class="nav navbar-nav main-menu">
+					<li  data="2" title="服務項目"><a href='main_ProcessLevel2.php?&Ptarget=2&GID=350'>服務項目</a></li>
+					<li  data="7" title="線上申請"><a href='main_ProcessLevel2.php?&Ptarget=7&GID=350'>線上申請</a></li>
+					<li  data="5" title="書目資料庫"><a href='main_ProcessLevel2.php?&Ptarget=5&GID=350'>書目資料庫</a></li>
+					<li  data="8" title="書目下載"><a href='main_ProcessLevel2.php?&Ptarget=8&GID=350'>書目下載</a></li>
+					<li  data="6" title="出版機構網"><a href='main_ProcessLevel2.php?&Ptarget=6&GID=350'>出版機構網</a></li>
+					<li  data="197" title="出版品"><a href='main_ProcessLevel2.php?&Ptarget=197&GID=350'>出版品</a></li>
+					<li  data="303" title="工具與資源"><a href='main_ProcessLevel2.php?&Ptarget=303&GID=350'>工具與資源</a></li>
+				</ul>
+				<!-- 次選單 -->
+				<ul class="nav navbar-nav sub-menu">
+					<!--
+					<li><a href="A40_Suggest.php?Pfuncid=320&Pact=ViewContent"><span class="glyphicon glyphicon-envelope">&ensp;</span>聯絡我們</a></li>
+					-->
+					<li><a href="main_ProcessMenuItems.php?Ptarget=333&Pact=ViewContent&Pval=333&Pfld=Ffile" tabindex='1'>網站導覽</a></li>
+					<li><a href="main_ProcessMenuItems.php?Ptarget=17&Pact=ViewContent&Pval=17&Pfld=Ffile" tabindex='1'><span class="glyphicon glyphicon-envelope">&ensp;</span>聯絡我們</a></li>
+					<li><a href="https://isbn.ncl.edu.tw/NEW_ISBNNet.eng/" class="btn-language hidden-xs" tabindex='1'>English</a></li>
+				</ul>
+			</div>
+			<!-- 手機隱藏選單區結束 -->
+			<script type="text/javascript">
+			var $ofweidht = innerWidth; //取得螢幕寬度
+			if ($ofweidht <= 768) { //設定判斷條件，大於等於1280時frametop的CSS屬性為block
+				document.getElementById("logoImg").src = 'img/logo-smallz.png';
+			} else {
+				document.getElementById("logoImg").src = 'img/logo.png';
+			}
+			</script>
+		</div>
+	</nav>
+	<!--nav結束-->
+	<section class="search-books mh-30">
+		<div class="container">
+
+			<div class="row">
+				<div class="search-left col-xs-12 col-lg-3">
+					<div class="panel panel-ISBN">
+						<h2 class="title-left-ISBN"></h2>
+						<ul class="ul_listnone list-ISBN">
+
+						</ul>
+					</div>
+				</div>
+				<div class="search-right col-xs-12 col-lg-9">
+					<div class="title-right-ISBN">
+						<h2 id="mainTitle"></h2>
+					</div>
+					<div class="content-intro" id="mainBody">
+
+						<form name=F1 id=F1 method=post action='' onSubmit='return ConfirmActions();'>
+							<p class="text-right-ISBN">輸入查詢內容</p>
+							<div class="divtable table-searchoptions m-0">
+								<div class="tr"><!-- /第一筆篩選條件 -->
+									<div class="td" style="width:4em;">
+										<p class="right"><label for='FO_SearchField0'>尋找：</label></p>
+									</div>
+									<div class="td" style="width:9em;">
+										<select name=FO_SearchField0 id='FO_SearchField0' size=1 aria-label="" >
+	<option value="All">所有查詢欄位</option>
+	<option value="Title">書名</option>
+	<option value="Author">作者</option>
+	<option value="PublisherShortTitle">出版者</option>
+	<option value="SubjHeading">標題(主題詞)</option>
+	<option value="SerialTitle">叢書名</option>
+	<option value="ClassNo">分類號</option>
+	<option value="ISBN">ISBN</option>
+	<option value="Date_Sales">確認出版年月</option>
+	<option value="PubMonth_Pre">預計出版年月</option>
+</select>
+									</div>
+									<div class="td" style="width:1em;">
+										<p><label for="FO_SearchValue0">為</label></p>
+									</div>
+									<div class="td">
+										<input type=text name='FO_SearchValue0' id='FO_SearchValue0' value='' title='輸入查詢詞' maxlength='255' class='form-control'>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-xs-12">
+								<a href="javascript:void(0);" class="btn btn-blue col-xs-12" onclick="ButtonClicked('FB_開始查詢'); GoSearch();">開始查詢</a>
+							</div>
+
+							<div class="col-xs-12">
+								<div style="height:20px;">&nbsp;</div>
+
+								<h4 class="text-right-ISBN">熱門關鍵字：</h4>
+								<div class="footsort-booksearch bg-0">
+									<a href="H30_SearchBooks.php?Pact=Search&Pval=the">the</a><p>&nbsp;、&nbsp;</p><a href="H30_SearchBooks.php?Pact=Search&Pval=%E6%9D%B1%E7%AB%8B">東立</a><p>&nbsp;、&nbsp;</p><a href="H30_SearchBooks.php?Pact=Search&Pval=%E8%AE%80%E4%BA%AB">讀享</a><p>&nbsp;、&nbsp;</p><a href="H30_SearchBooks.php?Pact=Search&Pval=%E5%B0%96%E7%AB%AF">尖端</a><p>&nbsp;、&nbsp;</p><a href="H30_SearchBooks.php?Pact=Search&Pval=%E6%96%B0%E5%AD%B8%E6%9E%97">新學林</a><p>&nbsp;、&nbsp;</p><a href="H30_SearchBooks.php?Pact=Search&Pval=%E5%9F%8E%E9%82%A6%E5%8E%9F%E5%89%B5">城邦原創</a><p>&nbsp;、&nbsp;</p><a href="H30_SearchBooks.php?Pact=Search&Pval=%E8%A7%92%E5%B7%9D">角川</a><p>&nbsp;、&nbsp;</p><a href="H30_SearchBooks.php?Pact=Search&Pval=%E7%9A%87%E5%86%A0">皇冠</a><p>&nbsp;、&nbsp;</p><a href="H30_SearchBooks.php?Pact=Search&Pval=%E9%95%B7%E9%B4%BB">長鴻</a><p>&nbsp;、&nbsp;</p><a href="H30_SearchBooks.php?Pact=Search&Pval=%E8%AD%B7%E7%8E%84">護玄</a>
+								</div>
+							</div>
+
+							<div id=SearchMsg></div>
+							<br>
+
+							<input type=hidden name=FB_clicked  value=''>
+							<input type=hidden name=FB_pageSID  value='Simple'>
+
+							<div id=Bottom style="display:none;">
+								<table width=100% border=0 cellspacing=0 cellpadding=0>
+								<tr height=35>
+									<td width=20  valign=center align=center class=表格列_0><!--Add-->&nbsp;</td>
+									<td width=560 valign=center align=right  class=表格列_0><input type=hidden name='FO_Match' value=2>&nbsp;</td>
+									<td width=*   valign=center align=left   class=表格列_0>
+									<div id=SearchButton  style='display:block;'><input type=submit name='FB_Search' value='&nbsp;開始查詢&nbsp;' onClick='ButtonClicked("FB_開始查詢");' onSubmit='GoSearch();' class='彩繪按鈕_變寬_OUT' onMouseOver="className='彩繪按鈕_變寬_OVER'" onMouseOut="className='彩繪按鈕_變寬_OUT'" ></div>
+									<div id=SearchMessage style='display:block;'></div>
+									</td>
+								</tr>
+								</table>
+							</div>
+
+							<div class="col-xs-12">
+								<p class="text-right-ISBN">顯示查詢結果 ( 找到 0 筆 )</p>
+								<div class="headsort-booksearch">
+									&nbsp;
+									<p><label for='FO_每頁筆數'>每頁筆數</label>：</p>
+									<select name=FO_每頁筆數 id='FO_每頁筆數' size=1 aria-label="每頁筆數選項：" onChange='ButtonClicked("FB_每頁筆數"); document.F1.submit();'>
+	<option value="5">5</option>
+	<option value="10" selected>10</option>
+	<option value="20">20</option>
+	<option value="30">30</option>
+	<option value="40">40</option>
+	<option value="50">50</option>
+</select>
+
+									<p><label for='jumptono'>跳至頁數</label>：</p>
+									<input type=text name='FO_目前頁數' id='jumptono' class='jumpto' title='目前頁數' value='1' style='width: 2em;'>
+									<p>/&nbsp;0</p>&emsp;
+									<a href="" class="btn btn-blue" onClick='ButtonClicked("FB_切換頁");'>跳頁</a>
+
+									<div class="btn-skipto pull-right">
+										<a aria-label="按鈕：到第一頁" href=""><span class="glyphicon glyphicon-step-backward"></span></a>
+										<a aria-label="按鈕：上一頁"   href=""><span class="glyphicon glyphicon-triangle-left"></span></a>
+										<a aria-label="按鈕：下一頁"   href=""><span class="glyphicon glyphicon-triangle-right"></span></a>
+										<a aria-label="按鈕：到最後頁" href=""><span class="glyphicon glyphicon-step-forward"></span></a>
+									</div>
+								</div><!--換頁按鈕-->
+
+
+								<input type=hidden name=FB_ListOri value=''>
+
+							</div>
+
+						</form>
+					
+						<form name=F3 method=post action='' target=IF1>
+							<input type=hidden name=FB_匯出檔案 value='0'>
+						</form>
+					
+						<iframe name=IF1 title='隱藏頁框(無意義)' frameborder=0 width=100% height=0 src='blank.html'></iframe>
+					
+						<br>
+						<br>
+
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+	<!-- / container 整個段落內容-->
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-lg-3 logo-link">
+					<a href="https://www.ncl.edu.tw/" target=_blank><img alt="連結至國家圖書館首頁" src="img/logo-NCL.png"></a>
+					<a href="/NEW_ISBNNet/"><img alt="連結至ISBN新書資訊網首頁" src="img/logo-ISBN-w.png"></a>
+				</div>
+				<div class="col-xs-12 col-lg-9 footer-address">
+					<div class="col-xs-12" id="sitemap">
+						<!--
+						<a href="main_ProcessMenuItems.php?Ptarget=333&Pact=ViewContent&Pval=333&Pfld=Ffile">網站導覽</a>
+						&emsp;|&emsp;
+						-->
+						<!--
+						<a href="main_ProcessMenuItems.php?Ptarget=17&Pact=ViewContent&Pval=17&Pfld=Ffile">聯絡信箱</a>
+						&emsp;|&emsp;
+						-->
+						<a href="A40_Suggest.php?Pfuncid=320&Pact=ViewContent">聯絡信箱</a>
+						&emsp;|&emsp;
+                                                <div class='tooltip'><a href="https://www.ncl.edu.tw/content_281.html" target=_blank>本館地圖及交通資訊</a><span class="tooltiptext">另開新視窗</span></div>
+						<div class="color-gray float-right">國家圖書館著作權聲明 Copyright © 2018 All rights reserved.</div>
+						<div class="clear"></div>
+					</div>
+					<div class="col-xs-12">
+						<div class="col-xs-12 col-lg-4 color-white center">本館地址：100201臺北市中山南路20號</div>
+						<div class="col-xs-12 col-lg-4 color-white center">總機：(02)23619132</div>
+						<div class="col-xs-12 col-lg-4 color-white center">歡迎您，您是第 Duplicate entry '' for key 'Fuser_id' 位拜訪者</div>
+					</div>
+					<div class="col-xs-12">
+						<div class="inline-block">線上看：
+							<a href="main_ProcessMenuItems.php?Ptarget=326&Pact=ViewContent&Pval=326&Pfld=Ffile">《臺灣出版與閱讀》</a>、
+							<a href="C00_index.php?Pfuncid=251">《全國新書資訊月刊》</a>、
+							<a href="A20_TPSpost.php?Pact=showIntro">每日預告書訊</a>
+						</div>
+						<div class="float-right">
+						<a href="https://accessibility.moda.gov.tw/Applications/Detail?category=20200306171223" target=_blank title="[另開視窗]無障礙網站"><img src="images/2.0A.png" border="0" width="88" height="31" alt="通過A無障礙網頁檢測" /></a>
+						<a onclick="topFunction()" id="goTop" href="#startlink"><img alt="回頂端按鈕" src="img/btn-gototop.png"></a>
+						</div>
+						<div class="clear"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="js/highlight.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/system.js?v=20181001A"></script>
+	<!--
+	-1683724953.3120
+	-->
+	<script>openCitymotherChild('classGroup', 'unfolded_', 'span');</script>
+</body>
+
+</html>

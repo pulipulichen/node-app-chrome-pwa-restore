@@ -1,0 +1,1129 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US"
+	prefix="og: https://ogp.me/ns#" >
+<head>
+	<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="pingback" href="https://www.cortical.io/xmlrpc.php" />
+
+	<script type="text/javascript">
+		document.documentElement.className = 'js';
+	</script>
+	
+	<script data-cfasync="false" data-no-defer="1">var ewww_webp_supported=!1;function check_webp_feature(A,e){var w;e=void 0!==e?e:function(){},ewww_webp_supported?e(ewww_webp_supported):((w=new Image).onload=function(){ewww_webp_supported=0<w.width&&0<w.height,e&&e(ewww_webp_supported)},w.onerror=function(){e&&e(!1)},w.src="data:image/webp;base64,"+{alpha:"UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAARBxAR/Q9ERP8DAABWUDggGAAAABQBAJ0BKgEAAQAAAP4AAA3AAP7mtQAAAA=="}[A])}check_webp_feature("alpha");</script><script data-cfasync="false" data-no-defer="1">var Arrive=function(c,w){"use strict";if(c.MutationObserver&&"undefined"!=typeof HTMLElement){var r,a=0,u=(r=HTMLElement.prototype.matches||HTMLElement.prototype.webkitMatchesSelector||HTMLElement.prototype.mozMatchesSelector||HTMLElement.prototype.msMatchesSelector,{matchesSelector:function(e,t){return e instanceof HTMLElement&&r.call(e,t)},addMethod:function(e,t,r){var a=e[t];e[t]=function(){return r.length==arguments.length?r.apply(this,arguments):"function"==typeof a?a.apply(this,arguments):void 0}},callCallbacks:function(e,t){t&&t.options.onceOnly&&1==t.firedElems.length&&(e=[e[0]]);for(var r,a=0;r=e[a];a++)r&&r.callback&&r.callback.call(r.elem,r.elem);t&&t.options.onceOnly&&1==t.firedElems.length&&t.me.unbindEventWithSelectorAndCallback.call(t.target,t.selector,t.callback)},checkChildNodesRecursively:function(e,t,r,a){for(var i,n=0;i=e[n];n++)r(i,t,a)&&a.push({callback:t.callback,elem:i}),0<i.childNodes.length&&u.checkChildNodesRecursively(i.childNodes,t,r,a)},mergeArrays:function(e,t){var r,a={};for(r in e)e.hasOwnProperty(r)&&(a[r]=e[r]);for(r in t)t.hasOwnProperty(r)&&(a[r]=t[r]);return a},toElementsArray:function(e){return e=void 0!==e&&("number"!=typeof e.length||e===c)?[e]:e}}),e=(l.prototype.addEvent=function(e,t,r,a){a={target:e,selector:t,options:r,callback:a,firedElems:[]};return this._beforeAdding&&this._beforeAdding(a),this._eventsBucket.push(a),a},l.prototype.removeEvent=function(e){for(var t,r=this._eventsBucket.length-1;t=this._eventsBucket[r];r--)e(t)&&(this._beforeRemoving&&this._beforeRemoving(t),(t=this._eventsBucket.splice(r,1))&&t.length&&(t[0].callback=null))},l.prototype.beforeAdding=function(e){this._beforeAdding=e},l.prototype.beforeRemoving=function(e){this._beforeRemoving=e},l),t=function(i,n){var o=new e,l=this,s={fireOnAttributesModification:!1};return o.beforeAdding(function(t){var e=t.target;e!==c.document&&e!==c||(e=document.getElementsByTagName("html")[0]);var r=new MutationObserver(function(e){n.call(this,e,t)}),a=i(t.options);r.observe(e,a),t.observer=r,t.me=l}),o.beforeRemoving(function(e){e.observer.disconnect()}),this.bindEvent=function(e,t,r){t=u.mergeArrays(s,t);for(var a=u.toElementsArray(this),i=0;i<a.length;i++)o.addEvent(a[i],e,t,r)},this.unbindEvent=function(){var r=u.toElementsArray(this);o.removeEvent(function(e){for(var t=0;t<r.length;t++)if(this===w||e.target===r[t])return!0;return!1})},this.unbindEventWithSelectorOrCallback=function(r){var a=u.toElementsArray(this),i=r,e="function"==typeof r?function(e){for(var t=0;t<a.length;t++)if((this===w||e.target===a[t])&&e.callback===i)return!0;return!1}:function(e){for(var t=0;t<a.length;t++)if((this===w||e.target===a[t])&&e.selector===r)return!0;return!1};o.removeEvent(e)},this.unbindEventWithSelectorAndCallback=function(r,a){var i=u.toElementsArray(this);o.removeEvent(function(e){for(var t=0;t<i.length;t++)if((this===w||e.target===i[t])&&e.selector===r&&e.callback===a)return!0;return!1})},this},i=new function(){var s={fireOnAttributesModification:!1,onceOnly:!1,existing:!1};function n(e,t,r){return!(!u.matchesSelector(e,t.selector)||(e._id===w&&(e._id=a++),-1!=t.firedElems.indexOf(e._id)))&&(t.firedElems.push(e._id),!0)}var c=(i=new t(function(e){var t={attributes:!1,childList:!0,subtree:!0};return e.fireOnAttributesModification&&(t.attributes=!0),t},function(e,i){e.forEach(function(e){var t=e.addedNodes,r=e.target,a=[];null!==t&&0<t.length?u.checkChildNodesRecursively(t,i,n,a):"attributes"===e.type&&n(r,i)&&a.push({callback:i.callback,elem:r}),u.callCallbacks(a,i)})})).bindEvent;return i.bindEvent=function(e,t,r){t=void 0===r?(r=t,s):u.mergeArrays(s,t);var a=u.toElementsArray(this);if(t.existing){for(var i=[],n=0;n<a.length;n++)for(var o=a[n].querySelectorAll(e),l=0;l<o.length;l++)i.push({callback:r,elem:o[l]});if(t.onceOnly&&i.length)return r.call(i[0].elem,i[0].elem);setTimeout(u.callCallbacks,1,i)}c.call(this,e,t,r)},i},o=new function(){var a={};function i(e,t){return u.matchesSelector(e,t.selector)}var n=(o=new t(function(){return{childList:!0,subtree:!0}},function(e,r){e.forEach(function(e){var t=e.removedNodes,e=[];null!==t&&0<t.length&&u.checkChildNodesRecursively(t,r,i,e),u.callCallbacks(e,r)})})).bindEvent;return o.bindEvent=function(e,t,r){t=void 0===r?(r=t,a):u.mergeArrays(a,t),n.call(this,e,t,r)},o};d(HTMLElement.prototype),d(NodeList.prototype),d(HTMLCollection.prototype),d(HTMLDocument.prototype),d(Window.prototype);var n={};return s(i,n,"unbindAllArrive"),s(o,n,"unbindAllLeave"),n}function l(){this._eventsBucket=[],this._beforeAdding=null,this._beforeRemoving=null}function s(e,t,r){u.addMethod(t,r,e.unbindEvent),u.addMethod(t,r,e.unbindEventWithSelectorOrCallback),u.addMethod(t,r,e.unbindEventWithSelectorAndCallback)}function d(e){e.arrive=i.bindEvent,s(i,e,"unbindArrive"),e.leave=o.bindEvent,s(o,e,"unbindLeave")}}(window,void 0),ewww_webp_supported=!1;function check_webp_feature(e,t){var r;ewww_webp_supported?t(ewww_webp_supported):((r=new Image).onload=function(){ewww_webp_supported=0<r.width&&0<r.height,t(ewww_webp_supported)},r.onerror=function(){t(!1)},r.src="data:image/webp;base64,"+{alpha:"UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAARBxAR/Q9ERP8DAABWUDggGAAAABQBAJ0BKgEAAQAAAP4AAA3AAP7mtQAAAA==",animation:"UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA"}[e])}function ewwwLoadImages(e){if(e){for(var t=document.querySelectorAll(".batch-image img, .image-wrapper a, .ngg-pro-masonry-item a, .ngg-galleria-offscreen-seo-wrapper a"),r=0,a=t.length;r<a;r++)ewwwAttr(t[r],"data-src",t[r].getAttribute("data-webp")),ewwwAttr(t[r],"data-thumbnail",t[r].getAttribute("data-webp-thumbnail"));for(var i=document.querySelectorAll(".rev_slider ul li"),r=0,a=i.length;r<a;r++){ewwwAttr(i[r],"data-thumb",i[r].getAttribute("data-webp-thumb"));for(var n=1;n<11;)ewwwAttr(i[r],"data-param"+n,i[r].getAttribute("data-webp-param"+n)),n++}for(r=0,a=(i=document.querySelectorAll(".rev_slider img")).length;r<a;r++)ewwwAttr(i[r],"data-lazyload",i[r].getAttribute("data-webp-lazyload"));for(var o=document.querySelectorAll("div.woocommerce-product-gallery__image"),r=0,a=o.length;r<a;r++)ewwwAttr(o[r],"data-thumb",o[r].getAttribute("data-webp-thumb"))}for(var l=document.querySelectorAll("video"),r=0,a=l.length;r<a;r++)ewwwAttr(l[r],"poster",e?l[r].getAttribute("data-poster-webp"):l[r].getAttribute("data-poster-image"));for(var s,c=document.querySelectorAll("img.ewww_webp_lazy_load"),r=0,a=c.length;r<a;r++)e&&(ewwwAttr(c[r],"data-lazy-srcset",c[r].getAttribute("data-lazy-srcset-webp")),ewwwAttr(c[r],"data-srcset",c[r].getAttribute("data-srcset-webp")),ewwwAttr(c[r],"data-lazy-src",c[r].getAttribute("data-lazy-src-webp")),ewwwAttr(c[r],"data-src",c[r].getAttribute("data-src-webp")),ewwwAttr(c[r],"data-orig-file",c[r].getAttribute("data-webp-orig-file")),ewwwAttr(c[r],"data-medium-file",c[r].getAttribute("data-webp-medium-file")),ewwwAttr(c[r],"data-large-file",c[r].getAttribute("data-webp-large-file")),null!=(s=c[r].getAttribute("srcset"))&&!1!==s&&s.includes("R0lGOD")&&ewwwAttr(c[r],"src",c[r].getAttribute("data-lazy-src-webp"))),c[r].className=c[r].className.replace(/\bewww_webp_lazy_load\b/,"");for(var w=document.querySelectorAll(".ewww_webp"),r=0,a=w.length;r<a;r++)e?(ewwwAttr(w[r],"srcset",w[r].getAttribute("data-srcset-webp")),ewwwAttr(w[r],"src",w[r].getAttribute("data-src-webp")),ewwwAttr(w[r],"data-orig-file",w[r].getAttribute("data-webp-orig-file")),ewwwAttr(w[r],"data-medium-file",w[r].getAttribute("data-webp-medium-file")),ewwwAttr(w[r],"data-large-file",w[r].getAttribute("data-webp-large-file")),ewwwAttr(w[r],"data-large_image",w[r].getAttribute("data-webp-large_image")),ewwwAttr(w[r],"data-src",w[r].getAttribute("data-webp-src"))):(ewwwAttr(w[r],"srcset",w[r].getAttribute("data-srcset-img")),ewwwAttr(w[r],"src",w[r].getAttribute("data-src-img"))),w[r].className=w[r].className.replace(/\bewww_webp\b/,"ewww_webp_loaded");window.jQuery&&jQuery.fn.isotope&&jQuery.fn.imagesLoaded&&(jQuery(".fusion-posts-container-infinite").imagesLoaded(function(){jQuery(".fusion-posts-container-infinite").hasClass("isotope")&&jQuery(".fusion-posts-container-infinite").isotope()}),jQuery(".fusion-portfolio:not(.fusion-recent-works) .fusion-portfolio-wrapper").imagesLoaded(function(){jQuery(".fusion-portfolio:not(.fusion-recent-works) .fusion-portfolio-wrapper").isotope()}))}function ewwwWebPInit(e){ewwwLoadImages(e),ewwwNggLoadGalleries(e),document.arrive(".ewww_webp",function(){ewwwLoadImages(e)}),document.arrive(".ewww_webp_lazy_load",function(){ewwwLoadImages(e)}),document.arrive("videos",function(){ewwwLoadImages(e)}),"loading"==document.readyState?document.addEventListener("DOMContentLoaded",ewwwJSONParserInit):("undefined"!=typeof galleries&&ewwwNggParseGalleries(e),ewwwWooParseVariations(e))}function ewwwAttr(e,t,r){null!=r&&!1!==r&&e.setAttribute(t,r)}function ewwwJSONParserInit(){"undefined"!=typeof galleries&&check_webp_feature("alpha",ewwwNggParseGalleries),check_webp_feature("alpha",ewwwWooParseVariations)}function ewwwWooParseVariations(e){if(e)for(var t=document.querySelectorAll("form.variations_form"),r=0,a=t.length;r<a;r++){var i=t[r].getAttribute("data-product_variations"),n=!1;try{for(var o in i=JSON.parse(i))void 0!==i[o]&&void 0!==i[o].image&&(void 0!==i[o].image.src_webp&&(i[o].image.src=i[o].image.src_webp,n=!0),void 0!==i[o].image.srcset_webp&&(i[o].image.srcset=i[o].image.srcset_webp,n=!0),void 0!==i[o].image.full_src_webp&&(i[o].image.full_src=i[o].image.full_src_webp,n=!0),void 0!==i[o].image.gallery_thumbnail_src_webp&&(i[o].image.gallery_thumbnail_src=i[o].image.gallery_thumbnail_src_webp,n=!0),void 0!==i[o].image.thumb_src_webp&&(i[o].image.thumb_src=i[o].image.thumb_src_webp,n=!0));n&&ewwwAttr(t[r],"data-product_variations",JSON.stringify(i))}catch(e){}}}function ewwwNggParseGalleries(e){if(e)for(var t in galleries){var r=galleries[t];galleries[t].images_list=ewwwNggParseImageList(r.images_list)}}function ewwwNggLoadGalleries(e){e&&document.addEventListener("ngg.galleria.themeadded",function(e,t){window.ngg_galleria._create_backup=window.ngg_galleria.create,window.ngg_galleria.create=function(e,t){var r=$(e).data("id");return galleries["gallery_"+r].images_list=ewwwNggParseImageList(galleries["gallery_"+r].images_list),window.ngg_galleria._create_backup(e,t)}})}function ewwwNggParseImageList(e){for(var t in e){var r=e[t];if(void 0!==r["image-webp"]&&(e[t].image=r["image-webp"],delete e[t]["image-webp"]),void 0!==r["thumb-webp"]&&(e[t].thumb=r["thumb-webp"],delete e[t]["thumb-webp"]),void 0!==r.full_image_webp&&(e[t].full_image=r.full_image_webp,delete e[t].full_image_webp),void 0!==r.srcsets)for(var a in r.srcsets)nggSrcset=r.srcsets[a],void 0!==r.srcsets[a+"-webp"]&&(e[t].srcsets[a]=r.srcsets[a+"-webp"],delete e[t].srcsets[a+"-webp"]);if(void 0!==r.full_srcsets)for(var i in r.full_srcsets)nggFSrcset=r.full_srcsets[i],void 0!==r.full_srcsets[i+"-webp"]&&(e[t].full_srcsets[i]=r.full_srcsets[i+"-webp"],delete e[t].full_srcsets[i+"-webp"])}return e}check_webp_feature("alpha",ewwwWebPInit);</script><title>Extract Keywords | Free Keyword Extraction | NLP Keyword Extraction | Cortical.io</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><script id="diviarea-loader">window.DiviPopupData=window.DiviAreaConfig={"zIndex":1000000,"animateSpeed":400,"triggerClassPrefix":"show-popup-","idAttrib":"data-popup","modalIndicatorClass":"is-modal","blockingIndicatorClass":"is-blocking","defaultShowCloseButton":true,"withCloseClass":"with-close","noCloseClass":"no-close","triggerCloseClass":"close","singletonClass":"single","darkModeClass":"dark","noShadowClass":"no-shadow","altCloseClass":"close-alt","popupSelector":".et_pb_section.popup","initializeOnEvent":"et_pb_after_init_modules","popupWrapperClass":"area-outer-wrap","fullHeightClass":"full-height","openPopupClass":"da-overlay-visible","overlayClass":"da-overlay","exitIndicatorClass":"on-exit","hoverTriggerClass":"on-hover","clickTriggerClass":"on-click","onExitDelay":2000,"notMobileClass":"not-mobile","notTabletClass":"not-tablet","notDesktopClass":"not-desktop","baseContext":"body","activePopupClass":"is-open","closeButtonClass":"da-close","withLoaderClass":"with-loader","debug":false,"ajaxUrl":"https:\/\/www.cortical.io\/wp-admin\/admin-ajax.php","sys":[]};var divimode_loader=function(){"use strict";!function(t){t.DiviArea=t.DiviPopup={loaded:!1};var n=t.DiviArea,i=n.Hooks={},o={};function r(t,n,i){var r,e,c;if("string"==typeof t)if(o[t]){if(n)if((r=o[t])&&i)for(c=r.length;c--;)(e=r[c]).callback===n&&e.context===i&&(r[c]=!1);else for(c=r.length;c--;)r[c].callback===n&&(r[c]=!1)}else o[t]=[]}function e(t,n,i,r){if("string"==typeof t){var e={callback:n,priority:i,context:r},c=o[t];c?(c.push(e),c=function(t){var n,i,o,r,e=t.length;for(r=1;r<e;r++)for(n=t[r],i=r;i>0;i--)(o=t[i-1]).priority>n.priority&&(t[i]=o,t[i-1]=n);return t}(c)):c=[e],o[t]=c}}function c(t,n,i){"string"==typeof n&&(n=[n]);var r,e,c=[];for(r=0;r<n.length;r++)Array.prototype.push.apply(c,o[n[r]]);for(e=0;e<c.length;e++){var a=void 0;c[e]&&"function"==typeof c[e].callback&&("filter"===t?void 0!==(a=c[e].callback.apply(c[e].context,i))&&(i[0]=a):c[e].callback.apply(c[e].context,i))}if("filter"===t)return i[0]}i.silent=function(){return i},n.removeFilter=i.removeFilter=function(t,n){r(t,n)},n.removeAction=i.removeAction=function(t,n){r(t,n)},n.applyFilters=i.applyFilters=function(t){for(var n=[],i=arguments.length-1;i-- >0;)n[i]=arguments[i+1];return c("filter",t,n)},n.doAction=i.doAction=function(t){for(var n=[],i=arguments.length-1;i-- >0;)n[i]=arguments[i+1];c("action",t,n)},n.addFilter=i.addFilter=function(n,i,o,r){e(n,i,parseInt(o||10,10),r||t)},n.addAction=i.addAction=function(n,i,o,r){e(n,i,parseInt(o||10,10),r||t)},n.addActionOnce=i.addActionOnce=function(n,i,o,c){e(n,i,parseInt(o||10,10),c||t),e(n,(function(){r(n,i)}),1+parseInt(o||10,10),c||t)}}(window);return{}}();
+</script><style id="et-divi-open-sans-inline-css">/* Original: https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&#038;subset=latin,latin-ext&#038;display=swap *//* User Agent: Mozilla/5.0 (Unknown; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) Safari/538.1 Daum/4.1 */@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjWV4exQ.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVc.ttf) format('truetype');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4uaVc.ttf) format('truetype');}/* User Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:27.0) Gecko/20100101 Firefox/27.0 */@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjWV4exg.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVQ.woff) format('woff');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4uaVQ.woff) format('woff');}/* User Agent: Mozilla/5.0 (Windows NT 6.3; rv:39.0) Gecko/20100101 Firefox/39.0 */@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk5hkWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk8ZkWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkxhjWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0RkyFjWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: italic;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memQYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWq8tWZ0Pw86hd0Rk0ZjWV4ewA.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 300;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsiH0B4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 400;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 600;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsgH1x4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 700;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1x4uaVI.woff2) format('woff2');}@font-face {font-family: 'Open Sans';font-style: normal;font-weight: 800;font-stretch: normal;font-display: swap;src: url(https://fonts.gstatic.com/s/opensans/v35/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgshZ1x4uaVI.woff2) format('woff2');}</style>
+		<!-- All in One SEO 4.3.6.1 - aioseo.com -->
+		<meta name="description" content="Automatically extract keywords from text or from a web page. Keyword extraction or key word extraction takes place and keywords are listed in the output area, and the meaning of the input is numerically encoded as a semantic fingerprint, which is graphically displayed as a square grid." />
+		<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+		<meta name="google-site-verification" content="fr2JBaXHdAojjNe3wjbmGk93ZhyXyJeF1kwJk7trrDU" />
+		<link rel="canonical" href="https://www.cortical.io/freetools/extract-keywords/" />
+		<meta name="generator" content="All in One SEO (AIOSEO) 4.3.6.1 " />
+		<meta property="og:locale" content="en_US" />
+		<meta property="og:site_name" content="Cortical.io" />
+		<meta property="og:type" content="article" />
+		<meta property="og:title" content="Extract Keywords | Free Keyword Extraction | NLP Keyword Extraction | Cortical.io" />
+		<meta property="og:description" content="Automatically extract keywords from text or from a web page. Keyword extraction or key word extraction takes place and keywords are listed in the output area, and the meaning of the input is numerically encoded as a semantic fingerprint, which is graphically displayed as a square grid." />
+		<meta property="og:url" content="https://www.cortical.io/freetools/extract-keywords/" />
+		<meta property="og:image" content="https://www.cortical.io/wp-content/uploads/cortical-io-logo-social.jpg" />
+		<meta property="og:image:secure_url" content="https://www.cortical.io/wp-content/uploads/cortical-io-logo-social.jpg" />
+		<meta property="article:published_time" content="2019-12-12T17:34:22+00:00" />
+		<meta property="article:modified_time" content="2022-06-15T21:15:27+00:00" />
+		<meta property="article:publisher" content="https://www.facebook.com/cortical.io" />
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:site" content="@cortical_io" />
+		<meta name="twitter:title" content="Extract Keywords | Free Keyword Extraction | NLP Keyword Extraction | Cortical.io" />
+		<meta name="twitter:description" content="Automatically extract keywords from text or from a web page. Keyword extraction or key word extraction takes place and keywords are listed in the output area, and the meaning of the input is numerically encoded as a semantic fingerprint, which is graphically displayed as a square grid." />
+		<meta name="twitter:image" content="https://www.cortical.io/wp-content/uploads/cortical-io-logo-social.jpg" />
+		<script type="application/ld+json" class="aioseo-schema">
+			{"@context":"https:\/\/schema.org","@graph":[{"@type":"BreadcrumbList","@id":"https:\/\/www.cortical.io\/freetools\/extract-keywords\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/www.cortical.io\/#listItem","position":1,"item":{"@type":"WebPage","@id":"https:\/\/www.cortical.io\/","name":"Home","description":"Cortical.io delivers AI-based solutions that streamline the extraction, classification, review and analysis of information hidden in unstructured text while providing short time to value.","url":"https:\/\/www.cortical.io\/"},"nextItem":"https:\/\/www.cortical.io\/freetools\/extract-keywords\/#listItem"},{"@type":"ListItem","@id":"https:\/\/www.cortical.io\/freetools\/extract-keywords\/#listItem","position":2,"item":{"@type":"WebPage","@id":"https:\/\/www.cortical.io\/freetools\/extract-keywords\/","name":"Extract Keywords","description":"Automatically extract keywords from text or from a web page. Keyword extraction or key word extraction takes place and keywords are listed in the output area, and the meaning of the input is numerically encoded as a semantic fingerprint, which is graphically displayed as a square grid.","url":"https:\/\/www.cortical.io\/freetools\/extract-keywords\/"},"previousItem":"https:\/\/www.cortical.io\/#listItem"}]},{"@type":"Organization","@id":"https:\/\/www.cortical.io\/#organization","name":"Cortical.io","url":"https:\/\/www.cortical.io\/","sameAs":["https:\/\/www.linkedin.com\/company\/cortical-io"]},{"@type":"Person","@id":"https:\/\/www.cortical.io\/blog\/author\/corticalioadmin\/#author","url":"https:\/\/www.cortical.io\/blog\/author\/corticalioadmin\/","name":"corticalioadmin","image":{"@type":"ImageObject","@id":"https:\/\/www.cortical.io\/freetools\/extract-keywords\/#authorImage","url":"https:\/\/secure.gravatar.com\/avatar\/e141feae4d724e4bfc1a1eedace7586e?s=96&d=mm&r=g","width":96,"height":96,"caption":"corticalioadmin"}},{"@type":"WebPage","@id":"https:\/\/www.cortical.io\/freetools\/extract-keywords\/#webpage","url":"https:\/\/www.cortical.io\/freetools\/extract-keywords\/","name":"Extract Keywords | Free Keyword Extraction | NLP Keyword Extraction | Cortical.io","description":"Automatically extract keywords from text or from a web page. Keyword extraction or key word extraction takes place and keywords are listed in the output area, and the meaning of the input is numerically encoded as a semantic fingerprint, which is graphically displayed as a square grid.","inLanguage":"en-US","isPartOf":{"@id":"https:\/\/www.cortical.io\/#website"},"breadcrumb":{"@id":"https:\/\/www.cortical.io\/freetools\/extract-keywords\/#breadcrumblist"},"author":{"@id":"https:\/\/www.cortical.io\/blog\/author\/corticalioadmin\/#author"},"creator":{"@id":"https:\/\/www.cortical.io\/blog\/author\/corticalioadmin\/#author"},"datePublished":"2019-12-12T17:34:22+01:00","dateModified":"2022-06-15T21:15:27+02:00"},{"@type":"WebSite","@id":"https:\/\/www.cortical.io\/#website","url":"https:\/\/www.cortical.io\/","name":"Cortical.io","description":"Natural language understanding inspired by neuroscience","inLanguage":"en-US","publisher":{"@id":"https:\/\/www.cortical.io\/#organization"}}]}
+		</script>
+		<!-- All in One SEO -->
+
+
+<!-- Google Tag Manager for WordPress by gtm4wp.com -->
+<script data-cfasync="false" data-pagespeed-no-defer>
+	var gtm4wp_datalayer_name = "dataLayer";
+	var dataLayer = dataLayer || [];
+
+	const gtm4wp_scrollerscript_debugmode         = false;
+	const gtm4wp_scrollerscript_callbacktime      = 100;
+	const gtm4wp_scrollerscript_readerlocation    = 150;
+	const gtm4wp_scrollerscript_contentelementid  = "content";
+	const gtm4wp_scrollerscript_scannertime       = 60;
+</script>
+<!-- End Google Tag Manager for WordPress by gtm4wp.com --><script type="text/javascript">
+			let jqueryParams=[],jQuery=function(r){return jqueryParams=[...jqueryParams,r],jQuery},$=function(r){return jqueryParams=[...jqueryParams,r],$};window.jQuery=jQuery,window.$=jQuery;let customHeadScripts=!1;jQuery.fn=jQuery.prototype={},$.fn=jQuery.prototype={},jQuery.noConflict=function(r){if(window.jQuery)return jQuery=window.jQuery,$=window.jQuery,customHeadScripts=!0,jQuery.noConflict},jQuery.ready=function(r){jqueryParams=[...jqueryParams,r]},$.ready=function(r){jqueryParams=[...jqueryParams,r]},jQuery.load=function(r){jqueryParams=[...jqueryParams,r]},$.load=function(r){jqueryParams=[...jqueryParams,r]},jQuery.fn.ready=function(r){jqueryParams=[...jqueryParams,r]},$.fn.ready=function(r){jqueryParams=[...jqueryParams,r]};</script><link rel='dns-prefetch' href='//js.hs-scripts.com' />
+<link rel="alternate" type="application/rss+xml" title="Cortical.io &raquo; Feed" href="https://www.cortical.io/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Cortical.io &raquo; Comments Feed" href="https://www.cortical.io/comments/feed/" />
+<meta content="Cortical Child Theme v.1.0.12" name="generator"/><style type="text/css" media="all">
+.wpautoterms-footer{background-color:#ffffff;text-align:center;}
+.wpautoterms-footer a{color:#000000;font-family:Arial, sans-serif;font-size:14px;}
+.wpautoterms-footer .separator{color:#cccccc;font-family:Arial, sans-serif;font-size:14px;}</style>
+<style id='safe-svg-svg-icon-style-inline-css' type='text/css'>
+.safe-svg-cover .safe-svg-inside{display:inline-block;max-width:100%}.safe-svg-cover svg{height:100%;max-height:100%;max-width:100%;width:100%}
+
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;}body { margin: 0;--wp--style--global--content-size: 823px;--wp--style--global--wide-size: 1080px; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.is-layout-flex){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}a:where(:not(.wp-element-button)){text-decoration: underline;}.wp-element-button, .wp-block-button__link{background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;line-height: inherit;padding: calc(0.667em + 2px) calc(1.333em + 2px);text-decoration: none;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='wpautoterms_css-css' href='https://www.cortical.io/wp-content/plugins/auto-terms-of-service-and-privacy-policy/css/wpautoterms.css?ver=6.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='et_pb_dmb_breadcrumbs-css-css' href='https://www.cortical.io/wp-content/plugins/divi-module-breadcrumbs/style.css?ver=6.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='cookie-law-info-css' href='https://www.cortical.io/wp-content/plugins/webtoffee-gdpr-cookie-consent/public/css/cookie-law-info-public.css?ver=2.3.8' type='text/css' media='all' />
+<link rel='stylesheet' id='cookie-law-info-gdpr-css' href='https://www.cortical.io/wp-content/plugins/webtoffee-gdpr-cookie-consent/public/css/cookie-law-info-gdpr.css?ver=2.3.8' type='text/css' media='all' />
+<style id='cookie-law-info-gdpr-inline-css' type='text/css'>
+.cli-modal-content, .cli-tab-content { background-color: #ffffff; }.cli-privacy-content-text, .cli-modal .cli-modal-dialog, .cli-tab-container p, a.cli-privacy-readmore { color: #000000; }.cli-tab-header { background-color: #f2f2f2; }.cli-tab-header, .cli-tab-header a.cli-nav-link,span.cli-necessary-caption,.cli-switch .cli-slider:after { color: #000000; }.cli-switch .cli-slider:before { background-color: #ffffff; }.cli-switch input:checked + .cli-slider:before { background-color: #ffffff; }.cli-switch .cli-slider { background-color: #e3e1e8; }.cli-switch input:checked + .cli-slider { background-color: #28a745; }.cli-modal-close svg { fill: #000000; }.cli-tab-footer .wt-cli-privacy-accept-all-btn { background-color: #00acad; color: #ffffff}.cli-tab-footer .wt-cli-privacy-accept-btn { background-color: #00acad; color: #ffffff}.cli-tab-header a:before{ border-right: 1px solid #000000; border-bottom: 1px solid #000000; }
+</style>
+<link rel='stylesheet' id='css-divi-area-css' href='https://www.cortical.io/wp-content/plugins/popups-for-divi/styles/front.min.css?ver=3.0.5' type='text/css' media='all' />
+<style id='css-divi-area-inline-css' type='text/css'>
+.et_pb_section.popup{display:none}
+</style>
+<link rel='stylesheet' id='weglot-css-css' href='https://www.cortical.io/wp-content/plugins/weglot/dist/css/front-css.css?ver=4.0.1' type='text/css' media='' />
+<link rel='stylesheet' id='new-flag-css-css' href='https://www.cortical.io/wp-content/plugins/weglot/app/styles/new-flags.css?ver=4.0.1' type='text/css' media='all' />
+<style id='custom-flag-handle-inline-css' type='text/css'>
+.weglot-flags.flag-0.en>a:before,.weglot-flags.flag-0.en>span:before {background-image: url(https://cdn.weglot.com/flags/rectangle_mat/us.svg); }.weglot-flags.flag-1.en>a:before,.weglot-flags.flag-1.en>span:before {background-image: url(https://cdn.weglot.com/flags/shiny/us.svg); }.weglot-flags.flag-2.en>a:before,.weglot-flags.flag-2.en>span:before {background-image: url(https://cdn.weglot.com/flags/square/us.svg); }.weglot-flags.flag-3.en>a:before,.weglot-flags.flag-3.en>span:before {background-image: url(https://cdn.weglot.com/flags/circle/us.svg); }
+</style>
+<link rel='stylesheet' id='dp-divi-filtergrid-styles-css' href='https://www.cortical.io/wp-content/plugins/dp-divi-filtergrid/styles/style.min.css?ver=2.9.2' type='text/css' media='all' />
+<link rel='stylesheet' id='dp-owl-carousel-pro-styles-css' href='https://www.cortical.io/wp-content/plugins/dp-owl-carousel-pro/styles/style.min.css?ver=2.3.9' type='text/css' media='all' />
+<link rel='stylesheet' id='extension-styles-css' href='https://www.cortical.io/wp-content/plugins/schema-and-structured-data-for-wp/modules/divi-builder/styles/style.min.css?ver=1.0.0' type='text/css' media='all' />
+<link rel='stylesheet' id='divi-style-parent-css' href='https://www.cortical.io/wp-content/themes/Divi/style-static.min.css?ver=4.19.0' type='text/css' media='all' />
+<link rel='stylesheet' id='divi-style-css' href='https://www.cortical.io/wp-content/themes/Cortical-Child/style.css?ver=4.19.0' type='text/css' media='all' />
+<script type='text/javascript' src='https://www.cortical.io/wp-includes/js/jquery/jquery.min.js?ver=3.6.1' id='jquery-core-js'></script>
+<script type='text/javascript' src='https://www.cortical.io/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js'></script>
+<script type='text/javascript' id='jquery-js-after'>
+jqueryParams.length&&$.each(jqueryParams,function(e,r){if("function"==typeof r){var n=String(r);n.replace("$","jQuery");var a=new Function("return "+n)();$(document).ready(a)}});
+</script>
+<script type='text/javascript' src='https://www.cortical.io/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.13.9' id='regenerator-runtime-js'></script>
+<script type='text/javascript' src='https://www.cortical.io/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0' id='wp-polyfill-js'></script>
+<script type='text/javascript' src='https://www.cortical.io/wp-includes/js/dist/dom-ready.min.js?ver=392bdd43726760d1f3ca' id='wp-dom-ready-js'></script>
+<script type='text/javascript' src='https://www.cortical.io/wp-content/plugins/auto-terms-of-service-and-privacy-policy/js/base.js?ver=2.5.0' id='wpautoterms_base-js'></script>
+<script type='text/javascript' id='cookie-law-info-js-extra'>
+/* <![CDATA[ */
+var Cli_Data = {"nn_cookie_ids":[],"non_necessary_cookies":[],"cookielist":{"necessary":{"id":151,"status":true,"priority":0,"title":"Necessary","strict":true,"default_state":false,"ccpa_optout":false,"loadonstart":false},"functional":{"id":152,"status":true,"priority":5,"title":"Functional","strict":false,"default_state":false,"ccpa_optout":false,"loadonstart":false},"performance":{"id":153,"status":true,"priority":4,"title":"Performance","strict":false,"default_state":false,"ccpa_optout":false,"loadonstart":false},"analytics":{"id":154,"status":true,"priority":3,"title":"Analytics","strict":false,"default_state":false,"ccpa_optout":false,"loadonstart":false},"advertisement":{"id":155,"status":true,"priority":2,"title":"Advertisement","strict":false,"default_state":false,"ccpa_optout":false,"loadonstart":false},"others":{"id":156,"status":true,"priority":1,"title":"Others","strict":false,"default_state":false,"ccpa_optout":false,"loadonstart":false}},"ajax_url":"https:\/\/www.cortical.io\/wp-admin\/admin-ajax.php","current_lang":"en","security":"3379c50a97","eu_countries":["GB"],"geoIP":"enabled","use_custom_geolocation_api":"","custom_geolocation_api":"https:\/\/geoip.cookieyes.com\/geoip\/checker\/result.php","consentVersion":"1","strictlyEnabled":["necessary","obligatoire"],"cookieDomain":"","privacy_length":"250","ccpaEnabled":"1","ccpaRegionBased":"1","ccpaBarEnabled":"1","ccpaType":"ccpa_gdpr","triggerDomRefresh":"","secure_cookies":""};
+var log_object = {"ajax_url":"https:\/\/www.cortical.io\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.cortical.io/wp-content/plugins/webtoffee-gdpr-cookie-consent/public/js/cookie-law-info-public.js?ver=2.3.8' id='cookie-law-info-js'></script>
+<script type='text/javascript' id='cookie-law-info-ccpa-js-extra'>
+/* <![CDATA[ */
+var ccpa_data = {"opt_out_prompt":"Do you really wish to opt out?","opt_out_confirm":"Confirm","opt_out_cancel":"Cancel"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.cortical.io/wp-content/plugins/webtoffee-gdpr-cookie-consent/admin/modules/ccpa/assets/js/cookie-law-info-ccpa.js?ver=2.3.8' id='cookie-law-info-ccpa-js'></script>
+<script type='text/javascript' src='https://www.cortical.io/wp-content/plugins/duracelltomi-google-tag-manager/js/analytics-talk-content-tracking.js?ver=1.16.2' id='gtm4wp-scroll-tracking-js'></script>
+<script type='text/javascript' src='https://www.cortical.io/wp-content/plugins/popups-for-divi/scripts/ie-compat.min.js?ver=3.0.5' id='dap-ie-js'></script>
+<script type='text/javascript' src='https://www.cortical.io/wp-content/plugins/weglot/dist/front-js.js?ver=4.0.1' id='wp-weglot-js-js'></script>
+<link rel="https://api.w.org/" href="https://www.cortical.io/wp-json/" /><link rel="alternate" type="application/json" href="https://www.cortical.io/wp-json/wp/v2/freetools/894" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.cortical.io/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.cortical.io/wp-includes/wlwmanifest.xml" />
+<meta name="generator" content="WordPress 6.1.1" />
+<link rel='shortlink' href='https://www.cortical.io/?p=894' />
+<link rel="alternate" type="application/json+oembed" href="https://www.cortical.io/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.cortical.io%2Ffreetools%2Fextract-keywords%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.cortical.io/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.cortical.io%2Ffreetools%2Fextract-keywords%2F&#038;format=xml" />
+			<!-- DO NOT COPY THIS SNIPPET! Start of Page Analytics Tracking for HubSpot WordPress plugin v10.1.16-->
+			<script type="text/javascript" class="hsq-set-content-id" data-content-id="blog-post">
+				var _hsq = _hsq || [];
+				_hsq.push(["setContentType", "blog-post"]);
+			</script>
+			<!-- DO NOT COPY THIS SNIPPET! End of Page Analytics Tracking for HubSpot WordPress plugin -->
+			<style type="text/css" id="et-bloom-custom-css">
+					.et_bloom .et_bloom_optin_6 .et_bloom_form_content { background-color: #ededed !important; } .et_bloom .et_bloom_optin_6 .et_bloom_form_container .et_bloom_form_header { background-color: #ffffff !important; } .et_bloom .et_bloom_optin_6 .et_bloom_form_content button { background-color: #0f6186 !important; } .et_bloom .et_bloom_optin_6 .et_bloom_form_content .et_bloom_fields i { color: #0f6186 !important; } .et_bloom .et_bloom_optin_6 .et_bloom_form_content .et_bloom_custom_field_radio i:before { background: #0f6186 !important; } .et_bloom .et_bloom_optin_6 .et_bloom_form_content button { background-color: #0f6186 !important; } .et_bloom .et_bloom_optin_6 .et_bloom_form_container h2, .et_bloom .et_bloom_optin_6 .et_bloom_form_container h2 span, .et_bloom .et_bloom_optin_6 .et_bloom_form_container h2 strong { font-family: "Open Sans", Helvetica, Arial, Lucida, sans-serif; }.et_bloom .et_bloom_optin_6 .et_bloom_form_container p, .et_bloom .et_bloom_optin_6 .et_bloom_form_container p span, .et_bloom .et_bloom_optin_6 .et_bloom_form_container p strong, .et_bloom .et_bloom_optin_6 .et_bloom_form_container form input, .et_bloom .et_bloom_optin_6 .et_bloom_form_container form button span { font-family: "Open Sans", Helvetica, Arial, Lucida, sans-serif; } 
+				</style>
+<!-- Google Tag Manager for WordPress by gtm4wp.com -->
+<!-- GTM Container placement set to footer -->
+<script data-cfasync="false" data-pagespeed-no-defer>
+	var dataLayer_content = {"pagePostType":"freetools","pagePostType2":"single-freetools","pagePostAuthor":"corticalioadmin"};
+	dataLayer.push( dataLayer_content );
+</script>
+<script data-cfasync="false">
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.'+'js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-56985PX');
+</script>
+<!-- End Google Tag Manager -->
+<!-- End Google Tag Manager for WordPress by gtm4wp.com -->
+<script type="application/json" id="weglot-data">{"language_from":"en","excluded_paths":[{"type":"START_WITH","value":"\/free-tools\/","language_button_displayed":false,"exclusion_behavior":"REDIRECT","excluded_languages":[],"regex":"^\/free-tools\/"},{"type":"IS_EXACTLY","value":"\/freetools\/extract-keywords\/","language_button_displayed":false,"exclusion_behavior":"REDIRECT","excluded_languages":[],"regex":"^\/freetools\/extract-keywords\/$"},{"type":"IS_EXACTLY","value":"cortical.io\/freetools\/compare-text\/","language_button_displayed":false,"exclusion_behavior":"REDIRECT","excluded_languages":[],"regex":"^cortical.io\/freetools\/compare-text\/$"},{"type":"IS_EXACTLY","value":"\/freetools\/detect-language\/","language_button_displayed":false,"exclusion_behavior":"REDIRECT","excluded_languages":[],"regex":"^\/freetools\/detect-language\/$"},{"type":"IS_EXACTLY","value":"\/freetools\/disambiguate-terms\/","language_button_displayed":false,"exclusion_behavior":"REDIRECT","excluded_languages":[],"regex":"^\/freetools\/disambiguate-terms\/$"},{"type":"START_WITH","value":"\/resources\/","language_button_displayed":false,"exclusion_behavior":"REDIRECT","excluded_languages":[],"regex":"^\/resources\/"},{"type":"START_WITH","value":"\/company\/events\/","language_button_displayed":false,"exclusion_behavior":"REDIRECT","excluded_languages":[],"regex":"^\/company\/events\/"},{"type":"IS_EXACTLY","value":"\/contact-request\/","language_button_displayed":false,"exclusion_behavior":"REDIRECT","excluded_languages":[],"regex":"^\/contact-request\/$"},{"type":"IS_EXACTLY","value":"\/demo-request\/","language_button_displayed":false,"exclusion_behavior":"REDIRECT","excluded_languages":[],"regex":"^\/demo-request\/$"},{"type":"START_WITH","value":"\/company\/jobs\/","language_button_displayed":false,"exclusion_behavior":"REDIRECT","excluded_languages":[],"regex":"^\/company\/jobs\/"},{"type":"START_WITH","value":"\/blog\/","language_button_displayed":false,"exclusion_behavior":"REDIRECT","excluded_languages":[],"regex":"^\/blog\/"},{"type":"START_WITH","value":"\/company\/news\/","language_button_displayed":false,"exclusion_behavior":"REDIRECT","excluded_languages":[],"regex":"^\/company\/news\/"},{"type":"START_WITH","value":"\/news\/","language_button_displayed":false,"exclusion_behavior":"REDIRECT","excluded_languages":[],"regex":"^\/news\/"},{"type":"START_WITH","value":"\/jobs","language_button_displayed":false,"exclusion_behavior":"REDIRECT","excluded_languages":[],"regex":"^\/jobs"},{"type":"START_WITH","value":"\/event","language_button_displayed":false,"exclusion_behavior":"REDIRECT","excluded_languages":[],"regex":"^\/event"},{"type":"START_WITH","value":"\/free-webinar","language_button_displayed":false,"exclusion_behavior":"REDIRECT","excluded_languages":[],"regex":"^\/free-webinar"},{"type":"START_WITH","value":"\/semanticpro\/roi-tool","language_button_displayed":false,"exclusion_behavior":"REDIRECT","excluded_languages":[],"regex":"^\/semanticpro\/roi-tool"}],"excluded_blocks":[{"value":".owl-carousel owl-loaded owl-drag","description":"carousel"},{"value":".et_pb_section et_pb_section_9 et_pb_with_background et_section_regular","description":"Footer"},{"value":".personnel","description":"Management Overview"},{"value":".award","description":"Awards"},{"value":"#footer-bottom","description":"Footer with social media icons"}],"custom_settings":{"button_style":{"with_flags":true,"flag_type":"rectangle_mat","custom_css":"","is_dropdown":false,"full_name":false,"with_name":false},"translate_search":true,"translate_email":false,"translate_amp":false},"languages":[{"language_to":"de","custom_code":null,"custom_name":null,"custom_local_name":null,"provider":null,"enabled":true,"automatic_translation_enabled":true,"connect_host_destination":null,"custom_flag":null}],"current_language":"en","switcher_links":{"en":"https:\/\/www.cortical.io\/freetools\/extract-keywords\/","de":"https:\/\/www.cortical.io\/de\/freetools\/extract-keywords\/"},"original_path":"\/freetools\/extract-keywords\/"}</script><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+
+<script type="application/ld+json" class="saswp-schema-markup-output">
+[{"@context":"https://schema.org/","@type":"WebPage","@id":"https://www.cortical.io/freetools/extract-keywords/#webpage","name":"Extract Keywords","url":"https://www.cortical.io/freetools/extract-keywords/","lastReviewed":"2022-06-15T23:15:27+02:00","dateCreated":"2019-12-12T17:34:22+01:00","inLanguage":"en-US","description":"Automatically extract keywords from text or from a web page. Keyword extraction or key word extraction takes place and keywords are listed in the output area, and the meaning of the input is numerically encoded as a semantic fingerprint, which is graphically displayed as a square grid.","mainEntity":{"@type":"Article","mainEntityOfPage":"https://www.cortical.io/freetools/extract-keywords/","headline":"Extract Keywords","description":"Automatically extract keywords from text or from a web page. Keyword extraction or key word extraction takes place and keywords are listed in the output area, and the meaning of the input is numerically encoded as a semantic fingerprint, which is graphically displayed as a square grid.","keywords":"","datePublished":"2019-12-12T17:34:22+01:00","dateModified":"2022-06-15T23:15:27+02:00","author":{"@type":"Person","name":"corticalioadmin","url":"https://www.cortical.io/blog/author/corticalioadmin/","sameAs":[],"image":{"@type":"ImageObject","url":"https://secure.gravatar.com/avatar/e141feae4d724e4bfc1a1eedace7586e?s=96&d=mm&r=g","height":96,"width":96}},"publisher":{"@type":"Organization","name":"Cortical.io","url":"https://www.cortical.io"}},"reviewedBy":{"@type":"Organization","name":"Cortical.io","url":"https://www.cortical.io"}},
+
+{"@context":"https://schema.org/","@type":"Organization","@id":"https://www.cortical.io#Organization","name":"Cortical.io","url":"https://cortical.io/sandbox","sameAs":["","",""]},
+
+{"@context":"https://schema.org/","@type":"Product","@id":"https://www.cortical.io/freetools/extract-keywords/#product","url":"https://www.cortical.io/freetools/extract-keywords/","name":"Free Keyword Extraction","sku":"","description":"Automatically extract keywords from text or from a web page. Keyword extraction or key word extraction takes place and keywords are listed in the output area, and the meaning of the input is numerically encoded as a semantic fingerprint, which is graphically displayed as a square grid.","brand":{"@type":"Brand","name":"Cortical.io"},"offers":{"@type":"AggregateOffer","availability":"InStock","itemCondition":"NewCondition","price":"","priceCurrency":"","url":"https://www.cortical.io/freetools/extract-keywords/","priceValidUntil":"1970-01-01T00:00:00Z","highPrice":"","lowPrice":"","offerCount":"","seller":{"@type":"Organization","name":"Cortical.io"},"priceSpecification":{"@type":"priceSpecification","valueAddedTaxIncluded":""}},"gtin8":"","color":"","gtin13":"","gtin12":"","mpn":"","additionalType":"","aggregateRating":{"@type":"AggregateRating","ratingValue":"5","reviewCount":"1"}}]
+</script>
+
+<style type="text/css" id="custom-background-css">
+body.custom-background { background-color: #f1f2f2; }
+</style>
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/wp-content/uploads/icon_144.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/wp-content/uploads/icon_114.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/wp-content/uploads/icon_72.png">
+<link rel="apple-touch-icon-precomposed" href="/wp-content/uploads/icon_57.png">
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+
+<script>
+jQuery(document).ready(function ($) {
+$(".blog-subscribe").on("click", function(){
+	showMailingPopUp();								   
+	});
+});
+</script>
+
+<!-- Triblio script -->
+<script type='text/javascript' data-cfasync='false' src='https://tribl.io/h.js?orgId=PnPan5aMWEHe9o0Rm2Qm'></script>
+
+<!-- Start of HubSpot Embed Code -->
+<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/20028123.js"></script>
+<!-- End of HubSpot Embed Code -->
+
+<script>
+document.addEventListener("DOMContentLoaded", function(){
+ var origLink = document.querySelector("a[href$=\"wg-choose-original=true\"]")
+	if(origLink) {
+			origLink.addEventListener("click",function(e) { 
+				var href = this.href;
+				e.preventDefault(); 
+				document.cookie = "WG_CHOOSE_ORIGINAL=1; path=/;"; 
+				window.location = href;
+			});
+	}
+});
+</script><link rel="icon" href="https://www.cortical.io/wp-content/uploads/cropped-cortical-io_logo_favicon-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://www.cortical.io/wp-content/uploads/cropped-cortical-io_logo_favicon-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://www.cortical.io/wp-content/uploads/cropped-cortical-io_logo_favicon-180x180.png" />
+<meta name="msapplication-TileImage" content="https://www.cortical.io/wp-content/uploads/cropped-cortical-io_logo_favicon-270x270.png" />
+<link rel="stylesheet" id="et-divi-customizer-global-cached-inline-styles" href="https://www.cortical.io/wp-content/et-cache/global/et-divi-customizer-global.min.css?ver=1682961367" /><style id="et-critical-inline-css"></style>
+<link rel="preload" as="style" id="et-core-unified-cpt-tb-13172-deferred-894-cached-inline-styles" href="https://www.cortical.io/wp-content/et-cache/894/et-core-unified-cpt-tb-13172-deferred-894.min.css?ver=1682961404" onload="this.onload=null;this.rel='stylesheet';" /></head>
+<body class="freetools-template-default single single-freetools postid-894 custom-background et-tb-has-template et-tb-has-footer et_bloom et_button_icon_visible et_button_custom_icon et_pb_button_helper_class et_fixed_nav et_show_nav et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_header_style_left et_cover_background et_pb_gutter linux et_pb_gutters2 et_right_sidebar et_divi_theme et-db">
+<script data-cfasync="false" data-no-defer="1">if(typeof ewww_webp_supported==="undefined"){var ewww_webp_supported=!1}if(ewww_webp_supported){document.body.classList.add("webp-support")}</script>
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-dark-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 0.49803921568627" /><feFuncG type="table" tableValues="0 0.49803921568627" /><feFuncB type="table" tableValues="0 0.49803921568627" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 1" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-purple-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-blue-red"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 1" /><feFuncG type="table" tableValues="0 0.27843137254902" /><feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-midnight"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 0" /><feFuncG type="table" tableValues="0 0.64705882352941" /><feFuncB type="table" tableValues="0 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-magenta-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.78039215686275 1" /><feFuncG type="table" tableValues="0 0.94901960784314" /><feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-purple-green"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0.44705882352941 0.4" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-blue-orange"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.098039215686275 1" /><feFuncG type="table" tableValues="0 0.66274509803922" /><feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><div id="page-container">
+<div id="et-boc" class="et-boc">
+			
+		
+
+	<header id="main-header" data-height-onload="30">
+		<div class="container clearfix et_menu_container">
+					<div class="logo_container">
+				<span class="logo_helper"></span>
+				<a href="https://www.cortical.io/" data-wpel-link="internal">
+				<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="263" height="75" alt="Cortical.io" id="logo" data-height-percentage="70" data-src-img="/wp-content/uploads/cortical-io-logo-v2.png" data-src-webp="/wp-content/uploads/cortical-io-logo-v2.png.webp" data-eio="j" class="ewww_webp" /><noscript><img src="/wp-content/uploads/cortical-io-logo-v2.png" width="263" height="75" alt="Cortical.io" id="logo" data-height-percentage="70" /></noscript>
+				</a>
+			</div>
+					<div id="et-top-navigation" data-height="30" data-fixed-height="62">
+									<nav id="top-menu-nav">
+					<ul id="top-menu" class="nav"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-11313"><a href="https://www.cortical.io/semanticpro/" data-wpel-link="internal">SemanticPro</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11617"><a href="https://www.cortical.io/semanticpro/" data-wpel-link="internal">Overview</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10911"><a href="https://www.cortical.io/semanticpro/extractanalyze/" data-wpel-link="internal">Extract &#038; Analyze</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10912"><a href="https://www.cortical.io/semanticpro/classify-automate/" data-wpel-link="internal">Classify &#038; Automate</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13546"><a href="https://www.cortical.io/semanticpro/roi-tool/" data-wpel-link="internal">ROI Tool</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-10901"><a href="https://www.cortical.io/industries/" data-wpel-link="internal">Industries</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10927"><a href="https://www.cortical.io/industries/" data-wpel-link="internal">Industry Overview</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11301"><a href="https://www.cortical.io/industries/insurance-financial-services/" data-wpel-link="internal">Insurance</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-13351"><a href="https://www.cortical.io/industries/banking-financial-services/" data-wpel-link="internal">Banking | Financial Services</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10822"><a href="https://www.cortical.io/industries/management-consulting/" data-wpel-link="internal">Management Consulting</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10825"><a href="https://www.cortical.io/industries/transportation/" data-wpel-link="internal">Transportation</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10824"><a href="https://www.cortical.io/industries/pharmaceuticals/" data-wpel-link="internal">Pharmaceuticals</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10826"><a href="https://www.cortical.io/industries/manufacturing/" data-wpel-link="internal">Manufacturing</a></li>
+</ul>
+</li>
+<li class="greyoverlay menu-item menu-item-type-post_type menu-item-object-page menu-item-10966"><a href="https://www.cortical.io/why-cortical-io/" data-wpel-link="internal">Why Cortical.io</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-12773"><a href="https://www.cortical.io/science/" data-wpel-link="internal">Science</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12788"><a href="https://www.cortical.io/science/" data-wpel-link="internal">Overview</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12769"><a href="https://www.cortical.io/science/semantic-folding/" data-wpel-link="internal">Semantic Folding</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12953"><a href="https://www.cortical.io/science/difference-with-other-approaches/" data-wpel-link="internal">Difference With Other Approaches</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-10830"><a href="https://www.cortical.io/resources/" data-wpel-link="internal">Resources</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11650"><a href="/resources#presentations" data-wpel-link="internal">Product Info</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11651"><a href="/resources#casestudies" data-wpel-link="internal">Case Studies</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11652"><a href="/resources#articles" data-wpel-link="internal">Articles</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11653"><a href="/resources#whitepapers" data-wpel-link="internal">White Papers</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11654"><a href="/resources#videos" data-wpel-link="internal">Videos</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11656"><a href="/resources#podcasts" data-wpel-link="internal">Podcasts</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-10829"><a href="https://www.cortical.io/company/" data-wpel-link="internal">Company</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11603"><a href="https://www.cortical.io/company/" data-wpel-link="internal">About us</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11485"><a href="https://www.cortical.io/company/news/" data-wpel-link="internal">News</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11450"><a href="https://www.cortical.io/company/events/" data-wpel-link="internal">Events</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11449"><a href="https://www.cortical.io/company/jobs/" data-wpel-link="internal">Jobs</a></li>
+</ul>
+</li>
+<li class="button menu-item menu-item-type-custom menu-item-object-custom menu-item-13191"><a href="https://www.cortical.io/demo-request/" data-wpel-link="internal">Book a Demo</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-13195"><a href="https://www.cortical.io/contact-request/" data-wpel-link="internal"><span class="et-pb-icon menu-item"></span></a></li>
+</ul>					</nav>
+				
+				
+				
+									<div id="et_top_search">
+						<span id="et_search_icon"></span>
+					</div>
+				
+				<div id="et_mobile_nav_menu">
+				<div class="mobile_nav closed">
+					<span class="select_page">Select Page</span>
+					<span class="mobile_menu_bar mobile_menu_bar_toggle"></span>
+				</div>
+			</div>			</div> <!-- #et-top-navigation -->
+		</div> <!-- .container -->
+				<div class="et_search_outer">
+			<div class="container et_search_form_container">
+				<form role="search" method="get" class="et-search-form" action="https://www.cortical.io/">
+				<input type="search" class="et-search-field" placeholder="Search &hellip;" value="" name="s" title="Search for:" />				</form>
+				<span class="et_close_search_field"></span>
+			</div>
+		</div>
+			</header> <!-- #main-header -->
+<div id="et-main-area">
+	
+
+
+<div class="freetoolsbreadcrumb">
+				
+<div class="et_pb_row et_pb_row_0">
+				<div class="et_pb_column et_pb_column_4_4 et_pb_column_0  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_dmb_breadcrumbs et_pb_dmb_breadcrumbs_0">
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_module_inner">
+					<ol vocab="http://schema.org/" typeof="BreadcrumbList"><li property="itemListElement" typeof="ListItem"><a href="https://www.cortical.io" class="" data-icon="" property="item" typeof="WebPage"><span>Home</span><meta property="name" content="Home"/></a><meta property="position" content="1"/></li><li class="et_pb_inline_icon" data-icon="&#x35;" property="itemListElement" typeof="ListItem"><a href="https://www.cortical.io/freetools/" class="" data-icon="" property="item" typeof="WebPage"><span>Free Tools</span><meta property="name" content="Free Tools"/></a><meta property="position" content="2"/></li><li class="et_pb_inline_icon" data-icon="&#x35;" property="itemListElement" typeof="ListItem"><span property="name">Extract Keywords</span><meta property="position" content="3"/></li></ol>
+				</div>
+			</div>
+			</div>
+				
+				
+				
+				
+			</div>
+</div>
+
+
+
+
+<div id="main-content">
+	<div class="container">
+	
+	<div class="demo-navbar">
+        <nav class="demo-navbar__menu">
+            <ul>
+                <li id="demo-navbar__keyword-extraction" >
+                                <a href="/freetools/extract-keywords/" data-wpel-link="internal">
+                                    extract keywords
+                                </a>
+                            </li>
+                        
+                            <li id="demo-navbar__similarity-explorer">
+                                <a href="/freetools/compare-text/" data-wpel-link="internal">
+                                    compare text
+                                </a>
+                            </li>
+                        
+                            <li id="demo-navbar__language-detection" >
+                                <a href="/freetools/detect-language/" data-wpel-link="internal">
+                                    detect language
+                                </a>
+                            </li>
+                        
+                            <li id="demo-navbar__topic-explorer" >
+                                <a href="/freetools/disambiguate-terms/" data-wpel-link="internal">
+                                    disambiguate terms
+                                </a>
+                            </li>
+                        
+                           
+                        
+                            <!--<li id="demo-navbar__api" >
+                                <a href="/free-tools/api/" data-wpel-link="internal">
+                                    retina api
+                                </a>
+                            </li>-->
+                        
+</ul>
+</nav>
+</div>
+		
+			
+											<article id="post-894" class="et_pb_post post-894 freetools type-freetools status-publish hentry">
+					
+						<div class="et_post_meta_wrapper">
+							<h1 class="entry-title">Extract Keywords</h1>
+
+						
+
+					<div class="entry-content">
+					<!-- <xsl:stylesheet -->
+<div class="template-keyword-extraction">
+<div id="keyword-extraction">
+	<div id="terms"></div>
+	<div class="wrap">
+	<div  class="container-fluid demo-container">
+		<div class="row row--external">
+
+			<div class="single-demo__header single-demo__header--keyword-extraction">
+				<div class="row">
+					
+						
+						<p>To extract keywords from text or from a web page, follow the instructions on the input screen below. Keywords are listed in the output area, and the meaning of the input is numerically encoded as a semantic fingerprint, which is graphically displayed as a square grid. Each blue dot on the grid contains part of the meaning of the text.
+</p>
+<p> Check out <a href="/semanticpro/extractanalyze/" data-wpel-link="internal">SemanticPro Extract & Analyze</a> - a business solution using advanced extraction features to help in the review and analysis of unstructured text</p>
+
+<p><strong>Exploring semantic fingerprints <span class="expand"><a href="#">+</a></span></strong></p>
+<div class="expanded">
+Every dot on a semantic fingerprint represents a collection of terms that are associated with one another. You can view some of the terms that are located at any of the blue dots on the grid by hovering over that dot. Dots that are close to one another on the grid are also close in meaning. Together, all blue dots on the grid represent the meaning of the inputted text or web page.</div>				
+
+					
+				</div>
+			</div>
+
+		</div>
+
+		<div class="row demo-area row--external">
+			
+			<div class="col-md-9 demo-area__left">
+				<div id="inner-left">
+					<!-- Input Area -->
+<h5>Input</h5>
+<a href="#" class="demo-area__question-mark" data-toggle="modal" data-target="#description" rel="noopener noreferrer"><i class="fa fa-question-circle" aria-hidden="true"></i></a>
+
+
+<div id="input-content" ></div>
+
+				</div>
+			</div>
+
+			<div class="col-md-3 demo-area__right">
+				<div class="demo-area__expand"><i class="fa fa-expand " id="" data-toggle="modal" data-target="#fingerprint-modal" aria-hidden="true"></i></div>
+
+				<!-- Fingerprint -->
+				<h5>Resulting fingerprint</h5>
+<div id="fingerprint-container">
+    <div id="fingerprint" class="fingerprint-wrapper"></div>
+    <div id="fingerprint-mouseover" class="fingerprint-wrapper" style="pointer-events: none"></div>
+    <div id="loading-animation"
+         style="opacity: 0; position: absolute; width: 256px; height: 256px; pointer-events: none">
+        <div class="vert">
+            <div class="loader__container" role="progressbar" aria-busy="true" aria-label="Loading">
+                <ul class="loader">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <ul class="loader">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <ul class="loader">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="loader-text">
+                <h3>Generating Fingerprint<span>.</span><span>.</span><span>.</span></h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+			</div>
+			
+		</div>
+		
+				<div class="row row--external">
+
+					<!-- Output -->
+					<div id="output-container" class="demo-area__output">
+						<h5>Output</h5>
+							
+						<div class="row">
+							
+								<div class="demo-area__standard-output" id="standard-output"></div>
+							
+						 	
+						</div>
+					</div>
+		</div>
+
+		<div class="info-container">
+
+<p><strong>How it works <span class="expand"><a href="#">+</a></span></strong></p>
+<div class="expanded">
+<p>The Cortical.io Retina performs the following operations:</p>
+<ol>
+    <li>Parses the input text.</li>
+    <li>Numerically encodes the meaning of the text as a semantic fingerprint.</li>
+    <li>Displays the <a href="https://youtu.be/HLuRQKzYbb8" target="_blank" rel="noopener noreferrer external" data-wpel-link="external">semantic fingerprint</a> as a square grid, where each blue dot on the grid contains part of the meaning of the text.
+    <ol>
+        <li>Determines the importance of each term in the text:</li>
+        <li>Generates a semantic fingerprint of the term.</li>
+        <li>Compares the fingerprint of the term with the fingerprint of the text.</li>
+        <li>Determines the overlap in meaning between the term and the text.</li>
+        <li>Compares the frequency of the term in the text with the frequency of the term in the entire Retina semantic space.</li>
+    </ol></li>
+</ol>
+</div>
+
+
+</div>
+
+				
+		</div>
+
+
+
+			</div><!--/.container-->
+
+
+		</div><!--/#wrap--></div><!--/#wrap-->
+
+
+
+
+<div class="modal fade demo-modal demo-modal--fingerprint" id="fingerprint-modal" tabindex="-1" role="dialog" aria-labelledby="how-it-works-label">
+  	<div class="modal-dialog" role="document">
+    	<div class="modal-content">
+      		<div class="modal-header">
+        		<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        		<h5 class="modal-title" id="how-it-works-label">Resulting Fingerprint</h5>
+      		</div>
+      		<div class="modal-body">
+        		<div id="modal-fingerprint-container">
+    <div id="modal-fingerprint" class="fingerprint-wrapper"></div>
+    <div id="modal-fingerprint-mouseover" class="fingerprint-wrapper" style="pointer-events: none"></div>
+</div>
+
+      		</div>
+    	</div>
+  	</div>
+</div>
+</div>					<div id="social">
+								<span>
+									<i class="fa fa-external-link" aria-hidden="true"></i> Share:
+								</span>
+								
+								<!-- Go to www.addthis.com/dashboard to customize your tools --> <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-59d778390019fb9d"></script>
+<!-- Go to www.addthis.com/dashboard to customize your tools --> <div class="addthis_inline_share_toolbox"></div>
+								
+							</div>
+					
+							
+					</div> <!-- .entry-content -->
+					
+				</article> <!-- .et_pb_post -->
+
+						
+	
+	</div> <!-- .container -->
+			<div id="sticky-demo-button">
+	<a href="https://www.cortical.io/semanticpro/" data-wpel-link="internal"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="See How Our AI Works In Real Life" title="See How Our AI Works In Real Life" data-src-img="https://www.cortical.io/wp-content/uploads/Button_Explore-Business-Solutions_v3.png" data-src-webp="https://www.cortical.io/wp-content/uploads/Button_Explore-Business-Solutions_v3.png.webp" data-eio="j" class="ewww_webp" /><noscript><img src="https://www.cortical.io/wp-content/uploads/Button_Explore-Business-Solutions_v3.png" alt="See How Our AI Works In Real Life" title="See How Our AI Works In Real Life" /></noscript></a>
+	</div>
+			
+	
+	
+</div> <!-- #main-content -->
+
+
+
+
+<script src="/demos/keyword-extraction/jquery.highlighttextarea.js"></script>
+		
+ 
+	<!-- EXTRACT KEYWORDS -->
+			<script  src="/demos/common/js/readability.js"></script>
+	<script  src="/static/demos/js/cortical.js"></script>
+	<script  src="https://cdnjs.cloudflare.com/ajax/libs/he/1.1.1/he.min.js"></script>
+	
+	<script  src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+<script  src="//cdnjs.cloudflare.com/ajax/libs/attrchange/2.0.1/attrchange.min.js" ></script>		
+		
+
+	
+<!-- SCRIPTS AND STYLES FROM CORTICAL -->	
+	<link href="/static/css/bootstrap3.min.css" rel="stylesheet">
+
+  
+  <link rel="stylesheet" href="/styles.css">
+  
+  <link href="/static/css/styles2016.css" rel="stylesheet">
+  
+  <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+  <script src="/static/js/html5shiv.js"></script>
+  <script src="/static/js/respond.min.js"></script>
+<![endif]-->
+
+<!--[if gte IE 9]>
+  <style type="text/css">
+    .gradient {
+       filter: none;
+    }
+  </style>
+<![endif]-->
+
+
+<script  src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script  src="/static/js/md5.min.js" ></script>
+<script  src="https://sdk.amazonaws.com/js/aws-sdk-2.2.9.min.js"></script>
+<script  src="/static/js/aws-cortical.js" ></script>
+
+<script  src="//ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
+<script  src="/demos/common/js/parallax.min.js"></script>
+<script  src="/static/js/url.min.js" ></script>
+
+
+ <!-- DISAMBIGUATE TERMS AND COMPARE TEXT -->
+	
+
+
+<script  src="/demos/common/js/jquery.tooltipster.js"></script>
+<link rel="stylesheet" href="/demos/common/css/tooltipster.css">
+
+
+<!-- Retina Plugins -->
+<script src="/demos/common/js/jquery.retinaApi.js"></script>
+<script src="/demos/common/js/layout.js"></script>
+		
+
+<script  src="/demos/common/js/jquery.retinaFingerprintRenderer-1.0.js"></script>
+<script  src="/demos/common/js/jquery.retinaFingerprintEditor.js"></script>
+<script  src="/demos/common/js/jquery.retinaExpressionBuilder.js"></script>
+
+		
+<link rel="stylesheet" href="/demos/common/css/expression-builder.css">
+
+<link rel="stylesheet" href="/demos/keyword-extraction/jquery.highlighttextarea.css">
+
+<!-- cortical.io stylesheet -->
+<link rel="stylesheet" href="/demos/common/css/demos-new.css?cachebust=03062602">
+
+
+<!-- cortical.io standard layout -->
+<script  src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.js"></script>
+
+
+<!-- /SCRIPTS AND STYLES FROM CORTICAL -->	
+
+		<!-- <script src="/demos/keyword-extraction/settings.js"></script> -->
+				<script src="/demos/keyword-extraction/settings.js"></script>
+										<!-- Loading Animation -->
+		<link rel="stylesheet" href="/demos/common/css/loading-animation.css">
+		
+
+
+<script  src="https://cdn.jsdelivr.net/npm/clipboard@1/dist/clipboard.min.js"></script>
+
+
+	
+	<!-- COMPARE TEXT -->
+	 
+ 
+ <!-- DISAMBIGUATE TERMS -->
+  
+ 
+ 
+ 
+
+
+	
+
+
+	<footer class="et-l et-l--footer">
+			<div class="et_builder_inner_content et_pb_gutters2">
+		<div id="globalfooter" class="et_pb_section et_pb_section_0_tb_footer et_pb_with_background et_section_regular" >
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_row et_pb_row_0_tb_footer">
+				<div class="et_pb_column et_pb_column_1_6 et_pb_column_0_tb_footer  et_pb_css_mix_blend_mode_passthrough">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_0_tb_footer footer-navigation  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><div class="footer-nav-title"><a href="/semanticpro/" data-wpel-link="internal">SemanticPro</a></div>
+<ul class="footer-menu__list">
+<li><a href="/semanticpro/" data-wpel-link="internal">overview</a></li>
+<li><a href="/semanticpro/extractanalyze/" data-wpel-link="internal">extract &amp; analyze</a></li>
+<li><a href="/semanticpro/classify-automate/" data-wpel-link="internal">classify &amp; automate</a></li>
+<li><a href="/semanticpro/roi-tool/" data-wpel-link="internal">ROI tool</a></li>
+</ul></div>
+			</div><div class="et_pb_button_module_wrapper et_pb_button_0_tb_footer_wrapper  et_pb_module ">
+				<a class="et_pb_button et_pb_button_0_tb_footer et_pb_bg_layout_dark" href="https://www.cortical.io/demo-request/" data-wpel-link="internal">BOOK A DEMO</a>
+			</div>
+			</div><div class="et_pb_column et_pb_column_1_6 et_pb_column_1_tb_footer  et_pb_css_mix_blend_mode_passthrough">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_1_tb_footer footer-navigation  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><div class="footer-nav-title"><a href="/industries/" data-wpel-link="internal">Industries</a></div>
+<ul>
+<li><a href="/industries/" data-wpel-link="internal">overview</a></li>
+<li><a href="/industries/insurance-financial-services/" data-wpel-link="internal">insurance </a></li>
+<li><a href="/industries/banking-financial-services/" data-wpel-link="internal">banking &amp; financial services</a></li>
+<li><a href="/industries/management-consulting/" data-wpel-link="internal">management consulting</a></li>
+<li><a href="/industries/transportation/" data-wpel-link="internal">transportation</a></li>
+<li><a href="/industries/pharmaceuticals/" data-wpel-link="internal">pharmaceuticals</a></li>
+<li><a href="/industries/manufacturing/" data-wpel-link="internal">manufacturing</a></li>
+</ul></div>
+			</div>
+			</div><div class="et_pb_column et_pb_column_1_6 et_pb_column_2_tb_footer  et_pb_css_mix_blend_mode_passthrough">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_2_tb_footer footer-navigation  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><div class="footer-nav-title"><a href="/science/" data-wpel-link="internal">Science</a></div>
+<ul>
+<li><a href="/science/" data-wpel-link="internal">overview</a></li>
+<li><a href="/science/semantic-folding/" data-wpel-link="internal">semantic folding</a></li>
+<li><a href="/science/difference-with-other-approaches/" data-wpel-link="internal">difference with other approaches</a></li>
+</ul></div>
+			</div><div class="et_pb_module et_pb_text et_pb_text_3_tb_footer footer-navigation  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><div class="footer-nav-title"><a href="/free-tools/" data-wpel-link="internal">Free Tools</a></div>
+<ul>
+<li><a href="/freetools/extract-keywords/" data-wpel-link="internal">extract keywords</a></li>
+<li><a href="/freetools/compare-text/" data-wpel-link="internal">compare text</a></li>
+<li><a href="/freetools/detect-language/" data-wpel-link="internal">detect language</a></li>
+<li><a href="/freetools/disambiguate-terms/" data-wpel-link="internal">disambiguate terms</a></li>
+</ul></div>
+			</div>
+			</div><div class="et_pb_column et_pb_column_1_6 et_pb_column_3_tb_footer  et_pb_css_mix_blend_mode_passthrough">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_4_tb_footer footer-navigation  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><div class="footer-nav-title"><a href="/resources/" data-wpel-link="internal">Resources</a></div>
+<ul>
+<li><a href="/resources/#casestudies" data-wpel-link="internal">case studies</a></li>
+<li><a href="/resources/#articles" data-wpel-link="internal">articles</a></li>
+<li><a href="/resources/#whitepapers" data-wpel-link="internal">white papers</a></li>
+<li><a href="/resources/#podcasts" data-wpel-link="internal">podcasts</a></li>
+<li><a href="/resources/#videos" data-wpel-link="internal">videos</a></li>
+<li><a href="/resources/#presentations" data-wpel-link="internal">product info</a></li>
+</ul></div>
+			</div>
+			</div><div class="et_pb_column et_pb_column_1_6 et_pb_column_4_tb_footer  et_pb_css_mix_blend_mode_passthrough">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_5_tb_footer footer-navigation  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><div class="footer-nav-title"><a href="/why-cortical-io/" data-wpel-link="internal">Why Cortical.io</a></div>
+<p>&nbsp;</p></div>
+			</div><div class="et_pb_module et_pb_text et_pb_text_6_tb_footer footer-navigation  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><div class="footer-nav-title"><a href="/company/" data-wpel-link="internal">Company</a></div>
+<ul>
+<li><a href="/company/" data-wpel-link="internal">about us</a></li>
+<li><a href="/company/news/" data-wpel-link="internal">news</a></li>
+<li><a href="/company/jobs/" data-wpel-link="internal">jobs</a></li>
+<li><a href="/company/events/" data-wpel-link="internal">events</a></li>
+</ul></div>
+			</div>
+			</div><div class="et_pb_column et_pb_column_1_6 et_pb_column_5_tb_footer  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_7_tb_footer footer-navigation  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><div class="footer-nav-title"><a href="/contact/" data-wpel-link="internal">Contact</a></div>
+<p><a href="/cdn-cgi/l/email-protection#c68fa8a0a986a5a9b4b2afa5a7aae8afa9"><span class="__cf_email__" data-cfemail="2d44434b426d4e425f59444e4c41034442">[email&#160;protected]</span></a><br /><a href="/cdn-cgi/l/email-protection#fe8d9f929b8dbe9d918c8a979d9f92d09791"><span class="__cf_email__" data-cfemail="8af9ebe6eff9cae9e5f8fee3e9ebe6a4e3e5">[email&#160;protected]</span></a></p></div>
+			</div><div class="et_pb_module et_pb_text et_pb_text_8_tb_footer footer-navigation  et_pb_text_align_left et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><div class="footer-nav-title">Legal</div>
+<ul>
+<li><a href="/terms-of-service/" data-wpel-link="internal">terms of service</a></li>
+<li><a href="/privacy-policy/" data-wpel-link="internal">privacy</a></li>
+<li><a href="/legal-notice/" data-wpel-link="internal">legal notice</a></li>
+</ul></div>
+			</div><div class="et_pb_button_module_wrapper et_pb_button_1_tb_footer_wrapper  et_pb_module ">
+				<a class="et_pb_button et_pb_button_1_tb_footer et_pb_bg_layout_dark" href="https://share.hsforms.com/1aHMsmqTjTYykngyIkX4Evgbx9sr" target="_blank" data-wpel-link="external" rel="external noopener noreferrer">Stay Informed</a>
+			</div>
+			</div>
+				
+				
+				
+				
+			</div>
+				
+				
+			</div><div class="et_pb_section et_pb_section_1_tb_footer et_section_regular" >
+				
+				
+				
+				
+				
+				
+				<div class="et_pb_row et_pb_row_1_tb_footer">
+				<div class="et_pb_column et_pb_column_1_2 et_pb_column_6_tb_footer  et_pb_css_mix_blend_mode_passthrough">
+				
+				
+				
+				
+				<div class="et_pb_module et_pb_text et_pb_text_9_tb_footer footer-navigation  et_pb_text_align_left et_pb_text_align_center-phone et_pb_bg_layout_light">
+				
+				
+				
+				
+				<div class="et_pb_text_inner"><p>Cortical.io | Copyright 2022</p></div>
+			</div>
+			</div><div class="et_pb_column et_pb_column_1_2 et_pb_column_7_tb_footer  et_pb_css_mix_blend_mode_passthrough et-last-child">
+				
+				
+				
+				
+				<ul class="et_pb_module et_pb_social_media_follow et_pb_social_media_follow_0_tb_footer clearfix  et_pb_text_align_right et_pb_text_align_center-phone et_pb_bg_layout_light">
+				
+				
+				
+				
+				<li
+            class='et_pb_social_media_follow_network_0_tb_footer et_pb_social_icon et_pb_social_network_link  et-social-facebook'><a href="https://www.facebook.com/cortical.io" class="icon et_pb_with_border" title="Follow on Facebook" target="_blank" data-wpel-link="external" rel="external noopener noreferrer"><span
+                class='et_pb_social_media_follow_network_name'
+                aria-hidden='true'
+                >Follow</span></a></li><li
+            class='et_pb_social_media_follow_network_1_tb_footer et_pb_social_icon et_pb_social_network_link  et-social-twitter'><a href="https://twitter.com/cortical_io" class="icon et_pb_with_border" title="Follow on Twitter" target="_blank" data-wpel-link="external" rel="external noopener noreferrer"><span
+                class='et_pb_social_media_follow_network_name'
+                aria-hidden='true'
+                >Follow</span></a></li><li
+            class='et_pb_social_media_follow_network_2_tb_footer et_pb_social_icon et_pb_social_network_link  et-social-linkedin'><a href="https://www.linkedin.com/company/cortical-io/" class="icon et_pb_with_border" title="Follow on LinkedIn" target="_blank" data-wpel-link="external" rel="external noopener noreferrer"><span
+                class='et_pb_social_media_follow_network_name'
+                aria-hidden='true'
+                >Follow</span></a></li>
+			</ul>
+			</div>
+				
+				
+				
+				
+			</div>
+				
+				
+			</div>		</div>
+	</footer>
+		</div>
+
+			
+		</div>
+		</div>
+
+			<div class="et_bloom_popup et_bloom_optin et_bloom_resize et_bloom_optin_6 et_bloom_auto_popup et_bloom_auto_close" data-delay="20" data-cookie_duration="5">
+							<div class="et_bloom_form_container et_bloom_popup_container et_bloom_form_bottom et_bloom_rounded et_bloom_form_text_dark et_bloom_animation_fadein">
+								
+			<div class="et_bloom_form_container_wrapper clearfix et_bloom_with_custom_fields">
+				<div class="et_bloom_header_outer">
+					<div class="et_bloom_form_header et_bloom_header_text_dark">
+						<img width="610" height="244" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" class="et_bloom_image_slideup et_bloom_image ewww_webp" alt="" decoding="async" data-src-img="https://www.cortical.io/wp-content/uploads/API_Pre-Subscribe-610x244.jpg" data-src-webp="https://www.cortical.io/wp-content/uploads/API_Pre-Subscribe-610x244.jpg.webp" data-eio="j" /><noscript><img width="610" height="244" src="https://www.cortical.io/wp-content/uploads/API_Pre-Subscribe-610x244.jpg" class=" et_bloom_image_slideup et_bloom_image" alt="" decoding="async" /></noscript>
+						<div class="et_bloom_form_text">
+						<h2>We are bundling our Free Tools functionalities into a production-grade API.</h2>
+<p></p>
+<h4>Fill in the form below to get notified about the release!</h4>
+					</div>
+						
+					</div>
+				</div>
+				<div class="et_bloom_form_content et_bloom_3_fields et_bloom_bottom_inline">
+					
+					
+					<form method="post" class="clearfix">
+						<div class="et_bloom_fields">
+							<p class="et_bloom_popup_input et_bloom_subscribe_name">
+								<input placeholder="First Name" maxlength="50">
+							</p>
+									<p class="et_bloom_popup_input et_bloom_subscribe_last">
+										<input placeholder="Last Name" maxlength="50">
+									</p>
+							<p class="et_bloom_popup_input et_bloom_subscribe_email">
+								<input placeholder="Email">
+							</p>
+							<p class="et_bloom_custom_field et_bloom_popup_input"><input type="text" name="et_bloom_custom_field_optin_6_company" data-id="company" placeholder="Company Name" data-field_type="input" data-required_mark="required" pattern="[A-Z|a-z|0-9]*" title="Only letters and numbers allowed." /></p>
+							<button data-optin_id="optin_6" data-service="hubspot" data-list_id="2090" data-page_id="894" data-account="mpgarnier@corticalio" data-ip_address="true" class="et_bloom_submit_subscription">
+								<span class="et_bloom_subscribe_loader"></span>
+								<span class="et_bloom_button_text et_bloom_button_text_color_light">NOTIFY ME!</span>
+							</button>
+						</div>
+					</form>
+					<div class="et_bloom_success_container">
+						<span class="et_bloom_success_checkmark"></span>
+					</div>
+					<h2 class="et_bloom_success_message">Congratulations! You&#039;ll be notified when we release our API.</h2>
+					
+				</div>
+			</div>
+			<span class="et_bloom_close_button"></span>
+							</div>
+						</div>
+<!-- GTM Container placement set to footer -->
+<!-- Google Tag Manager (noscript) -->
+				<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-56985PX" height="0" width="0" style="display:none;visibility:hidden" aria-hidden="true"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) --><div class="wt-cli-cookie-bar-container" data-nosnippet="true"><!--googleoff: all--><div id="cookie-law-info-bar" role="dialog" aria-live="polite" aria-label="cookieconsent" aria-describedby="wt-cli-cookie-banner" data-cli-geo-loc="0" style="" class="wt-cli-cookie-bar"><div class="cli-wrapper"><a style="" data-cli_action="accept" class="wt-cli-element cli_cookie_close_button" title="Close and Accept" role="button">X</a><span id="wt-cli-cookie-banner">We use cookies on our website to give you the most relevant experience by remembering your preferences and repeat visits. By clicking “Accept”, you consent to the use of ALL the cookies. <a style="color:#333333;" role="button" class="wt-cli-ccpa-opt-out">Do not sell my personal information</a>.  <a id="wt-cli-policy-link" tabindex="0" href="https://www.cortical.io/cookie-policy/" style="" target="_blank" class="wt-cli-element wt-cli-element cli-plugin-main-link" data-wpel-link="internal">Read More</a><a id="wt-cli-accept-btn" tabindex="0" role='button' style="" data-cli_action="accept"  class="wt-cli-element medium cli-plugin-button cli-plugin-main-button cookie_action_close_header cli_action_button" >Accept</a><a id="wt-cli-settings-btn" tabindex="0" role='button' style="margin:0px 5px 0px 0px;" class="wt-cli-element medium cli-plugin-button cli-plugin-main-button cli_settings_button" >Cookie Settings</a><a id="wt-cli-reject-btn" tabindex="0" role='button' style=""  class="wt-cli-element medium cli-plugin-button cli-plugin-main-button cookie_action_close_header_reject cli_action_button"  data-cli_action="reject">Reject All</a></span></div></div><div tabindex="0" id="cookie-law-info-again" style="display:none;"><span id="cookie_hdr_showagain">Manage consent</span></div><div class="cli-modal" id="cliSettingsPopup" role="dialog" aria-labelledby="wt-cli-privacy-title" tabindex="-1" aria-hidden="true">
+  <div class="cli-modal-dialog" role="document">
+    <div class="cli-modal-content cli-bar-popup">
+      <button aria-label="Close" type="button" class="cli-modal-close" id="cliModalClose">
+      <svg class="" viewBox="0 0 24 24"><path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z"></path><path d="M0 0h24v24h-24z" fill="none"></path></svg>
+      <span class="wt-cli-sr-only">Close</span>
+      </button>
+        <div class="cli-modal-body">
+
+    <div class="wt-cli-element cli-container-fluid cli-tab-container">
+        <div class="cli-row">
+                            <div class="cli-col-12 cli-align-items-stretch cli-px-0">
+                    <div class="cli-privacy-overview">
+                        <h4 id='wt-cli-privacy-title'>Privacy Overview</h4>                        <div class="cli-privacy-content">
+                            <div class="cli-privacy-content-text">This website uses cookies to improve your experience while you navigate through the website. Out of these, the cookies that are categorized as necessary are stored on your browser as they are essential for the working of basic functionalities of the website. We also use third-party cookies that help us analyze and understand how you use this website. These cookies will be stored in your browser only with your consent. You also have the option to opt-out of these cookies. But opting out of some of these cookies may affect your browsing experience.</div>
+                        </div>
+                        <a id="wt-cli-privacy-readmore"  tabindex="0" role="button" class="cli-privacy-readmore" data-readmore-text="Show more" data-readless-text="Show less"></a>                    </div>
+                </div>
+                        <div class="cli-col-12 cli-align-items-stretch cli-px-0 cli-tab-section-container" role="tablist">
+
+                
+                                    <div class="cli-tab-section">
+                        <div class="cli-tab-header">
+                            <a id="wt-cli-tab-link-necessary" tabindex="0" role="tab" aria-expanded="false" aria-describedby="wt-cli-tab-necessary" aria-controls="wt-cli-tab-necessary" class="cli-nav-link cli-settings-mobile" data-target="necessary" data-toggle="cli-toggle-tab">
+                                Necessary                            </a>
+                                                                                        <div class="wt-cli-necessary-checkbox">
+                                    <input type="checkbox" class="cli-user-preference-checkbox" id="wt-cli-checkbox-necessary" aria-label="Necessary" data-id="checkbox-necessary" checked="checked" />
+                                    <label class="form-check-label" for="wt-cli-checkbox-necessary"> Necessary </label>
+                                </div>
+                                <span class="cli-necessary-caption">
+                                    Always Enabled                                </span>
+                                                    </div>
+                        <div class="cli-tab-content">
+                            <div id="wt-cli-tab-necessary" tabindex="0" role="tabpanel" aria-labelledby="wt-cli-tab-link-necessary" class="cli-tab-pane cli-fade" data-id="necessary">
+                            <div class="wt-cli-cookie-description">Necessary cookies are absolutely essential for the website to function properly. These cookies ensure basic functionalities and security features of the website, anonymously.
+<table class="wt-cli-element cookielawinfo-row-cat-table cookielawinfo-winter"><thead><tr><th scope="col" class="cookielawinfo-column-1">Cookie</th><th scope="col" class="cookielawinfo-column-3">Duration</th><th scope="col" class="cookielawinfo-column-4">Description</th></tr></thead><tbody><tr class="cookielawinfo-row"><td class="cookielawinfo-column-1">cookielawinfo-checkbox-analytics</td><td class="cookielawinfo-column-3">11 months</td><td class="cookielawinfo-column-4">This cookie is set by GDPR Cookie Consent plugin. The cookie is used to store the user consent for the cookies in the category "Analytics".</td></tr><tr class="cookielawinfo-row"><td class="cookielawinfo-column-1">cookielawinfo-checkbox-functional</td><td class="cookielawinfo-column-3">11 months</td><td class="cookielawinfo-column-4">The cookie is set by GDPR cookie consent to record the user consent for the cookies in the category "Functional".</td></tr><tr class="cookielawinfo-row"><td class="cookielawinfo-column-1">cookielawinfo-checkbox-necessary</td><td class="cookielawinfo-column-3">11 months</td><td class="cookielawinfo-column-4">This cookie is set by GDPR Cookie Consent plugin. The cookies is used to store the user consent for the cookies in the category "Necessary".</td></tr><tr class="cookielawinfo-row"><td class="cookielawinfo-column-1">cookielawinfo-checkbox-others</td><td class="cookielawinfo-column-3">11 months</td><td class="cookielawinfo-column-4">This cookie is set by GDPR Cookie Consent plugin. The cookie is used to store the user consent for the cookies in the category "Other.</td></tr><tr class="cookielawinfo-row"><td class="cookielawinfo-column-1">cookielawinfo-checkbox-performance</td><td class="cookielawinfo-column-3">11 months</td><td class="cookielawinfo-column-4">This cookie is set by GDPR Cookie Consent plugin. The cookie is used to store the user consent for the cookies in the category "Performance".</td></tr><tr class="cookielawinfo-row"><td class="cookielawinfo-column-1">viewed_cookie_policy</td><td class="cookielawinfo-column-3">11 months</td><td class="cookielawinfo-column-4">The cookie is set by the GDPR Cookie Consent plugin and is used to store whether or not user has consented to the use of cookies. It does not store any personal data.</td></tr></tbody></table></div>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="cli-tab-section">
+                        <div class="cli-tab-header">
+                            <a id="wt-cli-tab-link-functional" tabindex="0" role="tab" aria-expanded="false" aria-describedby="wt-cli-tab-functional" aria-controls="wt-cli-tab-functional" class="cli-nav-link cli-settings-mobile" data-target="functional" data-toggle="cli-toggle-tab">
+                                Functional                            </a>
+                                                                                        <div class="cli-switch">
+                                    <input type="checkbox" class="cli-user-preference-checkbox"  id="wt-cli-checkbox-functional" aria-label="functional" data-id="checkbox-functional" role="switch" aria-controls="wt-cli-tab-link-functional" aria-labelledby="wt-cli-tab-link-functional"  />
+                                    <label for="wt-cli-checkbox-functional" class="cli-slider" data-cli-enable="Enabled" data-cli-disable="Disabled"><span class="wt-cli-sr-only">functional</span></label>
+                                </div>
+                                                    </div>
+                        <div class="cli-tab-content">
+                            <div id="wt-cli-tab-functional" tabindex="0" role="tabpanel" aria-labelledby="wt-cli-tab-link-functional" class="cli-tab-pane cli-fade" data-id="functional">
+                            <div class="wt-cli-cookie-description">Functional cookies help to perform certain functionalities like sharing the content of the website on social media platforms, collect feedbacks, and other third-party features.
+</div>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="cli-tab-section">
+                        <div class="cli-tab-header">
+                            <a id="wt-cli-tab-link-performance" tabindex="0" role="tab" aria-expanded="false" aria-describedby="wt-cli-tab-performance" aria-controls="wt-cli-tab-performance" class="cli-nav-link cli-settings-mobile" data-target="performance" data-toggle="cli-toggle-tab">
+                                Performance                            </a>
+                                                                                        <div class="cli-switch">
+                                    <input type="checkbox" class="cli-user-preference-checkbox"  id="wt-cli-checkbox-performance" aria-label="performance" data-id="checkbox-performance" role="switch" aria-controls="wt-cli-tab-link-performance" aria-labelledby="wt-cli-tab-link-performance"  />
+                                    <label for="wt-cli-checkbox-performance" class="cli-slider" data-cli-enable="Enabled" data-cli-disable="Disabled"><span class="wt-cli-sr-only">performance</span></label>
+                                </div>
+                                                    </div>
+                        <div class="cli-tab-content">
+                            <div id="wt-cli-tab-performance" tabindex="0" role="tabpanel" aria-labelledby="wt-cli-tab-link-performance" class="cli-tab-pane cli-fade" data-id="performance">
+                            <div class="wt-cli-cookie-description">Performance cookies are used to understand and analyze the key performance indexes of the website which helps in delivering a better user experience for the visitors.
+</div>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="cli-tab-section">
+                        <div class="cli-tab-header">
+                            <a id="wt-cli-tab-link-analytics" tabindex="0" role="tab" aria-expanded="false" aria-describedby="wt-cli-tab-analytics" aria-controls="wt-cli-tab-analytics" class="cli-nav-link cli-settings-mobile" data-target="analytics" data-toggle="cli-toggle-tab">
+                                Analytics                            </a>
+                                                                                        <div class="cli-switch">
+                                    <input type="checkbox" class="cli-user-preference-checkbox"  id="wt-cli-checkbox-analytics" aria-label="analytics" data-id="checkbox-analytics" role="switch" aria-controls="wt-cli-tab-link-analytics" aria-labelledby="wt-cli-tab-link-analytics"  />
+                                    <label for="wt-cli-checkbox-analytics" class="cli-slider" data-cli-enable="Enabled" data-cli-disable="Disabled"><span class="wt-cli-sr-only">analytics</span></label>
+                                </div>
+                                                    </div>
+                        <div class="cli-tab-content">
+                            <div id="wt-cli-tab-analytics" tabindex="0" role="tabpanel" aria-labelledby="wt-cli-tab-link-analytics" class="cli-tab-pane cli-fade" data-id="analytics">
+                            <div class="wt-cli-cookie-description">Analytical cookies are used to understand how visitors interact with the website. These cookies help provide information on metrics the number of visitors, bounce rate, traffic source, etc.
+</div>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="cli-tab-section">
+                        <div class="cli-tab-header">
+                            <a id="wt-cli-tab-link-advertisement" tabindex="0" role="tab" aria-expanded="false" aria-describedby="wt-cli-tab-advertisement" aria-controls="wt-cli-tab-advertisement" class="cli-nav-link cli-settings-mobile" data-target="advertisement" data-toggle="cli-toggle-tab">
+                                Advertisement                            </a>
+                                                                                        <div class="cli-switch">
+                                    <input type="checkbox" class="cli-user-preference-checkbox"  id="wt-cli-checkbox-advertisement" aria-label="advertisement" data-id="checkbox-advertisement" role="switch" aria-controls="wt-cli-tab-link-advertisement" aria-labelledby="wt-cli-tab-link-advertisement"  />
+                                    <label for="wt-cli-checkbox-advertisement" class="cli-slider" data-cli-enable="Enabled" data-cli-disable="Disabled"><span class="wt-cli-sr-only">advertisement</span></label>
+                                </div>
+                                                    </div>
+                        <div class="cli-tab-content">
+                            <div id="wt-cli-tab-advertisement" tabindex="0" role="tabpanel" aria-labelledby="wt-cli-tab-link-advertisement" class="cli-tab-pane cli-fade" data-id="advertisement">
+                            <div class="wt-cli-cookie-description">Advertisement cookies are used to provide visitors with relevant ads and marketing campaigns. These cookies track visitors across websites and collect information to provide customized ads.
+</div>
+                            </div>
+                        </div>
+                    </div>
+                                    <div class="cli-tab-section">
+                        <div class="cli-tab-header">
+                            <a id="wt-cli-tab-link-others" tabindex="0" role="tab" aria-expanded="false" aria-describedby="wt-cli-tab-others" aria-controls="wt-cli-tab-others" class="cli-nav-link cli-settings-mobile" data-target="others" data-toggle="cli-toggle-tab">
+                                Others                            </a>
+                                                                                        <div class="cli-switch">
+                                    <input type="checkbox" class="cli-user-preference-checkbox"  id="wt-cli-checkbox-others" aria-label="others" data-id="checkbox-others" role="switch" aria-controls="wt-cli-tab-link-others" aria-labelledby="wt-cli-tab-link-others"  />
+                                    <label for="wt-cli-checkbox-others" class="cli-slider" data-cli-enable="Enabled" data-cli-disable="Disabled"><span class="wt-cli-sr-only">others</span></label>
+                                </div>
+                                                    </div>
+                        <div class="cli-tab-content">
+                            <div id="wt-cli-tab-others" tabindex="0" role="tabpanel" aria-labelledby="wt-cli-tab-link-others" class="cli-tab-pane cli-fade" data-id="others">
+                            <div class="wt-cli-cookie-description">Other uncategorized cookies are those that are being analyzed and have not been classified into a category as yet.
+</div>
+                            </div>
+                        </div>
+                    </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+<div class="cli-modal-footer">
+    <div class="wt-cli-element cli-container-fluid cli-tab-container">
+        <div class="cli-row">
+            <div class="cli-col-12 cli-align-items-stretch cli-px-0">
+                <div class="cli-tab-footer wt-cli-privacy-overview-actions">
+                    
+                        
+                                                    <a id="wt-cli-privacy-save-btn" role="button" tabindex="0" data-cli-action="accept" class="wt-cli-privacy-btn cli_setting_save_button wt-cli-privacy-accept-btn cli-btn">Save & Accept</a>
+                                                                    
+                </div>
+                            </div>
+        </div>
+    </div>
+</div>
+    </div>
+  </div>
+</div>
+<div class="cli-modal-backdrop cli-fade cli-settings-overlay"></div>
+<div class="cli-modal-backdrop cli-fade cli-popupbar-overlay"></div>
+<!--googleon: all--></div>
+		<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/javascript">
+		/* <![CDATA[ */
+			cli_cookiebar_settings='{"animate_speed_hide":"500","animate_speed_show":"500","background":"#FFF","border":"#b1a6a6c2","border_on":false,"button_1_button_colour":"#61a229","button_1_button_hover":"#4e8221","button_1_link_colour":"#fff","button_1_as_button":true,"button_1_new_win":false,"button_2_button_colour":"#333","button_2_button_hover":"#292929","button_2_link_colour":"#444","button_2_as_button":false,"button_2_hidebar":false,"button_2_nofollow":false,"button_3_button_colour":"#dedfe0","button_3_button_hover":"#b2b2b3","button_3_link_colour":"#333333","button_3_as_button":true,"button_3_new_win":false,"button_4_button_colour":"#dedfe0","button_4_button_hover":"#b2b2b3","button_4_link_colour":"#333333","button_4_as_button":true,"button_7_button_colour":"#61a229","button_7_button_hover":"#4e8221","button_7_link_colour":"#fff","button_7_as_button":true,"button_7_new_win":false,"font_family":"inherit","header_fix":false,"notify_animate_hide":true,"notify_animate_show":false,"notify_div_id":"#cookie-law-info-bar","notify_position_horizontal":"right","notify_position_vertical":"bottom","scroll_close":false,"scroll_close_reload":false,"accept_close_reload":false,"reject_close_reload":false,"showagain_tab":false,"showagain_background":"#fff","showagain_border":"#000","showagain_div_id":"#cookie-law-info-again","showagain_x_position":"100px","text":"#333333","show_once_yn":false,"show_once":"10000","logging_on":true,"as_popup":false,"popup_overlay":true,"bar_heading_text":"","cookie_bar_as":"banner","cookie_setting_popup":true,"accept_all":true,"js_script_blocker":false,"popup_showagain_position":"bottom-right","widget_position":"left","button_1_style":[],"button_2_style":[],"button_3_style":[],"button_4_style":[["margin","0px 5px 0px 0px"]],"button_5_style":[],"button_7_style":[],"accept_close_page_navigation":false}';
+		/* ]]> */
+		</script>
+		<link rel='stylesheet' id='et-gf-open-sans-css' href='https://fonts.googleapis.com/css?family=Open+Sans%3A400%2C700&#038;ver=1.3.12' type='text/css' media='all' />
+<link rel='stylesheet' id='et_bloom-css-css' href='https://www.cortical.io/wp-content/plugins/bloom/css/style.css?ver=1.3.12' type='text/css' media='all' />
+<link rel='stylesheet' id='cookie-law-info-table-css' href='https://www.cortical.io/wp-content/plugins/webtoffee-gdpr-cookie-consent/public/css/cookie-law-info-table.css?ver=2.3.8' type='text/css' media='all' />
+<script type='text/javascript' id='leadin-script-loader-js-js-extra'>
+/* <![CDATA[ */
+var leadin_wordpress = {"userRole":"visitor","pageType":"post","leadinPluginVersion":"10.1.16"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://js.hs-scripts.com/20028123.js?integration=WordPress&#038;ver=10.1.16' async defer id='hs-script-loader'></script>
+<script type='text/javascript' src='https://www.cortical.io/wp-content/plugins/duracelltomi-google-tag-manager/js/gtm4wp-form-move-tracker.js?ver=1.16.2' id='gtm4wp-form-move-tracker-js'></script>
+<script type='text/javascript' src='https://www.cortical.io/wp-content/plugins/popups-for-divi/scripts/front.min.js?ver=3.0.5' id='js-divi-area-js'></script>
+<script type='text/javascript' src='https://www.cortical.io/wp-content/themes/Cortical-Child/js/mycustom.js?ver=1.1' id='script-js'></script>
+<script type='text/javascript' id='divi-custom-script-js-extra'>
+/* <![CDATA[ */
+var DIVI = {"item_count":"%d Item","items_count":"%d Items"};
+var et_builder_utils_params = {"condition":{"diviTheme":true,"extraTheme":false},"scrollLocations":["app","top"],"builderScrollLocations":{"desktop":"app","tablet":"app","phone":"app"},"onloadScrollLocation":"app","builderType":"fe"};
+var et_frontend_scripts = {"builderCssContainerPrefix":"#et-boc","builderCssLayoutPrefix":"#et-boc .et-l"};
+var et_pb_custom = {"ajaxurl":"https:\/\/www.cortical.io\/wp-admin\/admin-ajax.php","images_uri":"https:\/\/www.cortical.io\/wp-content\/themes\/Divi\/images","builder_images_uri":"https:\/\/www.cortical.io\/wp-content\/themes\/Divi\/includes\/builder\/images","et_frontend_nonce":"04eab53f95","subscription_failed":"Please, check the fields below to make sure you entered the correct information.","et_ab_log_nonce":"0512fa579b","fill_message":"Please, fill in the following fields:","contact_error_message":"Please, fix the following errors:","invalid":"Invalid email","captcha":"Captcha","prev":"Prev","previous":"Previous","next":"Next","wrong_captcha":"You entered the wrong number in captcha.","wrong_checkbox":"Checkbox","ignore_waypoints":"no","is_divi_theme_used":"1","widget_search_selector":".widget_search","ab_tests":[],"is_ab_testing_active":"","page_id":"894","unique_test_id":"","ab_bounce_rate":"5","is_cache_plugin_active":"yes","is_shortcode_tracking":"","tinymce_uri":"https:\/\/www.cortical.io\/wp-content\/themes\/Divi\/includes\/builder\/frontend-builder\/assets\/vendors","accent_color":"#ffffff","waypoints_options":[]};
+var et_pb_box_shadow_elements = [];
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.cortical.io/wp-content/themes/Divi/js/scripts.min.js?ver=4.19.0' id='divi-custom-script-js'></script>
+<script type='text/javascript' src='https://www.cortical.io/wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/jquery.fitvids.js?ver=4.19.0' id='fitvids-js'></script>
+<script type='text/javascript' src='https://www.cortical.io/wp-content/plugins/schema-and-structured-data-for-wp/modules/divi-builder/scripts/frontend-bundle.min.js?ver=1.0.0' id='extension-frontend-bundle-js'></script>
+<script type='text/javascript' id='et-builder-cpt-modules-wrapper-js-extra'>
+/* <![CDATA[ */
+var et_modules_wrapper = {"builderCssContainerPrefix":"#et-boc","builderCssLayoutPrefix":"#et-boc .et-l"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.cortical.io/wp-content/themes/Divi/includes/builder/scripts/cpt-modules-wrapper.js?ver=4.19.0' id='et-builder-cpt-modules-wrapper-js'></script>
+<script type='text/javascript' src='https://www.cortical.io/wp-content/themes/Divi/core/admin/js/common.js?ver=4.19.0' id='et-core-common-js'></script>
+<script type='text/javascript' src='https://www.cortical.io/wp-content/plugins/bloom/js/jquery.uniform.min.js?ver=1.3.12' id='et_bloom-uniform-js-js'></script>
+<script type='text/javascript' id='et_bloom-custom-js-js-extra'>
+/* <![CDATA[ */
+var bloomSettings = {"ajaxurl":"https:\/\/www.cortical.io\/wp-admin\/admin-ajax.php","pageurl":"https:\/\/www.cortical.io\/freetools\/extract-keywords\/","stats_nonce":"891d791233","subscribe_nonce":"c8499db973","is_user_logged_in":"not_logged"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.cortical.io/wp-content/plugins/bloom/js/custom.js?ver=1.3.12' id='et_bloom-custom-js-js'></script>
+<script type='text/javascript' src='https://www.cortical.io/wp-content/plugins/bloom/js/idle-timer.min.js?ver=1.3.12' id='et_bloom-idle-timer-js-js'></script>
+	
+	<!--Weglot 4.0.1--><aside data-wg-notranslate="" class="country-selector weglot-inline weglot-default" tabindex="0" aria-expanded="false" aria-label="Language selected: English"><ul role="none"></ul></aside> </body>
+</html>

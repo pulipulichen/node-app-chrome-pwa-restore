@@ -6,12 +6,17 @@ function onlyUnique(value, index, array) {
   return array.indexOf(value) === index;
 }
 
-module.exports = function () {
+module.exports = function (sp = false) {
   var ods = fs.readFileSync('./APP ICON LIST.ods')
   var workbook = XLSX.read(ods)
   // console.log(workbook)
 
-  const worksheet = workbook.Sheets['list'];
+  let sheet = 'list'
+  if (sp === true) {
+    sheet = 'list-login'
+  }
+
+  const worksheet = workbook.Sheets[sheet];
   const data = XLSX.utils.sheet_to_json(worksheet,{header:1});
 
   let output = []

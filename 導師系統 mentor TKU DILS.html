@@ -1,0 +1,292 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	    <meta charset="utf-8" />
+        <title>Not logged in</title>
+
+	    <meta name="description" content="" />
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+		<!-- bootstrap & fontawesome -->
+		<link rel="stylesheet" href="//static.sis.tku.edu.tw/Content/bootstrap.css" />
+		<link rel="stylesheet" href="//static.sis.tku.edu.tw/Content/font-awesome.css" />
+
+		<!-- page specific plugin styles -->
+
+		<!-- text fonts -->
+		<link rel="stylesheet" href="//static.sis.tku.edu.tw/Content/ace/ace-fonts.css" />
+
+		<!-- ace styles -->
+		<link rel="stylesheet" href="//static.sis.tku.edu.tw/Content/ace/ace.css" class="ace-main-stylesheet" id="main-ace-style" />
+
+		<!--[if lte IE 9]>
+			<link rel="stylesheet" href="//static.sis.tku.edu.tw/Content/ace/ace-part2.css" class="ace-main-stylesheet" />
+		<![endif]-->
+		<link rel="stylesheet" href="//static.sis.tku.edu.tw/Content/ace/ace-skins.css" />
+		<link rel="stylesheet" href="//static.sis.tku.edu.tw/Content/ace/ace-rtl.css" />
+
+		<!--[if lte IE 9]>
+		  <link rel="stylesheet" href="//static.sis.tku.edu.tw/Content/ace/ace-ie.css" />
+		<![endif]-->
+
+		<!-- inline styles related to this page -->
+        <link rel="stylesheet" href="//static.sis.tku.edu.tw/Content/kendo/css" />
+		<link rel="stylesheet" href="//static.sis.tku.edu.tw/Content/Site.css" />
+
+		<!-- ace settings handler -->
+		<script src="//static.sis.tku.edu.tw/Scripts/ace/ace-extra.js"></script>
+		<script src="//static.sis.tku.edu.tw/Scripts/jquery"></script>
+		<script src="//static.sis.tku.edu.tw/Scripts/jquery-ui"></script>
+		<script src="//static.sis.tku.edu.tw/Scripts/jquery.validate.js"></script>
+		<script src="//static.sis.tku.edu.tw/Scripts/jquery.unobtrusive-ajax.js"></script>
+		<script src="//static.sis.tku.edu.tw/Scripts/bootstrap.js"></script>
+		<script src="//static.sis.tku.edu.tw/Scripts/ace/ace.js"></script>
+		<script src="//static.sis.tku.edu.tw/Scripts/ace/ace-elements.js"></script>
+        <script src="//static.sis.tku.edu.tw/Scripts/kendo/js"></script>
+
+		<!-- HTML5shiv and Respond.js for IE8 to support HTML5 elements and media queries -->
+
+		<!--[if lte IE 8]>
+		<script src="//static.sis.tku.edu.tw/Scripts/html5shiv.js"></script>
+		<script src="//static.sis.tku.edu.tw/Scripts/respond.js"></script>
+		<![endif]-->
+    </head>
+
+    <body class="no-skin tkutheme-blue">
+
+
+    <div id="top-menu" class="modal aside aside-hz aside-fixed aside-dark aside-top aside-hidden" data-fixed="true" data-placement="top" data-background="true" data-backdrop="invisible" tabindex="-1" style="position: fixed; padding-right: 17px; display: none;">
+        <div class="modal-dialog">
+            <div class="modal-content ace-scroll">
+                <div class="scroll-track" style="height: 124px; display: none;"><div class="scroll-bar" style="top: 0px; height: 81px;"></div></div><div class="scroll-content" style="">
+                    <div class="scroll-track scroll-white no-track idle-hide" style="display: none;"><div class="scroll-bar" style="top: 0px;"></div></div><div class="scroll-content" style="">
+                        <div class="modal-body container">
+                            <div class="row">
+                                <div class="col-sm-5 col-sm-offset-1 white">
+                                    <h3 class="lighter">淡江大學 學務、校友資訊系統</h3>Tamkang University Student-Affairs &amp; Alumni Information System
+                                </div>
+
+                                
+
+                                
+
+                                <div id="TopMenuFacet" class="col-sm-5 text-center line-height-2"></div>
+
+                                <script type="text/javascript">
+                                    $.ajax({
+                                        url: "//static.sis.tku.edu.tw/Nav/Facet/GetJson",
+                                        type: "GET",
+                                        dataType: "json",
+                                        success: function (data) {
+                                            $.each(data, function (i, item) {
+                                                //alert(item.Name + " " + item.Href);
+                                                $("#TopMenuFacet").append('<a class="btn btn-app btn-inverse no-radius" href="' + item.Href + '"><div><img src="//static.sis.tku.edu.tw/Content/tku/share/' + item.LowerCode + '/logo.png" /></div>' + item.Name + '</a>&nbsp; &nbsp;');
+                                            });
+                                        },
+                                        error: function () { }
+                                    });
+                                    
+                                </script>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- /.modal-content -->
+            <button class="btn btn-inverse btn-app btn-xs ace-settings-btn aside-trigger" data-target="#top-menu" data-toggle="modal" type="button" style="left:319px">
+                <i data-icon1="fa-chevron-down" data-icon2="fa-chevron-up" class="ace-icon fa bigger-110 icon-only fa-chevron-down"></i>
+            </button>
+
+        </div><!-- /.modal-dialog -->
+    </div>
+
+
+        <div id="navbar" class="navbar navbar-default tkutheme-blue">
+            
+<div id="navbar-container" class="navbar-container no-padding-left">
+        
+	
+        <div class="navbar-header pull-left">
+            <a href="#" class="navbar-brand no-padding-top no-padding-bottom" style="background:white; padding-left:4px;padding-right:4px;" >
+                <small>
+                    <!--<img src="//static.sis.tku.edu.tw/Content/tku/share/logo.png" />-->
+                    <img src="/Content/tku/share/logo.png" />
+                </small>
+            </a>
+            <a href="#" class="navbar-brand no-padding hidden-xs">
+                <small>
+                    <!--<img src="//static.sis.tku.edu.tw/Content/tku/share/head.png" />-->
+                    <img src="/Content/tku/share/head.png" />
+                </small>
+            </a>
+        </div>
+    
+    <nav role="navigation" class="navbar-menu pull-left">
+        <!-- collapse navbar-collapse-->
+
+
+
+<span id="NavItems" class="nav navbar-nav" style="margin-top:36px; margin-bottom:3px;"></span>
+
+        <script type="text/javascript">
+            $.ajax({
+                url: "//static.sis.tku.edu.tw/Nav/NavItem/GetJson",
+                type: "GET",
+                dataType: "json",
+                data: { facet: "" },
+                success: function (data) {
+                    $.each(data, function (i, item) {
+                        //alert(item.Title + " " + item.Href);
+                        if ("Mentor" == item.SubSystem) {
+                            $("#NavItems").append('<button class="btn btn-white btn-sm btn-round" type="button" style="margin-left: 3px; margin-bottom: 3px;" onclick="location.href=\'' + item.Href + '\';">' + item.Title + '</button>');
+                        }
+                        else {
+                            $("#NavItems").append('<button class="btn btn-sm btn-round" type="button" style="background: transparent none !important; border: solid 1px; margin-left: 3px; margin-bottom: 3px;" onclick="location.href=\'' + item.Href + '\';">' + item.Title + '</button>');
+                        }
+                    });
+                },
+                error: function () { }
+            });
+        </script>
+
+
+
+
+
+
+
+    </nav>
+
+     
+    <div class="navbar-buttons navbar-header pull-right no-padding-right align-right">
+
+
+            <div>
+                <button class="btn btn-app btn-light btn-xs" onclick="location.href = '//account.sis.tku.edu.tw/Authorize/Sso/Login?returnUrl=http://mentor.sis.tku.edu.tw/Mentor/ClassTalk';">
+                    <i class="ace-icon fa fa-sign-in bigger-160"></i>
+                    登入
+                </button>
+            </div>
+
+
+
+
+
+
+    </div>
+
+
+
+
+</div><!-- /.navbar-container -->
+        </div>
+        <div class="main-container" id="main-container">
+        
+            <a href="#" class="menu-toggler" id="menu-toggler" data-target="#sidebar" >
+                <span class="sr-only"></span>
+                <span class="toggler-text"></span>
+            </a>
+        
+            <div class="sidebar responsive" id="sidebar">
+                
+<div style="height:48px !important;width: 189px !important;background-image: url('//static.sis.tku.edu.tw/Content/tku/blue/sys.png');">
+    <a href="/" style="text-decoration:none;color:darkslategray">
+        <img src="//static.sis.tku.edu.tw/Content/tku/share/Mentor.png" class="no-margin no-padding" style="width:40px;" />
+        導師系統
+    </a>
+</div>
+
+
+
+
+
+
+<b class="arrow"></b>
+<!-- optional arrow for minimized menu & hover submenu -->
+
+<div class="sidebar-toggle sidebar-collapse">
+    <i class="ace-icon fa fa-angle-double-left" data-icon1="ace-icon fa fa-angle-double-left" data-icon2="ace-icon fa fa-angle-double-right"></i>
+    
+</div>
+            </div>
+
+            <div class="main-content">
+				<div class="main-content-inner">
+                    <div id="breadcrumbs" class="breadcrumbs">
+
+
+<ul class="breadcrumb">
+
+</ul>
+
+
+<!-- /.breadcrumb -->
+
+<div id="nav-search" class="nav-search minimized">
+    <form class="form-search">
+        <span class="input-icon">
+            <input type="text" class="nav-search-input" id="nav-search-input" autocomplete="off" placeholder="Search ..." />
+            <i class="ace-icon fa fa-search nav-search-icon"></i>
+        </span>
+    </form>
+</div>
+                    </div>
+
+                    <div class="page-content">
+                        
+
+                        <div class="page-header">
+
+
+    <table cellpadding="1" cellspacing="1" border="0">
+        <tr>
+            <td>
+                <img src="//static.sis.tku.edu.tw/Content/tku/blue/title.png" style="width:30px; height:30px; padding: 0; margin: 0;">
+            </td>
+            <td style="background-color:#E6E6E6; font-size: 16px; white-space: nowrap;">
+                學務系統
+            </td>
+            <td style="background-color:#E6E6E6;">&nbsp;&nbsp;</td>
+        </tr>
+    </table>
+
+
+                        </div>
+
+                        <div class="row">
+                            <div class="col-xs-12">
+                                
+
+<h4>尚未登入</h4>
+<h4>Not logged in</h4>
+
+<br />
+
+<h4>
+    請點選右上方按鈕登入系統。
+</h4>
+<h4>
+    Please click on the top right button to login to the system.
+</h4>
+
+                                <!-- page content goes here -->
+                            </div>
+                        </div>
+
+                    </div><!-- /.page-content -->
+                </div><!-- /.main-content-inner -->
+            </div><!-- /.main-content -->
+            <div class="footer">
+                <div class="footer-inner">
+                    <div class="footer-content">
+                        Copyright &copy; 2023 淡江大學版權所有
+                    </div>
+                </div>
+            </div>
+        </div><!-- /.main-container -->
+
+        
+    </body>
+</html>

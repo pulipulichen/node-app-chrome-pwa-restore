@@ -1,0 +1,3048 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=1200" />
+    <link rel="icon"  href="gw/icon.png">
+    <link rel="stylesheet" href="op/css/app.v2.css" type="text/css" />
+    <title>
+                智能表格识别_免费在线表格识别软件-有道智云AI开放平台
+            </title>
+<meta name="title" content="
+                智能表格识别_免费在线表格识别软件-有道智云AI开放平台
+            ">
+<meta name="keywords" content="
+                表格识别,报表识别,信息登记表识别,保险单识别,文档电子化
+            "/>
+<meta name="description" content="
+                表格识别服务，智能定位并识别表格结构及表格文字内容，结构化输出可编辑的表格结果轻松实现纸质报表、单据的电子化。
+            "/>    <!--[if lt IE 9]>
+      <script src="op/js/ie/html5shiv.js"></script>
+      <script src="op/js/ie/respond.min.js"></script>
+<![endif]-->    <!--
+脚本中会自动替换，请不要手动修改任何东西啦~
+liangqian 2019-11-05
+-->
+
+    <link rel="stylesheet" href="css/gw-header.css" type="text/css" cache="false">
+    <link rel="stylesheet" href="css/gw-product.css" type="text/css" cache="false" />
+    <link href="css/bootstrap-slider.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/streaming-audio.css?timestamp=1683701873198" rel="stylesheet" type="text/css"/>
+    <link href="css/fanyi.css" rel="stylesheet" type="text/css" cache="false" />
+    <link href="css/toast.css" rel="stylesheet" type="text/css" />
+    <link href="css/product-ocr-common.css" rel="stylesheet" type="text/css" />
+
+
+    <script src="jquery2.js" cache="false"></script>
+    <script src="op/js/app.v2.js"></script>
+    <script src="js/md5.js?timestamp=1683701873198"></script>
+    <script src="js/gw-common.js" cache="false"></script>
+    <script type="text/javascript" src="js/modal.js"></script>
+    <script type="text/javascript" src="js/clipboard.min.js"></script>
+    <script type="text/javascript" src="js/toast.js"></script>
+    <script type="text/javascript" src="js/bootstrap-slider.min.js"></script>
+    <script type="text/javascript" src="js/jszip.min.js" ></script>
+    <script src="js/product-ocr-common.js?timestamp=1683701873198"></script>
+</head>
+
+<body style="padding: 0px; margin: 0px; background:#fff;">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="js/bootstrap-select/bootstrap-select.min.css">
+
+<style>
+    .class-header{
+        font-family: "PingFangSC-Medium";
+        font-size: 18px;
+        color: #262626;
+        letter-spacing: 0.9px;
+        line-height: 18px;
+        margin: 32px auto;
+        text-align: center;
+    }
+    .class-item-container{
+        display: flex;
+        flex-direction: row-reverse;
+        margin-top: 12px;
+        margin-bottom: 12px;
+        margin-right: 60px;
+    }
+    .class-item-container-verification{
+        display: flex;
+        flex-direction: row;
+        margin-top: 12px;
+        margin-bottom: 12px;
+        /*margin-left: 46px;*/
+    }
+
+    .class-item-container-qudao{
+        display: flex;
+        flex-direction: row;
+        margin-top: 12px;
+        margin-bottom: 12px;
+        /*margin-left: 17px;*/
+    }
+    .class-item-name{
+        font-family: "PingFangSC-Medium";
+        font-size: 14px;
+        color: #262626;
+        letter-spacing: 0;
+        line-height: 14px;
+        margin-left: 26px;
+        margin-right: 17px;
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
+    .horizontal-line-style{
+        background: #D9D9D9;
+        margin-top: 12px;
+        height: 1px;
+        width: 100%;
+    }
+
+    .bottom-btn-container{
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px !important;
+        margin-bottom: 24px;
+        width: 100%;
+    }
+
+    .red-mark:before{
+        content: "* ";
+        color: red;
+    }
+    .top-dash-border{
+        border-bottom: 1px dashed #F0F2F5;
+        width: 448px;
+        margin: 0 auto;
+        margin-bottom: 32px;
+    }
+    .class-header-text{
+        font-family: "PingFangSC-Regular";
+        font-size: 14px;
+        color: #ADB1B8;
+        letter-spacing: 0;
+        text-align: left;
+        line-height: 14px;
+        margin-left: 18px;
+        margin-top: 8px;
+    }
+    .class-header-container{
+        display: flex;
+        flex-direction: column;
+        /*margin-top: 34px;*/
+        margin-bottom: 23px;
+        margin-left: 38px;
+    }
+    .normalbtn {
+        position: relative;
+        right: 0px;
+        width: 346px!important;
+        height: 36px;
+        background: #FFFFFF;
+        cursor: pointer;
+        border-radius: 4px;
+        border: 1px solid #C9CCD1;
+        background: #FAFBFC;
+        color: #8E959E;
+    }
+    .normalbtn-servicetype{
+        position: relative;
+        right: 0px;
+        width: 346px!important;
+        height: 36px;
+        background: #FFFFFF;
+        cursor: pointer;
+        border-radius: 4px;
+        border: 1px solid #C9CCD1;
+        background: #FAFBFC;
+        color: #8E959E;
+    }
+    .normalbtn-container{
+        position: relative;
+        right: 0px;
+        width: 346px;
+        height: 40px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .bootstrap-select .dropdown-menu {
+        top: 0px !important;
+    }
+    .btn_text {
+        position: relative;
+        font-family: "PingFangSC-Regular";
+        font-size: 14px;
+        color: #8E959E;
+        letter-spacing: 0;
+        line-height: 20px;
+        top: 10px;
+        margin-left: 16px;
+    }
+    .btn_arrow {
+        position: absolute;
+        top: 11px;
+        right: 8px;
+        background: url(images/tts-downarrow-16px.png);
+        line-height: 0;
+        font-size: 0;
+        width: 16px;
+        height: 16px;
+    }
+
+    .sel {
+        width: 346px;
+        list-style: none;
+        font-size: 14px;
+        position: absolute;
+        z-index: 9999;
+        background: #FFFFFF;
+        top:40px;
+        display: none;
+        border: 1px solid #C9CCD1;
+    }
+    .sel li {
+        width: 346px;
+        /*height: 30px;*/
+        line-height: 30px;
+        list-style: none;
+    }
+    .inputbox-style {
+        width: 346px;
+        height: 36px;
+        border: 1px solid #F0F2F5;
+        border-radius: 4px;
+        background: #FAFBFC;
+        color: #2D3138;
+    }
+    .inputbox-style:placeholder{
+        color: #8E959E;
+    }
+    .textarea-style {
+        width: 346px;
+        height: 80px;
+        border: 1px solid #F0F2F5;
+        border-radius: 4px;
+        background: #FAFBFC;
+        color: #2D3138;
+    }
+    .textarea-style:placeholder{
+        color: #8E959E;
+    }
+
+    .anchorColor{
+        color: #2D3138;
+        text-decoration: none;
+    }
+    .anchorColor:hover{
+        color: #0081FF;
+        text-decoration: none;
+    }
+
+    .partner-info-submit-btn{
+        width: 180px;
+        height: 48px;
+        background:rgba(41,98,255,1);
+        border-radius:24px;
+        font-family: "PingFangSC-Semibold";
+        font-size: 18px;
+        color: #FFFFFF;
+        letter-spacing: 0;
+    }
+    .partner-info-cancel-btn{
+        background: #FFFFFF;
+        border-radius:20px;
+        border:1px solid rgba(220,223,230,1);
+        font-family: "PingFangSC-Regular";
+        font-size: 14px;
+        color: #60656B;
+        letter-spacing: 0;
+        width: 130px;
+        height: 40px;
+    }
+    input:required {
+        box-shadow: none;
+    }
+    textarea:required{
+        box-shadow: none;
+    }
+    select:required{
+        box-shadow: none;
+    }
+    textarea {
+        resize: none;
+    }
+
+    #partner-quantity{
+        display: none;
+    }
+    #popup-feedback-detail button[data-id="serviceTypeOption"]{
+        border: 0px solid #F0F2F5!important;
+        box-shadow: none;
+        height: 34px!important;
+    }
+    #popup-feedback-detail button[data-id="partnerRegionOption"]{
+        border: 0px solid #F0F2F5!important;
+        box-shadow: none;
+        height: 34px!important;
+    }
+    #popup-feedback-detail button[data-id="partnerIndustryOption"]{
+        border: 0px solid #F0F2F5!important;
+        box-shadow: none;
+        height: 34px!important;
+    }
+    #popup-feedback-detail button[data-id="partnerJobOption"]{
+        border: 0px solid #F0F2F5!important;
+        box-shadow: none;
+        height: 34px!important;
+    }
+    #popup-feedback-detail button[data-id="partnerChannelOption"]{
+        border: 0px solid #F0F2F5!important;
+        box-shadow: none;
+        height: 34px!important;
+    }
+</style>
+<script src="js/js.cookie.min.js"></script>
+<!--display toggle between flex and none;-->
+<div id="popup-feedback-detail" style=" display: none; position: fixed; z-index: 2000; background: rgba(0, 0, 0, 0.3); width: 100%; height: 100%; top: 0px; left: 0px; overflow: hidden; justify-content: center; align-items: center;">
+    <div id="overlay-partner-inner-detail" style="background: #FFFFFF; border-radius: 16px; width: 570px; height: 560px;overflow-y: scroll;">
+
+        <img id="partner-info-close-btn" src="https://shared.ydstatic.com/ead/zhiyun/guanwang/partner_cdn/ic_close_normal.png" style="position: fixed;margin: 5px 0 0 527px;cursor: pointer;" width="32" height="32" />
+        <div class="class-header-container">
+            <img src="/common/popup-overlay/feedback_title.png" width="120" height="30" />
+        </div>
+        <div class="top-dash-border"></div>
+        <form id="feedback-info-form-id" action="#">
+            <div id="requirement" class="class-item-container">
+                <textarea id="requirement-detail" class="textarea-style" name="scenario"  row="5" placeholder="  请详细描述您遇到的问题或您希望得到的技术支持（必填，100字以内）" maxlength="100"></textarea>
+                <div class="class-item-name red-mark">需求详情：</div>
+                <p class="error-hint demond-detail">请填写需求详情</p>
+            </div>
+            <div class="class-item-container">
+                <textarea id="feedback-usage-scenario" class="textarea-style" name="company-intro" row="5" placeholder="  请详细描述您的使用场景（100字以内）" maxlength="100"></textarea>
+                <div class="class-item-name">使用场景：</div>
+            </div>
+
+            <div class="class-item-container">
+                <input id="fb-name" type="text" class="inputbox-style" placeholder="  姓名或称呼（必填）" name="name" maxlength="50" />
+                <div class="class-item-name red-mark">联系人姓名：</div>
+                <p class="error-hint demond-contact-name">请填写联系人姓名</p>
+            </div>
+            <div class="class-item-container">
+                <input id="fb-phone" type="text" class="inputbox-style" name="cell" placeholder="  手机或者固定电话（必填)" maxlength="20"  />
+                <div class="class-item-name red-mark">联系人电话：</div>
+                <p class="error-hint demond-contact-tell">请填写联系人电话</p>
+            </div>
+            <div class="class-item-container">
+                <input id="fb-email" type="email" class="inputbox-style" name="email" placeholder="  常用邮箱（必填)" pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?" maxlength="50" />
+                <div class="class-item-name red-mark">联系人邮箱：</div>
+                <p class="error-hint demond-contact-mail">请填写联系人邮箱</p>
+            </div>
+
+            <div class="class-item-container">
+                <div class="normalbtn-container">
+                    <input id="fb-verification" type="text" name="verification" maxlength="10" style="width:208px; height: 40px; background: #ffffff; border: 1px solid #F0F2F5; border-radius: 4px; margin-right: 8px;outline:none" placeholder="  输入验证码" />
+                    <img id="verification-code" src="" width="90" height="40" alt="verificatiton pics" style="border: 1px solid #F0F2F5; border-radius: 4px;">
+                    <div id="verification-refresh" style="cursor: pointer; border: 1px solid #F0F2F5; border-radius: 4px;">
+                        <img src="https://shared.ydstatic.com/ead/zhiyun/guanwang/partner_cdn/ic_Refresh_normal.png" width="24" height="24" style="margin: 8px;">
+                    </div>
+                </div>
+                <div class="class-item-name red-mark">验证码：</div>
+                <p class="error-hint demond-valid-code">请输入正确验证码</p>
+            </div>
+            <div class="bottom-btn-container">
+                <button type="button" class="btn btn-secondary cancel partner-info-cancel-btn" id="overlay-cancel-feedback">取消</button>
+                <button type="submit" class="btn btn-primary partner-info-submit-btn">立即提交</button>
+            </div>
+        </form>
+    </div>
+</div>
+<!-- Latest compiled and minified JavaScript -->
+<script src="js/bootstrap-select/bootstrap-select.min.js"></script>
+
+<style>
+.header {
+  /*box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.10); */
+  height: 64px;
+  width:100%;
+  z-index: 1000;
+  position: absolute;
+}
+.header:hover{
+  background: #121B34;
+}
+.header .icon-head{
+	display:inline-block;
+	width:24px;
+	height:24px;
+	margin-right:4px;
+	background: url('../../../images/ic_top_avatar_default_normal.png') no-repeat center;
+	background-size:100% auto;
+}
+.header #indexBtn {
+	color: rgba(255,255,255,0.8);
+}
+#indexBtn:hover {
+	color: #658EFF;
+}
+#indexBtn:hover .icon-head{
+	display:inline-block;
+	width:24px;
+	height:24px;
+	margin-right:4px;
+	background: url('../../../images/ic_top_avatar_default_hover.png') no-repeat center;
+	background-size:100% auto;
+}
+</style>
+<span style="display:none">
+<script>
+var _czc = _czc || [];
+_czc.push(["_setAccount", "1261993376"]);
+var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1261993376'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s13.cnzz.com/z_stat.php%3Fid%3D1261993376' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</span><link rel="stylesheet" href="/common/urs-login-modal/main.build.css?timestamp=1683701873202" />
+
+<div class="urs-login-modal">
+  <link rel="stylesheet" href="/common/urs-login-component/main.build.css?timestamp=1683701873202" />
+<div class='urs-login-component'>
+  <div class="urs-component-head">
+    <div class='icon-close'>
+      <img id="close-btn" src="/images/urs-login/ic_delete_normal_24px.png"/>
+    </div>
+    <p class="login-title"><p>
+    <p class="login-line"></p>
+  </div>
+  <link rel="stylesheet" href="/common/urs-component-tab/main.build.css?timestamp=1683701873202" />
+<div class='urs-component-tab'>
+  <div class="login-way">
+    <p class="item item-active" data-id="1">短信验证码</p>
+    <p class="item" data-id="2">手机密码</p>
+    <p class="item" data-id="3">网易邮箱</p>
+  </div>
+  <p class='mail-tip'>输入手机、验证码即登录，未注册将进入注册流程。</p>
+</div>
+<div class='urs-content'>
+  <div id="include-message" data-id="1"></div>
+  <div id="include-phone-password" data-id="2"></div>
+  <div id="include-mail" data-id="3"></div>
+</div>
+<script src="https://urswebzj.nosdn.127.net/webzj_cdn101/message.js"></script>
+<script src="/common/urs-component-tab/main.build.js?timestamp=1683701873202"></script>
+  <link rel="stylesheet" href="/common/urs-component-third-party/main.build.css?timestamp=1683701873202" />
+<div class="urs-component-third-party">
+  <p class="item-text">其他登录方式</p>
+    <div class="item-logo">
+      <div class="logo-content weibo" data-id="weibo"></div>
+      <div class="logo-content qq" data-id="qq"></div>
+      <div class="logo-content wechat" data-id="wechat"></div>
+    </div>
+  <p class="item-text have-question">遇到问题</p>
+</div>
+<script src="/common/urs-component-third-party/main.build.js?timestamp=1683701873202"></script>
+</div>
+<script src="https://urswebzj.nosdn.127.net/webzj_cdn101/message.js"></script>
+<script src="/common/urs-login-component/main.build.js?timestamp=1683701873202"></script>
+
+  <link rel="stylesheet" href="/common/urs-component-steps/main.build.css?timestamp=1683701873202" />
+<div class='urs-component-steps'>
+  <div class="urs-component-head">
+    <div class='icon-close'>
+      <img id="close-btn-step" src="/images/urs-login/ic_delete_normal_24px.png"/>
+    </div>
+    <p class="login-title"><p>
+    <p class="parse-line"></p>
+  </div>
+  <div class='step'>
+    <div class='item'>
+      <img src="/images/urs-login/icon-succ.png" />
+      <p class='text-desc'>账号密码</p>
+    </div>
+    <div class='item-arrow'>
+      <img src="/images/urs-login/line1.png" />
+    </div>
+    <div class='item'>
+      <img src="/images/urs-login/icon-step2.png" />
+      <p class='text-desc txt-active'>完善信息</p>
+    </div>
+    <div class='item-arrow'>
+      <img src="/images/urs-login/line1.png" />
+    </div>
+    <div class='item'>
+      <img src="/images/urs-login/icon-step3.png" />
+      <p class='text-desc'>注册成功 </p>
+    </div>
+  </div>
+  <!-- 完善信息 -->
+  <div class='form-info'>
+    <form>
+      <link rel="stylesheet" href="/common/urs-post-message/main.build.css?timestamp=1683701873202" />
+<div class="urs-post-message">
+  <iframe id="ursiframe" src="https://passport.youdao.com/webzj/act/urs-agent.html" style="width:0;height:0;"></iframe>
+  <link rel="stylesheet" href="/common/urs-code-select/main.build.css?timestamp=1683701873202">
+<div class="urs-code-select">
+    <div class="code-value">
+      <span class='code-num'>+86</span>
+      <i class="code-arrow"></i></div>
+    <div class="country-container">
+        <a data-code="+86-" class="flag-CN" href="javascript:void(0);" id="auto-id-1603616165079"
+          ><em>&nbsp;</em>中国 +86</a
+        >
+
+        <a data-code="+886-" class="flag-TW" href="javascript:void(0);" id="auto-id-1603616165080"
+          ><em>&nbsp;</em>台湾地区 +886</a
+        >
+
+        <a data-code="+852-" class="flag-HK" href="javascript:void(0);" id="auto-id-1603616165081"
+          ><em>&nbsp;</em>香港地区 +852</a
+        >
+
+        <a data-code="+853-" class="flag-MO" href="javascript:void(0);" id="auto-id-1603616165082"
+          ><em>&nbsp;</em>澳门地区 +853</a
+        >
+
+        <a data-code="+60-" class="flag-MY" href="javascript:void(0);" id="auto-id-1603616165083"
+          ><em>&nbsp;</em>马来西亚 +60</a
+        >
+
+        <a data-code="+65-" class="flag-SG" href="javascript:void(0);" id="auto-id-1603616165084"
+          ><em>&nbsp;</em>新加坡 +65</a
+        >
+
+        <a data-code="+81-" class="flag-JP" href="javascript:void(0);" id="auto-id-1603616165085"
+          ><em>&nbsp;</em>日本 +81</a
+        >
+
+        <a data-code="+82-" class="flag-KR" href="javascript:void(0);" id="auto-id-1603616165086"
+          ><em>&nbsp;</em>韩国 +82</a
+        >
+
+        <a data-code="+1-" class="flag-US" href="javascript:void(0);" id="auto-id-1603616165087"
+          ><em>&nbsp;</em>美国 +1</a
+        >
+
+        <a data-code="+1-" class="flag-CA" href="javascript:void(0);" id="auto-id-1603616165088"
+          ><em>&nbsp;</em>加拿大 +1</a
+        >
+
+        <a data-code="+61-" class="flag-AU" href="javascript:void(0);" id="auto-id-1603616165089"
+          ><em>&nbsp;</em>澳大利亚 +61</a
+        >
+
+        <a data-code="+64-" class="flag-NZ" href="javascript:void(0);" id="auto-id-1603616165090"
+          ><em>&nbsp;</em>新西兰 +64</a
+        >
+
+        <a data-code="+355-" class="flag-AL" href="javascript:void(0);" id="auto-id-1603616165091"
+          ><em>&nbsp;</em>阿尔巴尼亚 +355</a
+        >
+
+        <a data-code="+213-" class="flag-DZ" href="javascript:void(0);" id="auto-id-1603616165092"
+          ><em>&nbsp;</em>阿尔及利亚 +213</a
+        >
+
+        <a data-code="+93-" class="flag-AF" href="javascript:void(0);" id="auto-id-1603616165093"
+          ><em>&nbsp;</em>阿富汗 +93</a
+        >
+
+        <a data-code="+54-" class="flag-AR" href="javascript:void(0);" id="auto-id-1603616165094"
+          ><em>&nbsp;</em>阿根廷 +54</a
+        >
+
+        <a data-code="+971-" class="flag-AE" href="javascript:void(0);" id="auto-id-1603616165095"
+          ><em>&nbsp;</em>阿拉伯联合大公国 +971</a
+        >
+
+        <a data-code="+297-" class="flag-AW" href="javascript:void(0);" id="auto-id-1603616165096"
+          ><em>&nbsp;</em>阿鲁巴 +297</a
+        >
+
+        <a data-code="+968-" class="flag-OM" href="javascript:void(0);" id="auto-id-1603616165097"
+          ><em>&nbsp;</em>阿曼 +968</a
+        >
+
+        <a data-code="+994-" class="flag-AZ" href="javascript:void(0);" id="auto-id-1603616165098"
+          ><em>&nbsp;</em>阿塞拜疆 +994</a
+        >
+
+        <a data-code="+20-" class="flag-EG" href="javascript:void(0);" id="auto-id-1603616165099"
+          ><em>&nbsp;</em>埃及 +20</a
+        >
+
+        <a data-code="+251-" class="flag-ET" href="javascript:void(0);" id="auto-id-1603616165100"
+          ><em>&nbsp;</em>埃塞俄比亚 +251</a
+        >
+
+        <a data-code="+353-" class="flag-IE" href="javascript:void(0);" id="auto-id-1603616165101"
+          ><em>&nbsp;</em>爱尔兰 +353</a
+        >
+
+        <a data-code="+372-" class="flag-EE" href="javascript:void(0);" id="auto-id-1603616165102"
+          ><em>&nbsp;</em>爱沙尼亚 +372</a
+        >
+
+        <a data-code="+376-" class="flag-AD" href="javascript:void(0);" id="auto-id-1603616165103"
+          ><em>&nbsp;</em>安道尔 +376</a
+        >
+
+        <a data-code="+244-" class="flag-AO" href="javascript:void(0);" id="auto-id-1603616165104"
+          ><em>&nbsp;</em>安哥拉 +244</a
+        >
+
+        <a data-code="+1264-" class="flag-AI" href="javascript:void(0);" id="auto-id-1603616165105"
+          ><em>&nbsp;</em>安圭拉 +1264</a
+        >
+
+        <a data-code="+1268-" class="flag-AG" href="javascript:void(0);" id="auto-id-1603616165106"
+          ><em>&nbsp;</em>安提瓜和巴布达 +1268</a
+        >
+
+        <a data-code="+43-" class="flag-AT" href="javascript:void(0);" id="auto-id-1603616165107"
+          ><em>&nbsp;</em>奥地利 +43</a
+        >
+
+        <a data-code="+1246-" class="flag-BB" href="javascript:void(0);" id="auto-id-1603616165108"
+          ><em>&nbsp;</em>巴巴多斯 +1246</a
+        >
+
+        <a data-code="+675-" class="flag-PG" href="javascript:void(0);" id="auto-id-1603616165109"
+          ><em>&nbsp;</em>巴布亚新几内亚 +675</a
+        >
+
+        <a data-code="+1242-" class="flag-BS" href="javascript:void(0);" id="auto-id-1603616165110"
+          ><em>&nbsp;</em>巴哈马 +1242</a
+        >
+
+        <a data-code="+92-" class="flag-PK" href="javascript:void(0);" id="auto-id-1603616165111"
+          ><em>&nbsp;</em>巴基斯坦 +92</a
+        >
+
+        <a data-code="+595-" class="flag-PY" href="javascript:void(0);" id="auto-id-1603616165112"
+          ><em>&nbsp;</em>巴拉圭 +595</a
+        >
+
+        <a data-code="+970-" class="flag-PS" href="javascript:void(0);" id="auto-id-1603616165113"
+          ><em>&nbsp;</em>巴勒斯坦领土 +970</a
+        >
+
+        <a data-code="+973-" class="flag-BH" href="javascript:void(0);" id="auto-id-1603616165114"
+          ><em>&nbsp;</em>巴林 +973</a
+        >
+
+        <a data-code="+507-" class="flag-PA" href="javascript:void(0);" id="auto-id-1603616165115"
+          ><em>&nbsp;</em>巴拿马 +507</a
+        >
+
+        <a data-code="+55-" class="flag-BR" href="javascript:void(0);" id="auto-id-1603616165116"
+          ><em>&nbsp;</em>巴西 +55</a
+        >
+
+        <a data-code="+375-" class="flag-BY" href="javascript:void(0);" id="auto-id-1603616165117"
+          ><em>&nbsp;</em>白俄罗斯 +375</a
+        >
+
+        <a data-code="+1441-" class="flag-BM" href="javascript:void(0);" id="auto-id-1603616165118"
+          ><em>&nbsp;</em>百慕大 +1441</a
+        >
+
+        <a data-code="+359-" class="flag-BG" href="javascript:void(0);" id="auto-id-1603616165119"
+          ><em>&nbsp;</em>保加利亚 +359</a
+        >
+
+        <a data-code="+229-" class="flag-BJ" href="javascript:void(0);" id="auto-id-1603616165120"
+          ><em>&nbsp;</em>贝宁 +229</a
+        >
+
+        <a data-code="+32-" class="flag-BE" href="javascript:void(0);" id="auto-id-1603616165121"
+          ><em>&nbsp;</em>比利时 +32</a
+        >
+
+        <a data-code="+354-" class="flag-IS" href="javascript:void(0);" id="auto-id-1603616165122"
+          ><em>&nbsp;</em>冰岛 +354</a
+        >
+
+        <a data-code="+1787-" class="flag-PR" href="javascript:void(0);" id="auto-id-1603616165123"
+          ><em>&nbsp;</em>波多黎各 +1787</a
+        >
+
+        <a data-code="+48-" class="flag-PL" href="javascript:void(0);" id="auto-id-1603616165124"
+          ><em>&nbsp;</em>波兰 +48</a
+        >
+
+        <a data-code="+387-" class="flag-BA" href="javascript:void(0);" id="auto-id-1603616165125"
+          ><em>&nbsp;</em>波斯尼亚和黑塞哥维那 +387</a
+        >
+
+        <a data-code="+591-" class="flag-BO" href="javascript:void(0);" id="auto-id-1603616165126"
+          ><em>&nbsp;</em>玻利维亚 +591</a
+        >
+
+        <a data-code="+501-" class="flag-BZ" href="javascript:void(0);" id="auto-id-1603616165127"
+          ><em>&nbsp;</em>伯利兹 +501</a
+        >
+
+        <a data-code="+267-" class="flag-BW" href="javascript:void(0);" id="auto-id-1603616165128"
+          ><em>&nbsp;</em>博茨瓦纳 +267</a
+        >
+
+        <a data-code="+975-" class="flag-BT" href="javascript:void(0);" id="auto-id-1603616165129"
+          ><em>&nbsp;</em>不丹 +975</a
+        >
+
+        <a data-code="+226-" class="flag-BF" href="javascript:void(0);" id="auto-id-1603616165130"
+          ><em>&nbsp;</em>布基纳法索 +226</a
+        >
+
+        <a data-code="+257-" class="flag-BI" href="javascript:void(0);" id="auto-id-1603616165131"
+          ><em>&nbsp;</em>布隆迪 +257</a
+        >
+
+        <a data-code="+850-" class="flag-KP" href="javascript:void(0);" id="auto-id-1603616165132"
+          ><em>&nbsp;</em>朝鲜 +850</a
+        >
+
+        <a data-code="+240-" class="flag-GQ" href="javascript:void(0);" id="auto-id-1603616165133"
+          ><em>&nbsp;</em>赤道几内亚 +240</a
+        >
+
+        <a data-code="+45-" class="flag-DK" href="javascript:void(0);" id="auto-id-1603616165134"
+          ><em>&nbsp;</em>丹麦 +45</a
+        >
+
+        <a data-code="+49-" class="flag-DE" href="javascript:void(0);" id="auto-id-1603616165135"
+          ><em>&nbsp;</em>德国 +49</a
+        >
+
+        <a data-code="+670-" class="flag-TL" href="javascript:void(0);" id="auto-id-1603616165136"
+          ><em>&nbsp;</em>东帝汶 +670</a
+        >
+
+        <a data-code="+228-" class="flag-TG" href="javascript:void(0);" id="auto-id-1603616165137"
+          ><em>&nbsp;</em>多哥 +228</a
+        >
+
+        <a data-code="+1767-" class="flag-DM" href="javascript:void(0);" id="auto-id-1603616165138"
+          ><em>&nbsp;</em>多米尼加 +1767</a
+        >
+
+        <a data-code="+1809-" class="flag-DO" href="javascript:void(0);" id="auto-id-1603616165139"
+          ><em>&nbsp;</em>多明尼加共和国 +1809</a
+        >
+
+        <a data-code="+7-" class="flag-RU" href="javascript:void(0);" id="auto-id-1603616165140"
+          ><em>&nbsp;</em>俄罗斯 +7</a
+        >
+
+        <a data-code="+593-" class="flag-EC" href="javascript:void(0);" id="auto-id-1603616165141"
+          ><em>&nbsp;</em>厄瓜多尔 +593</a
+        >
+
+        <a data-code="+291-" class="flag-ER" href="javascript:void(0);" id="auto-id-1603616165142"
+          ><em>&nbsp;</em>厄立特里亚 +291</a
+        >
+
+        <a data-code="+33-" class="flag-FR" href="javascript:void(0);" id="auto-id-1603616165143"
+          ><em>&nbsp;</em>法国 +33</a
+        >
+
+        <a data-code="+298-" class="flag-FO" href="javascript:void(0);" id="auto-id-1603616165144"
+          ><em>&nbsp;</em>法罗群岛 +298</a
+        >
+
+        <a data-code="+689-" class="flag-PF" href="javascript:void(0);" id="auto-id-1603616165145"
+          ><em>&nbsp;</em>法属波利尼西亚 +689</a
+        >
+
+        <a data-code="+594-" class="flag-GF" href="javascript:void(0);" id="auto-id-1603616165146"
+          ><em>&nbsp;</em>法属圭亚那 +594</a
+        >
+
+        <a data-code="+63-" class="flag-PH" href="javascript:void(0);" id="auto-id-1603616165147"
+          ><em>&nbsp;</em>菲律宾 +63</a
+        >
+
+        <a data-code="+679-" class="flag-FJ" href="javascript:void(0);" id="auto-id-1603616165148"
+          ><em>&nbsp;</em>斐济 +679</a
+        >
+
+        <a data-code="+358-" class="flag-FI" href="javascript:void(0);" id="auto-id-1603616165149"
+          ><em>&nbsp;</em>芬兰 +358</a
+        >
+
+        <a data-code="+238-" class="flag-CV" href="javascript:void(0);" id="auto-id-1603616165150"
+          ><em>&nbsp;</em>佛得角 +238</a
+        >
+
+        <a data-code="+220-" class="flag-GM" href="javascript:void(0);" id="auto-id-1603616165151"
+          ><em>&nbsp;</em>冈比亚 +220</a
+        >
+
+        <a data-code="+242-" class="flag-CG" href="javascript:void(0);" id="auto-id-1603616165152"
+          ><em>&nbsp;</em>刚果共和国 +242</a
+        >
+
+        <a data-code="+243-" class="flag-CD" href="javascript:void(0);" id="auto-id-1603616165153"
+          ><em>&nbsp;</em>刚果民主共和国 +243</a
+        >
+
+        <a data-code="+57-" class="flag-CO" href="javascript:void(0);" id="auto-id-1603616165154"
+          ><em>&nbsp;</em>哥伦比亚 +57</a
+        >
+
+        <a data-code="+506-" class="flag-CR" href="javascript:void(0);" id="auto-id-1603616165155"
+          ><em>&nbsp;</em>哥斯达黎加 +506</a
+        >
+
+        <a data-code="+1473-" class="flag-GD" href="javascript:void(0);" id="auto-id-1603616165156"
+          ><em>&nbsp;</em>格林纳达 +1473</a
+        >
+
+        <a data-code="+299-" class="flag-GL" href="javascript:void(0);" id="auto-id-1603616165157"
+          ><em>&nbsp;</em>格陵兰 +299</a
+        >
+
+        <a data-code="+995-" class="flag-GE" href="javascript:void(0);" id="auto-id-1603616165158"
+          ><em>&nbsp;</em>格鲁吉亚 +995</a
+        >
+
+        <a data-code="+53-" class="flag-CU" href="javascript:void(0);" id="auto-id-1603616165159"
+          ><em>&nbsp;</em>古巴 +53</a
+        >
+
+        <a data-code="+590-" class="flag-GP" href="javascript:void(0);" id="auto-id-1603616165160"
+          ><em>&nbsp;</em>瓜德罗普岛 +590</a
+        >
+
+        <a data-code="+1671-" class="flag-GU" href="javascript:void(0);" id="auto-id-1603616165161"
+          ><em>&nbsp;</em>关岛 +1671</a
+        >
+
+        <a data-code="+592-" class="flag-GY" href="javascript:void(0);" id="auto-id-1603616165162"
+          ><em>&nbsp;</em>圭亚那 +592</a
+        >
+
+        <a data-code="+7-" class="flag-KZ" href="javascript:void(0);" id="auto-id-1603616165163"
+          ><em>&nbsp;</em>哈萨克斯坦 +7</a
+        >
+
+        <a data-code="+509-" class="flag-HT" href="javascript:void(0);" id="auto-id-1603616165164"
+          ><em>&nbsp;</em>海地 +509</a
+        >
+
+        <a data-code="+31-" class="flag-NL" href="javascript:void(0);" id="auto-id-1603616165165"
+          ><em>&nbsp;</em>荷兰 +31</a
+        >
+
+        <a data-code="+599-" class="flag-AN" href="javascript:void(0);" id="auto-id-1603616165166"
+          ><em>&nbsp;</em>荷属安的列斯群岛 +599</a
+        >
+
+        <a data-code="+382-" class="flag-ME" href="javascript:void(0);" id="auto-id-1603616165167"
+          ><em>&nbsp;</em>黑山 +382</a
+        >
+
+        <a data-code="+504-" class="flag-HN" href="javascript:void(0);" id="auto-id-1603616165168"
+          ><em>&nbsp;</em>洪都拉斯 +504</a
+        >
+
+        <a data-code="+253-" class="flag-DJ" href="javascript:void(0);" id="auto-id-1603616165169"
+          ><em>&nbsp;</em>吉布提 +253</a
+        >
+
+        <a data-code="+996-" class="flag-KG" href="javascript:void(0);" id="auto-id-1603616165170"
+          ><em>&nbsp;</em>吉尔吉斯斯坦 +996</a
+        >
+
+        <a data-code="+224-" class="flag-GN" href="javascript:void(0);" id="auto-id-1603616165171"
+          ><em>&nbsp;</em>几内亚 +224</a
+        >
+
+        <a data-code="+245-" class="flag-GW" href="javascript:void(0);" id="auto-id-1603616165172"
+          ><em>&nbsp;</em>几内亚比绍 +245</a
+        >
+
+        <a data-code="+233-" class="flag-GH" href="javascript:void(0);" id="auto-id-1603616165173"
+          ><em>&nbsp;</em>加纳 +233</a
+        >
+
+        <a data-code="+241-" class="flag-GA" href="javascript:void(0);" id="auto-id-1603616165174"
+          ><em>&nbsp;</em>加蓬 +241</a
+        >
+
+        <a data-code="+855-" class="flag-KH" href="javascript:void(0);" id="auto-id-1603616165175"
+          ><em>&nbsp;</em>柬埔寨 +855</a
+        >
+
+        <a data-code="+420-" class="flag-CZ" href="javascript:void(0);" id="auto-id-1603616165176"
+          ><em>&nbsp;</em>捷克共和国 +420</a
+        >
+
+        <a data-code="+263-" class="flag-ZW" href="javascript:void(0);" id="auto-id-1603616165177"
+          ><em>&nbsp;</em>津巴布韦 +263</a
+        >
+
+        <a data-code="+237-" class="flag-CM" href="javascript:void(0);" id="auto-id-1603616165178"
+          ><em>&nbsp;</em>喀麦隆 +237</a
+        >
+
+        <a data-code="+974-" class="flag-QA" href="javascript:void(0);" id="auto-id-1603616165179"
+          ><em>&nbsp;</em>卡塔尔 +974</a
+        >
+
+        <a data-code="+1345-" class="flag-KY" href="javascript:void(0);" id="auto-id-1603616165180"
+          ><em>&nbsp;</em>开曼群岛 +1345</a
+        >
+
+        <a data-code="+269-" class="flag-KM" href="javascript:void(0);" id="auto-id-1603616165181"
+          ><em>&nbsp;</em>科摩罗 +269</a
+        >
+
+        <a data-code="+965-" class="flag-KW" href="javascript:void(0);" id="auto-id-1603616165182"
+          ><em>&nbsp;</em>科威特 +965</a
+        >
+
+        <a data-code="+385-" class="flag-HR" href="javascript:void(0);" id="auto-id-1603616165183"
+          ><em>&nbsp;</em>克罗地亚 +385</a
+        >
+
+        <a data-code="+254-" class="flag-KE" href="javascript:void(0);" id="auto-id-1603616165184"
+          ><em>&nbsp;</em>肯尼亚 +254</a
+        >
+
+        <a data-code="+682-" class="flag-CK" href="javascript:void(0);" id="auto-id-1603616165185"
+          ><em>&nbsp;</em>库克群岛 +682</a
+        >
+
+        <a data-code="+371-" class="flag-LV" href="javascript:void(0);" id="auto-id-1603616165186"
+          ><em>&nbsp;</em>拉脱维亚 +371</a
+        >
+
+        <a data-code="+266-" class="flag-LS" href="javascript:void(0);" id="auto-id-1603616165187"
+          ><em>&nbsp;</em>莱索托 +266</a
+        >
+
+        <a data-code="+856-" class="flag-LA" href="javascript:void(0);" id="auto-id-1603616165188"
+          ><em>&nbsp;</em>老挝 +856</a
+        >
+
+        <a data-code="+961-" class="flag-LB" href="javascript:void(0);" id="auto-id-1603616165189"
+          ><em>&nbsp;</em>黎巴嫩 +961</a
+        >
+
+        <a data-code="+370-" class="flag-LT" href="javascript:void(0);" id="auto-id-1603616165190"
+          ><em>&nbsp;</em>立陶宛 +370</a
+        >
+
+        <a data-code="+231-" class="flag-LR" href="javascript:void(0);" id="auto-id-1603616165191"
+          ><em>&nbsp;</em>利比里亚 +231</a
+        >
+
+        <a data-code="+218-" class="flag-LY" href="javascript:void(0);" id="auto-id-1603616165192"
+          ><em>&nbsp;</em>利比亚 +218</a
+        >
+
+        <a data-code="+423-" class="flag-LI" href="javascript:void(0);" id="auto-id-1603616165193"
+          ><em>&nbsp;</em>列支敦士登 +423</a
+        >
+
+        <a data-code="+262-" class="flag-RE" href="javascript:void(0);" id="auto-id-1603616165194"
+          ><em>&nbsp;</em>留尼旺岛 +262</a
+        >
+
+        <a data-code="+352-" class="flag-LU" href="javascript:void(0);" id="auto-id-1603616165195"
+          ><em>&nbsp;</em>卢森堡 +352</a
+        >
+
+        <a data-code="+250-" class="flag-RW" href="javascript:void(0);" id="auto-id-1603616165196"
+          ><em>&nbsp;</em>卢旺达 +250</a
+        >
+
+        <a data-code="+40-" class="flag-RO" href="javascript:void(0);" id="auto-id-1603616165197"
+          ><em>&nbsp;</em>罗马尼亚 +40</a
+        >
+
+        <a data-code="+95-" class="flag-Myanmar" href="javascript:void(0);" id="auto-id-1603616165198"
+          ><em>&nbsp;</em>缅甸 +95</a
+        >
+
+        <a data-code="+261-" class="flag-MG" href="javascript:void(0);" id="auto-id-1603616165199"
+          ><em>&nbsp;</em>马达加斯加 +261</a
+        >
+
+        <a data-code="+960-" class="flag-MV" href="javascript:void(0);" id="auto-id-1603616165200"
+          ><em>&nbsp;</em>马尔代夫 +960</a
+        >
+
+        <a data-code="+356-" class="flag-MT" href="javascript:void(0);" id="auto-id-1603616165201"
+          ><em>&nbsp;</em>马耳他 +356</a
+        >
+
+        <a data-code="+265-" class="flag-MW" href="javascript:void(0);" id="auto-id-1603616165202"
+          ><em>&nbsp;</em>马拉维 +265</a
+        >
+
+        <a data-code="+223-" class="flag-ML" href="javascript:void(0);" id="auto-id-1603616165203"
+          ><em>&nbsp;</em>马里 +223</a
+        >
+
+        <a data-code="+389-" class="flag-MK" href="javascript:void(0);" id="auto-id-1603616165204"
+          ><em>&nbsp;</em>马其顿 +389</a
+        >
+
+        <a data-code="+596-" class="flag-MQ" href="javascript:void(0);" id="auto-id-1603616165205"
+          ><em>&nbsp;</em>马提尼克 +596</a
+        >
+
+        <a data-code="+230-" class="flag-MU" href="javascript:void(0);" id="auto-id-1603616165206"
+          ><em>&nbsp;</em>毛里求斯 +230</a
+        >
+
+        <a data-code="+222-" class="flag-MR" href="javascript:void(0);" id="auto-id-1603616165207"
+          ><em>&nbsp;</em>毛里塔尼亚 +222</a
+        >
+
+        <a data-code="+976-" class="flag-MN" href="javascript:void(0);" id="auto-id-1603616165208"
+          ><em>&nbsp;</em>蒙古 +976</a
+        >
+
+        <a data-code="+1664-" class="flag-MS" href="javascript:void(0);" id="auto-id-1603616165209"
+          ><em>&nbsp;</em>蒙特塞拉特 +1664</a
+        >
+
+        <a data-code="+880-" class="flag-BD" href="javascript:void(0);" id="auto-id-1603616165210"
+          ><em>&nbsp;</em>孟加拉国 +880</a
+        >
+
+        <a data-code="+51-" class="flag-PE" href="javascript:void(0);" id="auto-id-1603616165211"
+          ><em>&nbsp;</em>秘鲁 +51</a
+        >
+
+        <a data-code="+373-" class="flag-MD" href="javascript:void(0);" id="auto-id-1603616165212"
+          ><em>&nbsp;</em>摩尔多瓦 +373</a
+        >
+
+        <a data-code="+212-" class="flag-MA" href="javascript:void(0);" id="auto-id-1603616165213"
+          ><em>&nbsp;</em>摩洛哥 +212</a
+        >
+
+        <a data-code="+377-" class="flag-MC" href="javascript:void(0);" id="auto-id-1603616165214"
+          ><em>&nbsp;</em>摩纳哥 +377</a
+        >
+
+        <a data-code="+258-" class="flag-MZ" href="javascript:void(0);" id="auto-id-1603616165215"
+          ><em>&nbsp;</em>莫桑比克 +258</a
+        >
+
+        <a data-code="+52-" class="flag-MX" href="javascript:void(0);" id="auto-id-1603616165216"
+          ><em>&nbsp;</em>墨西哥 +52</a
+        >
+
+        <a data-code="+264-" class="flag-NA" href="javascript:void(0);" id="auto-id-1603616165217"
+          ><em>&nbsp;</em>纳米比亚 +264</a
+        >
+
+        <a data-code="+27-" class="flag-ZA" href="javascript:void(0);" id="auto-id-1603616165218"
+          ><em>&nbsp;</em>南非 +27</a
+        >
+
+        <a data-code="+211-" class="flag-SS" href="javascript:void(0);" id="auto-id-1603616165219"
+          ><em>&nbsp;</em>南苏丹 +211</a
+        >
+
+        <a data-code="+977-" class="flag-NP" href="javascript:void(0);" id="auto-id-1603616165220"
+          ><em>&nbsp;</em>尼泊尔 +977</a
+        >
+
+        <a data-code="+505-" class="flag-NI" href="javascript:void(0);" id="auto-id-1603616165221"
+          ><em>&nbsp;</em>尼加拉瓜 +505</a
+        >
+
+        <a data-code="+227-" class="flag-NE" href="javascript:void(0);" id="auto-id-1603616165222"
+          ><em>&nbsp;</em>尼日尔 +227</a
+        >
+
+        <a data-code="+234-" class="flag-NG" href="javascript:void(0);" id="auto-id-1603616165223"
+          ><em>&nbsp;</em>尼日利亚 +234</a
+        >
+
+        <a data-code="+47-" class="flag-NO" href="javascript:void(0);" id="auto-id-1603616165224"
+          ><em>&nbsp;</em>挪威 +47</a
+        >
+
+        <a data-code="+351-" class="flag-PT" href="javascript:void(0);" id="auto-id-1603616165225"
+          ><em>&nbsp;</em>葡萄牙 +351</a
+        >
+
+        <a data-code="+46-" class="flag-SE" href="javascript:void(0);" id="auto-id-1603616165226"
+          ><em>&nbsp;</em>瑞典 +46</a
+        >
+
+        <a data-code="+41-" class="flag-CH" href="javascript:void(0);" id="auto-id-1603616165227"
+          ><em>&nbsp;</em>瑞士 +41</a
+        >
+
+        <a data-code="+503-" class="flag-SV" href="javascript:void(0);" id="auto-id-1603616165228"
+          ><em>&nbsp;</em>萨尔瓦多 +503</a
+        >
+
+        <a data-code="+685-" class="flag-WS" href="javascript:void(0);" id="auto-id-1603616165229"
+          ><em>&nbsp;</em>萨摩亚 +685</a
+        >
+
+        <a data-code="+381-" class="flag-RS" href="javascript:void(0);" id="auto-id-1603616165230"
+          ><em>&nbsp;</em>塞尔维亚 +381</a
+        >
+
+        <a data-code="+232-" class="flag-SL" href="javascript:void(0);" id="auto-id-1603616165231"
+          ><em>&nbsp;</em>塞拉利昂 +232</a
+        >
+
+        <a data-code="+221-" class="flag-SN" href="javascript:void(0);" id="auto-id-1603616165232"
+          ><em>&nbsp;</em>塞内加尔 +221</a
+        >
+
+        <a data-code="+357-" class="flag-CY" href="javascript:void(0);" id="auto-id-1603616165233"
+          ><em>&nbsp;</em>塞浦路斯 +357</a
+        >
+
+        <a data-code="+248-" class="flag-SC" href="javascript:void(0);" id="auto-id-1603616165234"
+          ><em>&nbsp;</em>塞舌尔 +248</a
+        >
+
+        <a data-code="+966-" class="flag-SA" href="javascript:void(0);" id="auto-id-1603616165235"
+          ><em>&nbsp;</em>沙特阿拉伯 +966</a
+        >
+
+        <a data-code="+239-" class="flag-ST" href="javascript:void(0);" id="auto-id-1603616165236"
+          ><em>&nbsp;</em>圣多美和普林西比 +239</a
+        >
+
+        <a data-code="+1869-" class="flag-KN" href="javascript:void(0);" id="auto-id-1603616165237"
+          ><em>&nbsp;</em>圣基茨和尼维斯 +1869</a
+        >
+
+        <a data-code="+1758-" class="flag-LC" href="javascript:void(0);" id="auto-id-1603616165238"
+          ><em>&nbsp;</em>圣卢西亚 +1758</a
+        >
+
+        <a data-code="+378-" class="flag-SM" href="javascript:void(0);" id="auto-id-1603616165239"
+          ><em>&nbsp;</em>圣马力诺 +378</a
+        >
+
+        <a data-code="+508-" class="flag-PM" href="javascript:void(0);" id="auto-id-1603616165240"
+          ><em>&nbsp;</em>圣皮埃尔和密克隆群岛 +508</a
+        >
+
+        <a data-code="+1784-" class="flag-VC" href="javascript:void(0);" id="auto-id-1603616165241"
+          ><em>&nbsp;</em>圣文森特和格林纳丁斯 +1784</a
+        >
+
+        <a data-code="+94-" class="flag-LK" href="javascript:void(0);" id="auto-id-1603616165242"
+          ><em>&nbsp;</em>斯里兰卡 +94</a
+        >
+
+        <a data-code="+421-" class="flag-SK" href="javascript:void(0);" id="auto-id-1603616165243"
+          ><em>&nbsp;</em>斯洛伐克 +421</a
+        >
+
+        <a data-code="+386-" class="flag-SI" href="javascript:void(0);" id="auto-id-1603616165244"
+          ><em>&nbsp;</em>斯洛文尼亚 +386</a
+        >
+
+        <a data-code="+268-" class="flag-SZ" href="javascript:void(0);" id="auto-id-1603616165245"
+          ><em>&nbsp;</em>斯威士兰 +268</a
+        >
+
+        <a data-code="+249-" class="flag-SD" href="javascript:void(0);" id="auto-id-1603616165246"
+          ><em>&nbsp;</em>苏丹 +249</a
+        >
+
+        <a data-code="+597-" class="flag-SR" href="javascript:void(0);" id="auto-id-1603616165247"
+          ><em>&nbsp;</em>苏里南 +597</a
+        >
+
+        <a data-code="+252-" class="flag-SO" href="javascript:void(0);" id="auto-id-1603616165248"
+          ><em>&nbsp;</em>索马里 +252</a
+        >
+
+        <a data-code="+992-" class="flag-TJ" href="javascript:void(0);" id="auto-id-1603616165249"
+          ><em>&nbsp;</em>塔吉克斯坦 +992</a
+        >
+
+        <a data-code="+66-" class="flag-TH" href="javascript:void(0);" id="auto-id-1603616165250"
+          ><em>&nbsp;</em>泰国 +66</a
+        >
+
+        <a data-code="+255-" class="flag-TZ" href="javascript:void(0);" id="auto-id-1603616165251"
+          ><em>&nbsp;</em>坦桑尼亚 +255</a
+        >
+
+        <a data-code="+676-" class="flag-TO" href="javascript:void(0);" id="auto-id-1603616165252"
+          ><em>&nbsp;</em>汤加 +676</a
+        >
+
+        <a data-code="+1649-" class="flag-TC" href="javascript:void(0);" id="auto-id-1603616165253"
+          ><em>&nbsp;</em>特克斯和凯科斯群岛 +1649</a
+        >
+
+        <a data-code="+1868-" class="flag-TT" href="javascript:void(0);" id="auto-id-1603616165254"
+          ><em>&nbsp;</em>特里尼达和多巴哥 +1868</a
+        >
+
+        <a data-code="+216-" class="flag-TN" href="javascript:void(0);" id="auto-id-1603616165255"
+          ><em>&nbsp;</em>突尼斯 +216</a
+        >
+
+        <a data-code="+90-" class="flag-TR" href="javascript:void(0);" id="auto-id-1603616165256"
+          ><em>&nbsp;</em>土耳其 +90</a
+        >
+
+        <a data-code="+993-" class="flag-TM" href="javascript:void(0);" id="auto-id-1603616165257"
+          ><em>&nbsp;</em>土库曼斯坦 +993</a
+        >
+
+        <a data-code="+678-" class="flag-VU" href="javascript:void(0);" id="auto-id-1603616165258"
+          ><em>&nbsp;</em>瓦努阿图 +678</a
+        >
+
+        <a data-code="+502-" class="flag-GT" href="javascript:void(0);" id="auto-id-1603616165259"
+          ><em>&nbsp;</em>危地马拉 +502</a
+        >
+
+        <a data-code="+58-" class="flag-VE" href="javascript:void(0);" id="auto-id-1603616165260"
+          ><em>&nbsp;</em>委内瑞拉 +58</a
+        >
+
+        <a data-code="+673-" class="flag-BN" href="javascript:void(0);" id="auto-id-1603616165261"
+          ><em>&nbsp;</em>文莱 +673</a
+        >
+
+        <a data-code="+256-" class="flag-UG" href="javascript:void(0);" id="auto-id-1603616165262"
+          ><em>&nbsp;</em>乌干达 +256</a
+        >
+
+        <a data-code="+380-" class="flag-UA" href="javascript:void(0);" id="auto-id-1603616165263"
+          ><em>&nbsp;</em>乌克兰 +380</a
+        >
+
+        <a data-code="+598-" class="flag-UY" href="javascript:void(0);" id="auto-id-1603616165264"
+          ><em>&nbsp;</em>乌拉圭 +598</a
+        >
+
+        <a data-code="+998-" class="flag-UZ" href="javascript:void(0);" id="auto-id-1603616165265"
+          ><em>&nbsp;</em>乌兹别克斯坦 +998</a
+        >
+
+        <a data-code="+34-" class="flag-ES" href="javascript:void(0);" id="auto-id-1603616165266"
+          ><em>&nbsp;</em>西班牙 +34</a
+        >
+
+        <a data-code="+30-" class="flag-GR" href="javascript:void(0);" id="auto-id-1603616165267"
+          ><em>&nbsp;</em>希腊 +30</a
+        >
+
+        <a data-code="+225-" class="flag-CI" href="javascript:void(0);" id="auto-id-1603616165268"
+          ><em>&nbsp;</em>象牙海岸 +225</a
+        >
+
+        <a data-code="+687-" class="flag-NC" href="javascript:void(0);" id="auto-id-1603616165269"
+          ><em>&nbsp;</em>新喀里多尼亚 +687</a
+        >
+
+        <a data-code="+36-" class="flag-HU" href="javascript:void(0);" id="auto-id-1603616165270"
+          ><em>&nbsp;</em>匈牙利 +36</a
+        >
+
+        <a data-code="+963-" class="flag-SY" href="javascript:void(0);" id="auto-id-1603616165271"
+          ><em>&nbsp;</em>叙利亚 +963</a
+        >
+
+        <a data-code="+1876-" class="flag-JM" href="javascript:void(0);" id="auto-id-1603616165272"
+          ><em>&nbsp;</em>牙买加 +1876</a
+        >
+
+        <a data-code="+374-" class="flag-AM" href="javascript:void(0);" id="auto-id-1603616165273"
+          ><em>&nbsp;</em>亚美尼亚 +374</a
+        >
+
+        <a data-code="+967-" class="flag-YE" href="javascript:void(0);" id="auto-id-1603616165274"
+          ><em>&nbsp;</em>也门 +967</a
+        >
+
+        <a data-code="+964-" class="flag-IQ" href="javascript:void(0);" id="auto-id-1603616165275"
+          ><em>&nbsp;</em>伊拉克 +964</a
+        >
+
+        <a data-code="+98-" class="flag-IR" href="javascript:void(0);" id="auto-id-1603616165276"
+          ><em>&nbsp;</em>伊朗 +98</a
+        >
+
+        <a data-code="+972-" class="flag-IL" href="javascript:void(0);" id="auto-id-1603616165277"
+          ><em>&nbsp;</em>以色列 +972</a
+        >
+
+        <a data-code="+39-" class="flag-IT" href="javascript:void(0);" id="auto-id-1603616165278"
+          ><em>&nbsp;</em>意大利 +39</a
+        >
+
+        <a data-code="+91-" class="flag-IN" href="javascript:void(0);" id="auto-id-1603616165279"
+          ><em>&nbsp;</em>印度 +91</a
+        >
+
+        <a data-code="+62-" class="flag-ID" href="javascript:void(0);" id="auto-id-1603616165280"
+          ><em>&nbsp;</em>印尼 +62</a
+        >
+
+        <a data-code="+44-" class="flag-GB" href="javascript:void(0);" id="auto-id-1603616165281"
+          ><em>&nbsp;</em>英国 +44</a
+        >
+
+        <a data-code="+1340-" class="flag-VG" href="javascript:void(0);" id="auto-id-1603616165282"
+          ><em>&nbsp;</em>英属维尔京群岛 +1340</a
+        >
+
+        <a data-code="+962-" class="flag-JO" href="javascript:void(0);" id="auto-id-1603616165283"
+          ><em>&nbsp;</em>约旦 +962</a
+        >
+
+        <a data-code="+84-" class="flag-VN" href="javascript:void(0);" id="auto-id-1603616165284"
+          ><em>&nbsp;</em>越南 +84</a
+        >
+
+        <a data-code="+260-" class="flag-ZM" href="javascript:void(0);" id="auto-id-1603616165285"
+          ><em>&nbsp;</em>赞比亚 +260</a
+        >
+
+        <a data-code="+44-" class="flag-JE" href="javascript:void(0);" id="auto-id-1603616165286"
+          ><em>&nbsp;</em>泽西岛 +44</a
+        >
+
+        <a data-code="+235-" class="flag-TD" href="javascript:void(0);" id="auto-id-1603616165287"
+          ><em>&nbsp;</em>乍得 +235</a
+        >
+
+        <a data-code="+350-" class="flag-GI" href="javascript:void(0);" id="auto-id-1603616165288"
+          ><em>&nbsp;</em>直布罗陀 +350</a
+        >
+
+        <a data-code="+56-" class="flag-CL" href="javascript:void(0);" id="auto-id-1603616165289"
+          ><em>&nbsp;</em>智利 +56</a
+        >
+
+        <a data-code="+236-" class="flag-CF" href="javascript:void(0);" id="auto-id-1603616165290"
+          ><em>&nbsp;</em>中非共和国 +236</a
+        >
+    </div>
+</div>
+<script src="/common/urs-code-select/main.build.js?timestamp=1683701873202"></script>
+  <div class='contact-phone-group'>
+     <input type='text' name='contact-phone' id='contact-phone' placeholder='手机号'/>
+     <div class='mark-err err-phone'>
+         <i class='icon_err'></i>
+         <p>请输入正确手机号</p>
+     </div>
+  </div>
+
+  <div class='contact-phone-valid-group'>
+     <input type='text' name='contact-phone' id='valid-code' placeholder='验证码'/>
+     <button class='get-valid-code' type="button">获取验证码</button>
+     <div class='mark-err err-valid'>
+         <i class='icon_err'></i>
+         <p>请输入正确验证码</p>
+      </div>
+  </div>
+</div>
+<script src="/common/urs-post-message/main.build.js?timestamp=1683701873202"></script>
+      <div class='company-name'>
+        <input type='text' name='company-name' id='company-person-name' placeholder='公司或个人开发者名称（限20字符）'/>
+        <div class='mark-err err-name'>
+          <i class='icon_err'></i>
+          <p></p>
+        </div>
+      </div>
+      <div class='channel form-group'>
+        <select name='sel-channle' class="sel-channle" title="你是从哪个渠道知道我们的？">
+          <option value='0' disabled selected style='display:none;'>你是从哪个渠道知道我们的？</option>
+          <option value='搜索引擎'>搜索引擎</option>
+          <option value='有道官网'>有道官网</option>
+          <option value='翻译插件'>翻译插件</option>
+          <option value='微信公众号'>微信公众号</option>
+          <option value='微信小程序'>微信小程序</option>
+          <option value='展会/技术交流会'>展会/技术交流会</option>
+          <option value='他人推荐'>他人推荐</option>
+          <option value='其他'>其他</option>
+        </select>
+        <p class='mark-err err-channel'><i class='icon_err'></i>请选择渠道</p>
+      </div>
+      <div class='clause'>
+        <input type="checkbox" id='is-agree'/>
+        <p class='zhiyun'>同意 <a href="https://reg.163.com/agreement_mobile_wap.shtml?v=20171127" target="_blank">《服务条款》</a>与<a href="https://ai.youdao.com/DOCSIRMA/html/协议与声明/隐私政策/有道隐私政策/有道隐私政策-隐私政策.html" target="_blank">《有道隐私政策》</a></p>
+        <p class='netease'>同意 <a href="https://reg.163.com/agreement_mobile_wap.shtml?v=20171127" target="_blank">《服务条款》</a>与<a href="https://ai.youdao.com/DOCSIRMA/html/协议与声明/隐私政策/有道隐私政策/有道隐私政策-隐私政策.html" target="_blank">《有道隐私政策》</a></p>
+      </div>
+      <p class='mark-err err-clause'><i class='icon_err'></i>请勾选同意服务条款</p>
+      <div class="confirm-btn">
+        <button id="submit-info" type="button">确定</button>
+      </div>
+    </form>
+  </div>
+</div>
+<script src="/common/urs-component-steps/main.build.js?timestamp=1683701873202"></script>
+  <link rel="stylesheet" href="/common/urs-register-success/main.build.css?timestamp=1683701873202" />
+<div class="urs-register-success">
+  <div class="urs-component-head">
+    <div class='icon-close'>
+    <img id="close-btn-succ" src="/images/urs-login/ic_delete_normal_24px.png"/>
+    </div>
+    <p class="login-title"></p>
+    <p class="parse-line"></p>
+  </div>
+  <div class='step'>
+    <div class='item'>
+      <img src="/images/urs-login/icon-succ.png" />
+      <p class='text-desc'>账号密码</p>
+    </div>
+    <div class='item-arrow'>
+      <img src="/images/urs-login/line1.png" />
+    </div>
+    <div class='item'>
+      <img src="/images/urs-login/icon-succ.png" />
+      <p class='text-desc'>完善信息</p>
+    </div>
+    <div class='item-arrow'>
+      <img src="/images/urs-login/line1.png" />
+    </div>
+    <div class='item'>
+      <img src="/images/urs-login/icon-succ.png" />
+      <p class='text-desc txt-active'>注册成功 </p>
+    </div>
+  </div>
+  <div class='coupon-style'></div>
+  <p class='tip1'>添加客服微信并发送您的账号，可再获得50元体验金！</p>
+  <p class='tip2'>(体验金不可用于智云文档翻译系统和视频翻译系统)</p>
+  <div class="confirm-btn-succ">
+    <button>确定</button>
+  </div>
+</div>
+<script src="/common/urs-register-success/main.build.js?timestamp=1683701873202"></script>
+</div>
+
+<script src="/common/urs-login-modal/main.build.js?timestamp=1683701873202"></script>
+<div class="header" id="header">
+  <div class="content" id="top-content">
+    <!--
+    * 此模块 为官网和IRMA共用模块
+    * 如果需要新增样式，请在style 里面添加，否则在IRMA里面恐怕会找不到
+-->
+<style>
+  body {
+    font-family: PingFangSC-Regular,"Microsoft YaHei",Arial,sans-serif,Helvetica,STHeiti;
+    font-size: 14px;
+    color: #2D3138;
+    line-height: 1.5;
+  }
+  input, select, textarea, button{font-family:inherit;}
+  .triangle-up{
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-bottom: 10px solid #121B34;
+  }
+  li.triangle-up-sec{
+    position: absolute;
+    z-index: 10;
+    content: '';
+    top: -52px;
+    left: 23%;
+    width: 0;
+    height: 0;
+    border: 12px solid transparent;
+    border-bottom: 12px solid #2E364D;
+  }
+  li.triangle-up {
+    position:absolute;
+    top:-49px;
+    z-index: 11;
+    left: 23.2%;
+    height:0px;
+  }
+
+  li.dev-resource li.triangle-up {
+    left: 55px;
+  }
+
+  li.dev-resource li.triangle-up-sec {
+    left: 53px;
+  }
+
+  .header ul li:nth-child(2) ul li.triangle-up{
+    left: 33.2%;
+  }
+  .header ul li:nth-child(2) ul li.triangle-up-sec{
+    left: 33%;
+  }
+  .header ul li:nth-child(3) ul li.triangle-up{
+    left: 41.3%;
+  }
+  .header ul li:nth-child(3) ul li.triangle-up-sec{
+    left: 41%;
+  }
+
+  .header ul li:nth-child(4) ul li.triangle-up{
+    left: 45.2%;
+  }
+  .header ul li:nth-child(4) ul li.triangle-up-sec{
+    left: 44%;
+  }
+
+  .header .content {
+    width: 1200px;
+    margin: 0 auto;
+  }
+  .logo {
+    width:230px;
+    height: 64px;
+    display:block;
+    float: left;
+    padding-top:21px;
+  }
+  .logo .line-logo{
+    background: rgba(216,216,216,0.3);
+    width: 1px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 20px;
+  }
+  .logo img {
+  width: 204px;
+  height: 22px;
+}
+  .header .blank {
+    width:40px;
+    height: 80px;
+    display:block;
+    float: left;
+  }
+  .header .blank1 {
+    /*width:363px;*/
+    width:250px;
+    height: 80px;
+    display:block;
+    float: left;
+  }
+  .header ul {
+    padding: 0;
+    margin: 0;
+    position:relative;
+  }
+  .header ul li {
+    float: left;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .header ul li a {
+    display: block;
+    height: 64px;
+    text-align: left;
+    padding: 0 20px;
+    line-height: 64px;
+    font-size: 15px;
+    text-decoration: none;
+    color: #ffffff;
+    cursor:pointer;
+  }
+  .header ul li a:hover{
+    color: #2962FF;
+  }
+  .header ul li ul{
+    position:absolute;
+    top:64px;
+    max-width: 800px;
+    height: 386px;
+    padding: 10px 64px;
+    border:3px solid #2E364D;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    /* display:none;  */
+    /* width:163px;
+    height:100px; */
+    background: #121B34;
+    /*border-top:4px solid #0081FF;*/
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.10);
+    z-index: 1000;
+    color: #ffffff;
+
+    max-height: 0px;
+    visibility:hidden;
+
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+
+  }
+  /*浜岀骇涓嬫媺鑿滃崟鏍峰紡璁剧疆*/
+  .header ul li ul li {
+    height:50px;
+    float: left;
+    /*display: inline-block;*/
+  }
+
+  .header ul li ul li a{
+    min-width: 115px;
+    height:30px;
+    line-height:30px;
+    font-size: 13px;
+    color: rgba(255,255,255,0.8);
+    padding: 0;
+    text-decoration:none;
+    text-align:left;
+    opacity: 0;
+    visibility:hidden;
+  }
+  .header ul li ul li a.more-list{
+    position: relative;
+    width: 78px;
+  }
+  .header ul li ul li a.more-list .icon_arrow_more{
+    position: absolute;
+    right: 9px;
+    top: 10px;
+    width: 12px;
+    height: 12px
+  }
+  .header ul li ul li a:hover {
+    color:#0081FF;
+  }
+  /*榧犳爣婊戣繃涓�骇鑿滃崟鐨勫厓绱犳椂鏄剧ず涓嬫媺鑿滃崟*/
+  .header ul li:hover ul{
+
+
+    max-height: 500px;
+
+    /* display:block;  */
+    visibility:visible;
+  }
+  .header ul li:hover ul a {
+    visibility:visible;
+    opacity: 1;
+  }
+  .header .content-group {
+    margin-left: 22px;
+    float: right;
+    display: block;
+    width: 90px;
+    padding-top: 16px;
+  }
+  .header .content-group a {
+    float:left;
+    display: block;
+    width: 100px;
+    margin-left:16px;
+    border-radius: 6px;
+    font-size: 14px;
+    text-decoration: none;
+    line-height: 34px;
+    height: 34px;
+  }
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: #dddddd;
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-track {
+    background-color:transparent;
+  }
+  ::-webkit-scrollbar-track:hover {
+    background-color:transparent;
+  }
+  .nav-active {
+    color: #007ef9;
+  }
+
+  *, *:before, *:after {
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    /* box-sizing:border-box; */
+  }
+
+  #loginBtn {
+    width:80px;
+    height:32px;
+    text-align:center;
+    line-height: 30px;
+    color: #ffffff;
+    font-size:15px;
+    font-weight: 600;
+    border:1px solid rgba(255,255,255,0.3);
+    border-radius:16px;
+  }
+  #loginBtn:hover {
+    color: #ffffff;
+    background:  #2354DB;
+    border:1px solid #2354DB;
+  }
+  #registerBtn {
+    width:80px;
+    height:32px;
+    line-height: 31px;
+    color: #ffffff;
+    font-size:15px;
+    font-weight: 600;
+    text-align:center;
+    background-color: rgba(255,255,255,0.2);
+    border-radius:16px;
+  }
+  #registerBtn:hover {
+    background: #2354DB;
+  }
+
+  /*.new_tag_header_2{*/
+  /*background-image: url("../images/new_tag.png");*/
+  /*background-repeat: no-repeat;*/
+  /*background-position: 52px 26px;*/
+  /*}*/
+  /*.new_tag_header_4{*/
+  /*background-image: url("../images/new_tag.png");*/
+  /*background-repeat: no-repeat;*/
+  /*background-position: 84px 26px;*/
+  /*}*/
+  /*.new_tag_header_5{*/
+  /*background-image: url("../images/new_tag.png");*/
+  /*background-repeat: no-repeat;*/
+  /*background-position: 100px 26px;*/
+  /*}*/
+
+  /*.new_tag_item{*/
+  /*background-image: url("../images/new_tag.png");*/
+  /*background-repeat: no-repeat;*/
+  /*background-position: 120px 12px;*/
+  /*}*/
+  /*.new_tag_paisou{*/
+  /*background-image: url("../images/new_tag.png");*/
+  /*background-repeat: no-repeat;*/
+  /*background-position: 106px 12px;*/
+  /*}*/
+
+  /*.new_tag_jiaodui{*/
+  /*background-image: url("../images/new_tag.png");*/
+  /*background-repeat: no-repeat;*/
+  /*background-position: 135px 12px;*/
+  /*}*/
+
+  .gov-service-block{
+    visibility: hidden;
+  }
+
+  /*官网改版*/
+  .header .content .server-text{
+    font-weight:600;
+    line-height: 40px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);;
+  }
+  .header .content .pd-server{
+    margin-left: 58px;
+  }
+  .header .content ul li ul li:nth-child(3){
+    margin-left: 0;
+  }
+  .header .content .pd-other-box{
+    width: 834px;
+    height: 40px;
+    border-top: 1px dashed rgba(255,255,255,0.1);
+    margin-top: 326px;
+  }
+  .content .pd-other-box .item{
+    position: relative;
+    line-height: 40px;
+    font-size:15px;
+    font-weight:600;
+    color:rgba(255,255,255,1);
+    display: inline-block;
+    margin-right: 58px;
+    cursor: pointer;
+  }
+  .content .pd-other-box .item .link-priv{
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 600;
+    color: rgba(255,255,255,1);
+    height: 40px;
+    line-height: 40px;
+    padding: 0;
+  }
+  .pd-other-box .item .icon_arrow{
+    position: absolute;
+    right: -17px;
+    top: 15px;
+    width: 12px;
+    height: 12px;
+  }
+  .header ul li ul li.source-item{
+    display: block;
+    float: none;
+    height: 30px;
+  }
+  .header ul li ul li.source-item a{
+    text-align: center;
+  }
+  .header ul li ul.source-ul{
+    left: 750px;
+    height: 145px;
+    padding: 10px;
+  }
+  .center-notice{
+    position: relative;
+    padding: 49px 0 0;
+    background: #ffffff;
+    overflow: hidden;
+    width: 1200px;
+    margin: auto;
+  }
+  .center-notice .visit-more-notice{
+    display: block;
+    position: absolute;
+    top: 75px;
+    right: 11%;
+    width: 40px;
+    height: 40px;
+    z-index: 20;
+    cursor: pointer;
+  }
+  .center-notice .visit-more-notice img{
+    width: 100%;
+    height: 100%;
+  }
+  .center-notice .notice-container{
+    max-height: 96px;
+    width: 1200px;
+    overflow: hidden;
+    padding: 0;
+  }
+  .notice-container .notice-item{
+    width: 284px;
+    padding: 0 26px;
+    display: inline-block;
+  }
+  .notice-item .notice-info{
+    display: block;
+    max-height:56px;
+    font-size:18px;
+    font-weight:600;
+    color:rgba(46,47,51,1);
+    line-height:28px;
+    overflow: hidden;
+    text-decoration:none;
+    text-align: left;
+  }
+  .notice-item .notice-info:hover{
+    color:#2962FF;
+  }
+  .notice-container .notice-time{
+    position: relative;
+    font-size:13px;
+    margin-top: 20px;
+  }
+  .notice-time img{
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 16px;
+    height: 16px;
+  }
+  .notice-item .nc-text{
+    color:rgba(94,96,102,1);
+    margin-left: -40px;
+    text-decoration: none;
+  }
+  .notice-item .nc-time{
+    color:rgba(144,146,153,1);
+    margin-left: 20px;
+  }
+  /*/ * 设置垂直滚动条的宽度和水平滚动条的高度 *!*/
+  #overlay-partner-inner-detail::-webkit-scrollbar{
+    width: 8px;
+    height: 8px;
+  }
+
+  /* 设置滚动条的滑轨 */
+  #overlay-partner-inner-detail::-webkit-scrollbar-track {
+    background-color:transparent;
+  }
+
+  /* 滑块 */
+  #overlay-partner-inner-detail::-webkit-scrollbar-thumb {
+    background-color: #dddddd;
+    border-radius: 4px;
+  }
+
+  /* 滑轨两头的监听按钮 */
+  #overlay-partner-inner-detail::-webkit-scrollbar-button {
+    background-color: #888;
+    display: none;
+  }
+
+  .new-tag-filetrans {
+    width: 110px;
+    background: url("https://download.ydstatic.com/ead/zhiyun/liangqian/new.png") no-repeat 90% 50%;
+  }
+
+  .new-tag-4 {
+    background: url("https://download.ydstatic.com/ead/zhiyun/liangqian/new.png") no-repeat 58% 50%;
+  }
+
+  .new-tag-4-api {
+    background: url("https://download.ydstatic.com/ead/zhiyun/liangqian/new.png") no-repeat 91% 50%;
+  }
+
+  .new-tag-5 {
+    background: url("https://download.ydstatic.com/ead/zhiyun/liangqian/new.png") no-repeat 72% 50%;
+  }
+
+  .new-tag-6 {
+    background: url("https://download.ydstatic.com/ead/zhiyun/liangqian/new.png") no-repeat 86% 50%;
+  }
+
+  .new-tag-7 {
+    background: url("https://download.ydstatic.com/ead/zhiyun/liangqian/new.png") no-repeat 100% 50%;
+  }
+
+  .new-tag-8 {
+    background: url("https://download.ydstatic.com/ead/zhiyun/liangqian/new.png") no-repeat 75% 50%;
+  }
+  .new-tag-9 {
+    background: url("https://download.ydstatic.com/ead/zhiyun/liangqian/new.png") no-repeat 55% 50%;
+  }
+
+  .new-tag-10 {
+    background: url("https://download.ydstatic.com/ead/zhiyun/liangqian/new.png") no-repeat 67% 50%;
+  }
+
+  .item-list.iocr-text{
+    position: relative;
+  }
+  .item-list.document-dev{
+    position: relative;
+  }
+  .item-list .new-tag-icon{
+    position: absolute;
+    right: -30px;
+    top: 10px;
+    z-index: 10;
+    width: 23px;
+    height: 12px;
+    background: url("https://download.ydstatic.com/ead/zhiyun/liangqian/new.png") no-repeat;
+  }
+  .item-list .new-tag-icon-dev{
+    position: absolute;
+    right: -12px;
+    top: 10px;
+    z-index: 10;
+    width: 23px;
+    height: 12px;
+    background: url("https://download.ydstatic.com/ead/zhiyun/liangqian/new.png") no-repeat;
+  }
+  .logo-h1{
+    margin: 0;
+    font-size: 0;
+  }
+
+  .lang_item{
+    position: absolute !important;
+    width: 132px !important;
+  }
+
+  #top-content  .personal-service{
+    left: 537px;
+    height: 165px;
+    padding: 20px;
+    text-align:center;
+  }
+
+  #top-content  .personal-service .pd-server a{
+    text-align:center
+  }
+
+</style>
+<script>
+  function hideTopBar(sign){
+    // safari 浏览区的兼容性
+    if(navigator.userAgent.indexOf("Chrome") === -1 && navigator.userAgent.indexOf("Safari") > -1){
+      const URL = '/saas/' + sign;
+      window.open(URL, '_blank');
+    }
+  }
+</script>
+
+<h1 class="logo-h1"><a class="logo" href="/gw.s"><img id="logo-img" src="https://download.ydstatic.com/zhiyun/pic_logo20200915.png" alt="有道智云logo" /><span class="line-logo"></span></a></h1>
+<span class="blank"></span>
+<ul>
+  <li>
+    <a class="nav-list-item" href="/newuser-promotion.s" id="latest-event">最新活动</a>
+    <!--<a class="nav-list-item" href="/special-events.s" id="latest-event">最新活动</a>-->
+  </li>
+  <li>
+    <a class="nav-list-item" href="javascript:;" id="product-nav" class="new_tag_header_2">产品服务</a>
+    <ul style="left:142px;">
+      <li class="triangle-up"></li>
+      <li class="triangle-up-sec"></li>
+      <li class="pd-server">
+        <p class="server-text">自然语言翻译服务</p>
+        <a href="/product-fanyi-text.s" class="item-list" onclick="_czc.push(['_trackEvent', '首页', '顶部栏产品服务', '文本翻译', '', '']);" target="_blank">文本翻译</a>
+        <a href="/product-fanyi-picture.s" class="item-list" onclick="_czc.push(['_trackEvent', '首页', '顶部栏产品服务', '图片翻译', '', '']);" target="_blank">图片翻译</a>
+        <a href="/product-sst.s" class="item-list" onclick="_czc.push(['_trackEvent', '首页', '顶部栏产品服务', '语音翻译', '', '']);">语音翻译</a>
+        <a href="/streamingAudio.s" class="item-list" onclick="_czc.push(['_trackEvent', '首页', '顶部栏产品服务', '实时语音翻译', '', '']);" target="_blank">实时语音翻译</a>
+        <a href="/doc-trans.s" class="item-list document-dev" onclick="_czc.push(['_trackEvent', '首页', '顶部栏产品服务', '文档翻译', '', '']);" target="_blank" >文档翻译(开发版)</a>
+        <a href="/rich-translate.s#/" class="item-list document-dev lang_item new-tag-9" onclick="_czc.push(['_trackEvent', '首页', '顶部栏产品服务', '网页翻译', '', '']);" target="_blank" >网页翻译</a>
+
+      </li>
+      <li class="pd-server">
+        <p class="server-text">视觉智能服务</p>
+        <a href="/product-ocr-print.s" class="item-list" onclick="_czc.push(['_trackEvent', '首页', '顶部栏产品服务', '通用文字识别', '', '']);" target="_blank">通用文字识别</a>
+        <a href="/product-ocr-hand.s" class="item-list" onclick="_czc.push(['_trackEvent', '首页', '顶部栏产品服务', '手写体文字识别', '', '']);" target="_blank">手写体文字识别</a>
+        <a href="/product-ocr-table.s" class="item-list" onclick="_czc.push(['_trackEvent', '首页', '顶部栏产品服务', '表格识别', '', '']);" target="_blank">表格识别</a>
+        <a href="/product-ocr-question.s" class="item-list" onclick="_czc.push(['_trackEvent', '首页', '顶部栏产品服务', '整题识别', '', '']);" target="_blank">整题识别（含公式）</a>
+        <a href="/use-pdfToWord.s" class="item-list" onclick="_czc.push(['_trackEvent', '首页', '顶部栏产品服务', 'PDF转WORD', '', '']);" target="_blank">PDF转WORD</a>
+        <!--<a href="/product-ocr-receipt.s" class="item-list" onclick="_czc.push(['_trackEvent', '首页', '顶部栏产品服务', '购物小票识别', '', '']);" target="_blank">购物小票识别</a>
+        <a href="/product-ocr-id.s" class="item-list" onclick="_czc.push(['_trackEvent', '首页', '顶部栏产品服务', '身份证识别', '', '']);" target="_blank">身份证识别</a>
+        <a href="/product-ocr-bizcard.s" class="item-list" onclick="_czc.push(['_trackEvent', '首页', '顶部栏产品服务', '名片识别', '', '']);" target="_blank">名片识别</a>-->
+        <a href="/iocr.s" class="item-list iocr-text" onclick="_czc.push(['_trackEvent', '首页', '顶部栏产品服务', '自定义文字识别', '', '']);" target="_blank">自定义模板文字识别</a>
+        <a href="/imageProcessing.s" class="item-list iocr-text new-tag-4" onclick="_czc.push(['_trackEvent', '首页', '顶部栏产品服务', '图像处理', '', '']);" target="_blank">图像处理</a>
+        <a href="/imageAlgorithm.s" class="item-list iocr-text  new-tag-4" onclick="_czc.push(['_trackEvent', '首页', '顶部栏产品服务', '图像算法', '', '']);" target="_blank">图像算法</a>
+        <a href="/realTimeOcr.s" class="item-list iocr-text  new-tag-4" onclick="_czc.push(['_trackEvent', '首页', '顶部栏产品服务', '实况OCR', '', '']);" target="_blank">实况OCR</a>
+      </li>
+      <li class="pd-server">
+        <p class="server-text">智能语音服务</p>
+        <a href="/product-tts.s" class="item-list" onclick="_czc.push(['_trackEvent', '首页', '顶部栏产品服务', '语音合成', '', '']);" target="_blank">语音合成</a>
+        <a href="/product-asr.s" class="item-list" onclick="_czc.push(['_trackEvent', '首页', '顶部栏产品服务', '短语音识别', '', '']);" target="_blank">短语音识别</a>
+        <a href="/product-lsc.s" class="item-list new-tag-8" onclick="_czc.push(['_trackEvent', '首页', '顶部栏产品服务', '长语音转写', '', '']);" target="_blank">长语音转写</a>
+        <a href="/realTimeVoiceReco.s" class="item-list" onclick="_czc.push(['_trackEvent', '首页', '顶部栏产品服务', '实时语音识别', '', '']);" target="_blank">实时语音识别</a>
+        <a href="/product-assess.s" class="item-list" onclick="_czc.push(['_trackEvent', '首页', '顶部栏产品服务', '语音评测', '', '']);" target="_blank">语音评测</a>
+        <a href="/personalized-voice.s" class="item-list new-tag-7" onclick="_czc.push(['_trackEvent', '首页', '顶部栏产品服务', '个性化语音定制', '', '']);" target="_blank">个性化语音定制</a>
+        <a href="/voiceAssistant.s" class="item-list new-tag-4" onclick="_czc.push(['_trackEvent', '首页', '顶部栏产品服务', '语音助手', '', '']);" target="_blank">语音助手</a>
+      </li>
+      <li class="pd-server">
+        <p class="server-text">智慧学习服务</p>
+
+
+        <!--<a href="/DOCSIRMA/html/精品题库/API文档/整页精品题库服务/整页精品题库服务-API文档.html" class="item-list" target="_blank">整页拍搜批改</a>-->
+        <a href="/english-correction.s" class="item-list" onclick="_czc.push(['_trackEvent', '首页', '顶部栏产品服务', '英语作文批改', '', '']);"  target="_blank">英语作文批改</a>
+        <a href="/chinese-correction.s" class="item-list new-tag-7" onclick="_czc.push(['_trackEvent', '首页', '顶部栏产品服务', '中文作文批改', '', '']);"  target="_blank">中文作文批改</a>
+        <a href="/DOCSIRMA/html/题目识别切分/API文档/题目识别切分服务/题目识别切分服务-API文档.html" class="item-list" onclick="_czc.push(['_trackEvent', '首页', '顶部栏产品服务', '题目识别切分', '', '']);" target="_blank">题目识别切分</a>
+        <a href="/handwritingErasure.s" target="_blank" class="item-list new-tag-7" onclick="_czc.push(['_trackEvent', '首页', '顶部栏产品服务', '试卷手写体擦除', '', '']);">试卷手写体擦除</a>
+        <a href="/product-photosearch.s" onclick="_czc.push(['_trackEvent', '首页', '顶部栏产品服务', '精品题库', '', '']);"  class="item-list">精品题库</a>
+        <a href="https://homework.youdao.com/" target="_blank" class="item-list" onclick="_czc.push(['_trackEvent', '首页', '顶部栏产品服务', '学业大数据平台', '', '']);"  target="_blank">学业大数据平台</a>
+
+      </li>
+      <!--
+      <li class="pd-server">
+        <p class="server-text">解决方案</p>
+        <a href="https://ai.youdao.com/saas/eBook#/upload-image" onclick="_czc.push(['_trackEvent', '首页', '顶部栏个人服务', '文档校审', '', '']);" target="_blank" class="item-list">文档校审系统</a>
+        <a href="https://tongchuan.youdao.com/" onclick="_czc.push(['_trackEvent', '首页', '顶部栏个人服务', '会议同传', '', '']);" target="_blank" class="item-list">会议同传系统</a>
+        <a href="/saas/doctrans" class="item-list" onclick="_czc.push(['_trackEvent', '首页', '顶部栏个人服务', '文档翻译', '', '']);" target="_blank" onclick="hideTopBar('doctrans')">文档翻译系统</a>
+        <a href="/saas/videotrans" class="item-list" onclick="_czc.push(['_trackEvent', '首页', '顶部栏个人服务', '视频翻译', '', '']);" target="_blank" onclick="hideTopBar('videotrans')">视频翻译系统</a>
+      </li>
+      -->
+      <div class="pd-other-box">
+        <div class="private item">
+          <a href="/private.s" class="link-priv" target="_blank">私有化部署服务</a>
+          <img src="https://shared.ydstatic.com/ead/zhiyun/guanwang/images/ic_arrow_gray_normal.png" class="icon_arrow private-icon" alt="">
+        </div>
+        <!--
+        <div class="feedback item">
+          <span>需求反馈</span>
+          <img src="https://shared.ydstatic.com/ead/zhiyun/guanwang/images/ic_arrow_gray_normal.png" class="icon_arrow feedback-icon" alt="">
+        </div>
+        -->
+      </div>
+
+    </ul>
+  </li>
+
+
+
+  <li>
+    <a class="nav-list-item" href="javascript:;" id="project-nav" class="new_tag_header_4">解决方案</a>
+    <ul style="left:264px;">
+      <li class="triangle-up"></li>
+      <li class="triangle-up-sec"></li>
+      <li class="pd-server">
+        <p class="server-text">行业解决方案</p>
+        <a href="/ai-hardware.s"  onclick="_czc.push(['_trackEvent', '首页', '顶部栏解决方案', '智能硬件', '', '']);" class="item-list">智能硬件</a>
+        <a href="/ai-education.s"  onclick="_czc.push(['_trackEvent', '首页', '顶部栏解决方案', '智慧教育', '', '']);" class="item-list">智慧教育</a>
+        <a href="/enterprise-service.s" onclick="_czc.push(['_trackEvent', '首页', '顶部栏解决方案', '政企服务', '', '']);" class="item-list">政企服务</a>
+      </li>
+      <li class="pd-server">
+        <p class="server-text">专项解决方案</p>
+        <!--
+        <a href="https://tongchuan.youdao.com/" class="item-list">有道同传企业版</a>
+        <a href="https://ai.youdao.com/saas/eBook#/upload-image" class="item-list">智能文档校审系统</a>
+        <a href="/saas/doctrans" class="item-list new-tag-filetrans" target="_blank" onclick="hideTopBar('doctrans')">文档翻译系统</a>
+        <a href="/saas/videotrans" class="item-list new-tag-filetrans" target="_blank" onclick="hideTopBar('videotrans')">视频翻译系统</a>
+        -->
+        <a href="/mooc.s" onclick="_czc.push(['_trackEvent', '首页', '顶部栏解决方案', '慕课直录播系统', '', '']);" class="item-list">慕课录播直播系统</a>
+        <a href="/fingerReading.s" onclick="_czc.push(['_trackEvent', '首页', '顶部栏解决方案', '手指点读解决方案', '', '']);" class="item-list">手指点读解决方案</a>
+        <a href="/dictationCorrectionSolutions.s" onclick="_czc.push(['_trackEvent', '首页', '顶部栏解决方案', '听写与批改解决方案', '', '']);" class="item-list">听写与批改解决方案</a>
+        <a href="/aiSolution.s" class="item-list" onclick="_czc.push(['_trackEvent', '首页', '顶部栏解决方案', 'AI出海解决方案', '', '']);">AI出海解决方案</a>
+        <a href="/drivingSolution.s" class="item-list" onclick="_czc.push(['_trackEvent', '首页', '顶部栏解决方案', '智能座舱解决方案', '', '']);">智能座舱解决方案</a>
+      </li>
+      <li class="pd-server">
+        <p class="server-text">客户案例</p>
+        <a href="/anli.s#social" onclick="_czc.push(['_trackEvent', '首页', '顶部栏解决方案', '聊天社交领域', '', '']);" class="item-list">聊天社交领域</a>
+        <a href="/anli.s#education" onclick="_czc.push(['_trackEvent', '首页', '顶部栏解决方案', '学习教育领域', '', '']);" class="item-list">学习教育领域</a>
+        <a href="/anli.s#lifestyle" onclick="_czc.push(['_trackEvent', '首页', '顶部栏解决方案', '生活服务领域', '', '']);" class="item-list">生活服务领域</a>
+        <a href="/anli.s#reading" onclick="_czc.push(['_trackEvent', '首页', '顶部栏解决方案', '阅读资讯领域', '', '']);" class="item-list">阅读资讯领域</a>
+        <a href="/anli.s#hardware" onclick="_czc.push(['_trackEvent', '首页', '顶部栏解决方案', '智能硬件领域', '', '']);" class="item-list">智能硬件领域</a>
+        <a href="/anli.s#shopping" onclick="_czc.push(['_trackEvent', '首页', '顶部栏解决方案', '金融理财领域', '', '']);" class="item-list">金融理财领域</a>
+        <a href="/anli.s" onclick="_czc.push(['_trackEvent', '首页', '顶部栏解决方案', '查看全部', '', '']);" class="item-list more-list">
+          查看全部
+          <img src="https://shared.ydstatic.com/ead/zhiyun/guanwang/images/ic_arrow_gray_normal.png" class="icon_arrow_more" alt="">
+        </a>
+      </li>
+
+    </ul>
+  </li>
+
+  <li >
+    <a class="nav-list-item" href="javascript:;" id="personal-service">个人产品</a>
+    <ul class="personal-service" >
+      <li class="triangle-up"></li>
+      <li class="triangle-up-sec"></li>
+       <li class="pd-server">
+        <a href="https://ai.youdao.com/saas/eBook#/upload-image" onclick="_czc.push(['_trackEvent', '首页', '顶部栏个人服务', '文档校审', '', '']);" target="_blank" class="item-list">文档校审系统</a>
+        <a href="https://tongchuan.youdao.com/" onclick="_czc.push(['_trackEvent', '首页', '顶部栏个人服务', '会议同传', '', '']);" target="_blank" class="item-list">会议同传系统</a>
+        <a href="/saas/doctrans" class="item-list" onclick="_czc.push(['_trackEvent', '首页', '顶部栏个人服务', '文档翻译', '', '']);" target="_blank" onclick="hideTopBar('doctrans')">文档翻译系统</a>
+        <a href="/saas/videotrans" class="item-list" onclick="_czc.push(['_trackEvent', '首页', '顶部栏个人服务', '视频翻译', '', '']);" target="_blank" onclick="hideTopBar('videotrans')">视频翻译系统</a>
+      </li>
+    </ul>
+  </li>
+  <li><a class="nav-list-item" class="nav-list-item" href="/price-center.s" id="price-center-nav" onclick="_czc.push(['_trackEvent', '首页', '顶部栏价格中心', '', '', '']);" target="_blank">价格中心</a></li>
+  <li class="dev-resource">
+    <a class="nav-list-item" href="javascript:;" id="anli-nav">开发指南</a>
+    <ul class="source-ul">
+      <li class="triangle-up"></li>
+      <li class="triangle-up-sec"></li>
+      <li class="source-item"><a href="/doc.s#guide" onclick="_czc.push(['_trackEvent', '首页', '顶部栏开发指南', '入门指南', '', '']);" target="_blank">入门指南</a></li>
+      <li class="source-item"><a href="/doc.s#video" onclick="_czc.push(['_trackEvent', '首页', '顶部栏开发指南', '视频教程', '', '']);" target="_blank">视频教程</a></li>
+      <li class="source-item"><a href="/doc.s#docs" onclick="_czc.push(['_trackEvent', '首页', '顶部栏开发指南', '产品文档', '', '']);" target="_blank">产品文档</a></li>
+      <li class="source-item"><a href="/doc.s#qa" onclick="_czc.push(['_trackEvent', '首页', '顶部栏开发指南', '常见问题', '', '']);" target="_blank">常见问题</a></li>
+    </ul>
+  </li>
+  <li><a class="nav-list-item" href="/partner.s" onclick="_czc.push(['_trackEvent', '首页', '顶部栏渠道代理', '', '', '']);" id="download-nav">渠道代理</a></li>
+  <li><a class="nav-list-item" rel="nofollow" href="/contactUs.s" onclick="_czc.push(['_trackEvent', '首页', '点击顶部栏', '联系我们', '', '']);" id="doc-nav" >联系我们</a></li>
+</ul>
+
+
+        <div align="center" class="content-group">
+      <div class="login-urs">登录/注册</div>
+    </div>
+    
+  </div>
+</div>
+<script src="/common/gw-head/main.build.js"></script>
+
+
+
+
+<!-- banner section-->
+<div style="width:auto;height:320px;background: url(images/product-ocr-table/banner_table@2x.png) no-repeat center center #141c4a; background-size: auto 100%; ">
+    <div style="width:1200px;height:270px;margin-left: auto;margin-right: auto;">
+        <div class="banner-content" style="width:640px;height:200px;float:left;margin-top:100px">
+            <h1 class="p-h1-title">
+                智能表格识别服务
+            </h1>
+            <div class="p-h1-t">
+                表格识别服务，智能定位并识别表格结构及表格文字内容，结构化输出可编辑的表格结果轻松实现纸质报表、单据的电子化。
+            </div>
+            <div>
+                <a rel="nofollow" href="ocr-buy.s?productId=17&productName=文字识别OCR服务" class="button-blue">立即使用</a>
+                <a rel="nofollow" href="/DOCSIRMA/html/文字识别OCR/API文档/表格OCR服务/表格OCR服务-API文档.html" target="_blank" class="button-white">技术文档</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- banner section-->
+<div style="width: 100%;background-color: #ffffff;">
+    <div style="width: 100%;" align="center">
+        <div class="tts-container">
+            <div class="content-location">
+                <div class="location-container">
+                    <div class="selector">
+                        <select name="tran-type" id="tran-type">
+                            <option value="5">表格识别</option>
+                            <option value="4">通用文字识别</option>
+                            <option value="7">手写体识别</option>
+                            <option value="6">整题识别（含公式）</option>
+                            <option value="9">PDF转WORD</option>
+                            <!--
+                            <option value="1">购物小票识别</option>
+                            <option value="2">身份证识别</option>
+                            <option value="3">名片识别</option>
+                            -->
+                            <option value="8">自定义模板文字识别</option>
+                            <option value="10">图像处理</option>
+                            <option value="11">图像算法</option>
+                            <option value="12">实况OCR</option>
+                        </select>
+                    </div>
+                    <div class="location-lists">
+                        <div class="item line-active experience" data-id="experience">产品体验 <span class="location-line-active"></span></div>
+                        <div class="item advantage" data-id="advantage">产品优势 <span class="location-line-active"></span></div>
+                        <div class="item application" data-id="application">应用场景 <span class="location-line-active"></span></div>
+                        <div class="item pricing" data-id="pricing">产品定价 <span class="location-line-active"></span></div>
+                        <div class="item document" data-id="document">技术文档 <span class="location-line-active"></span></div>
+                        <div class="item case" data-id="case">合作案例 <span class="location-line-active"></span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 产品体验区 -->
+<div style="width: 100%;background-color: #ffffff;" id="experience">
+    <div style="width: 100%;" align="center">
+        <div class="tts-container">
+        <!--table ocr -->
+    <div id="tableocr" class="demo_box ocr_type" >
+      <div id="product_des" align="center">
+        <span id="des_text" >整行识别新模型，适用于身份证、购物小票和证件识别等多应用场景；支持27种语言的文字自动识别，包括繁简中文、英语、<br/>
+              日语、韩语、印地语和拉丁语系（葡萄牙/西班牙/法语/意大利语/罗马尼亚/波兰/俄语/荷兰/德语）等</span>
+      </div>
+      <div class="demo_main">
+        <div class="demo_left_box">
+          <div class="demo_box_wrapper">
+            <div>
+              <div class="small_img_box">
+                  <ul class="demo-card-list clear-float">
+                      <li><img class="box_active" src="https://download.ydstatic.com/ead/zhiyun/guanwang_cdn_2019/images/p-ocr/d_9.jpg"/></li>
+                      <li><img src="https://download.ydstatic.com/ead/zhiyun/guanwang_cdn_2019/images/p-ocr/d_10.jpg"/></li>
+                      <li><img src="https://download.ydstatic.com/ead/zhiyun/guanwang_cdn_2019/images/p-ocr/d_11.jpg"/></li>
+                      <li><img src="https://download.ydstatic.com/ead/zhiyun/guanwang_cdn_2019/images/p-ocr/d_12.jpg"/></li>
+                  </ul>
+              </div>
+              <div class="big_img_box">
+                <div style="width:448px;height:288px">
+                  <img id="preview5" style="max-width: 100%; max-height: 100%;clear: both;display: block;margin:auto;border-radius:4px;" src=""/>
+                </div>
+              </div>
+            </div>
+            <div style="width:560px;font-size:12px;line-height:30px;height:30px;float:left;text-align:left;color:#ADB1B8">支持27种语言的自动识别！支持图片格式：.bmp、.jpg、.png，图片大小Base64后≤2M</div>
+            <div style="width:560px;height:36px;">
+              <select id="local_select2" class="select_cl">
+                <option value="auto" selected="selected">自动识别</option>
+              </select>
+              <form id="upload-file-form1">
+                  <input id="upload-file-input5" style="display:none" type="file" name="uploadfile" value="本地上传" accept="image/*" />
+                  <a id="local-upload5" class="ocrbtn">本地上传</a>
+              </form>
+              <div style="width: 336px;height: 36px;background: #fff;float: left;border: 1px solid #fff;border-radius: 4px;border-radius: 4px;">
+                <input type="text" id="onlinetext5" class="ocr_online_text" placeholder="粘贴图片URL"/>
+                <b class="online_ocr_search_btn" id="online5"></b>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="demo-result5" class="demo_right_box">
+          <div class="demo_box_wrapper_tableocr white">
+                  <div id="result-box5" class="result-box"><ul><li class="selli">Excel结果</li><li>JSON</li></ul></div>
+                  <div>
+                    <div class="result-background">
+                        <p id="i-loading" class="m-t-lg" style="text-align: center; font-size: 50px;position:relative;top:100px;">
+                            <i class="fa fa-spinner fa-spin"></i>
+                        </p>
+                        <div class="table_box_tableocr  spantext" id="result-table5" style="display:none;">
+                        </div>
+                        <div class="spantext" data-label="RESPONSE JSON" id="demo-json5">
+                            <pre id="result5" class="result_tableocr">
+                            </pre>
+                        </div>
+                        <div class="tableocr-container" style="display:none;">
+                          <button id="ocr-table-excel" type="button" class="btn btn-primary tableocr-download-btn">下载表格</button>
+                        </div>
+                    </div>
+                  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end table ocr-->
+        </div>
+        <div style="width: 1200px;padding:24px 0px 36px 0px;background:#fff;text-align: center;color:#ADB1B8;font-size: 12px;">
+                体验中心仅作为部分效果体验，若您想获取更好体验，请通过
+            <a href="/DOCSIRMA/html/文字识别OCR/API文档/表格OCR服务/表格OCR服务-API文档.html" target="_blank" style="text-decoration: none;">API/SDK</a>方式接入该服务。<span>我同意</span>
+            <a style="color: #2962ff;text-decoration: none;-webkit-tap-highlight-color: transparent;outline: none;" data-outlink="1" tabindex="-1" target="_blank" href="https://reg.163.com/agreement_mobile_wap.shtml?v=20171127">《服务条款》</a>和
+            <a style="color: #2962ff;text-decoration: none;-webkit-tap-highlight-color: transparent;outline: none;" data-outlink="1" tabindex="-1" target="_blank" href="/DOCSIRMA/html/协议与声明/隐私政策/有道隐私政策/有道隐私政策-隐私政策.html" id="auto-id-1678345705242">《有道隐私政策》</a>
+        </div>
+    </div>
+
+</div>
+
+
+
+<!-- Start Content -->
+<div id="content">
+    <!-- Start Content Advantage -->
+    <div id="advantage" algin="center" style="background: #fff;">
+        <div style="width:1200px;height:610px;margin:0 auto;">
+            <div class="advantage-title"></div>
+
+            <div class="p3-content">
+                <div class="p3-left">
+                    <div class="p3-box">
+                        <div class="p3-img-div"><img class="p3-img" src="images/product-ocr-table/ic_advantage_1.png" /></div>
+                        <div class="p3-img-str">
+                            <div class="p3-h2">
+                                结构化输出结果
+                            </div>
+                            <div class="p3-h2-t">
+                                自动识别表头、表尾、表格结构及表格内容等信息，输出可编辑的结果
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p3-box">
+                        <div class="p3-img-div"><img class="p3-img" src="images/product-ocr-table/ic_advantage_2.png" /></div>
+                        <div class="p3-img-str">
+                            <div class="p3-h2">
+                                可识别合并单元格
+                            </div>
+                            <div class="p3-h2-t">
+                                支持对常规表格和含合并单元格的复杂表格的自动识别及定位
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p3-box ">
+                        <div class="p3-img-div"><img class="p3-img" src="images/product-ocr-table/ic_advantage_3.png" /></div>
+                        <div class="p3-img-str">
+                            <div class="p3-h2">
+                                自动定位识别
+                            </div>
+                            <div class="p3-h2-t">
+                                自动定位图片中题目的位置，提供文字和公式在图片中的位置信息
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p3-box ">
+                        <div class="p3-img-div"><img class="p3-img" src="images/product-ocr-table/ic_advantage_4.png" /></div>
+                        <div class="p3-img-str">
+                            <div class="p3-h2">
+                                识别准确率高
+                            </div>
+                            <div class="p3-h2-t">
+                                基于有道的海量数据和精深的深度学习技术，保证高准确性
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="p3-mid" style="background:url(images/product-ocr-table/pic_advantages_TableRecognition.png)">
+                </div>
+                <!-- p3-right start -->
+                <div class="p3-right">
+                    <div class="p3-box">
+                            <div class="p3-img-div"><img class="p3-img" src="images/product-ocr-table/ic_advantage_5.png" /></div>
+                            <div class="p3-img-str">
+                                <div class="p3-h2">
+                                    识别速度快
+                                </div>
+                                <div class="p3-h2-t">
+                                    海量并发支持实时识别，单图毫秒级响应。提供业界领先的公式识别服务
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p3-box">
+                            <div class="p3-img-div"><img class="p3-img" src="images/product-ocr-table/ic_advantage_6.png" /></div>
+                            <div class="p3-img-str">
+                                <div class="p3-h2">
+                                    技术成熟领先
+                                </div>
+                                <div class="p3-h2-t">
+                                    利用有道深度学习技术及海量数据不断优化算法迭代模型，提高服务质量
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="p3-box ">
+                            <div class="p3-img-div"><img class="p3-img" src="images/product-ocr-table/ic_advantage_7.png" /></div>
+                            <div class="p3-img-str">
+                                <div class="p3-h2">
+                                    服务安全稳定
+                                </div>
+                                <div class="p3-h2-t">
+                                    提供24小时云端高稳定服务，服务可用性高，满足到企业机构对安全性的要求
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="p3-box ">
+                            <div class="p3-img-div"><img class="p3-img" src="images/product-ocr-table/ic_advantage_8.png" /></div>
+                            <div class="p3-img-str">
+                                <div class="p3-h2">
+                                    接入形式灵活
+                                </div>
+                                <div class="p3-h2-t">
+                                    支持多种设备和操作系统，提供全平台API调用方式和Android/iOS SDK接入形式
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- p3-right end -->
+            </div>
+            <!-- p3-content end -->
+
+
+        </div>
+    </div>
+    <!-- End Content Advantage -->
+
+    <!-- Start Content  Application Scenario -->
+    <div id="application">
+        <div class="application-content">
+            <div class="application-title"></div>
+            <div class="application-detail">
+                <div class="application-item">
+                    <img src="images/product-ocr-table/application_1.png" alt="表格识别应用于识别对账单、资产负债表、损益表等财税信息内容.">
+                    <p class="application-text">
+                        应用于财税信息统计、存档及核算场景，定位并识别对账单、资产负债表、损益表等表格内容。
+                    </p>
+                </div>
+                <div class="application-item">
+                    <img src="images/product-ocr-table/application_2.png" alt="表格识别应用于信息登记表的识别录入">
+                    <p class="application-text">
+                        应用于登记表信息电子化场景，助力表格信息的结构化整理和统计。
+                    </p>
+                </div>
+                <div class="application-item">
+                    <img src="images/product-ocr-table/application_3.png" alt="表格识别应用于保险单核查.">
+                    <p class="application-text">
+                        应用于保险表单出单场景。可大幅度降低人工录入成本。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Content Application Scenario -->
+
+
+    <!-- Start Content Pricing -->
+    <div id="pricing">
+        <div class="pricing-content">
+            <div class="pricing-title"></div>
+            <div class="pricing-type" id="ocr-table-pricing-type">
+                <span class="pre-pay text light" data-sign="pre" style="width:120px; box-sizing: border-box;">按量计费</span>
+                <span class="after-pay text" data-sign="after" style="width:98px; box-sizing: border-box;">资源包</span>
+                <div class="active-line"></div>
+            </div>
+            <div class="sub-title">按实际使用量付费，支持阶梯计价模式，用量越多折扣越大。方便企业灵活控制成本，适合无明显高峰用量时段，用量较小的用户。</div>
+            <div class="pricing-detail">
+              <!--表格识别按量计费-->
+<div class="price-table-ocr-table">
+  <div class="table-wrapper">
+    <table>
+      <thead>
+        <tr>
+          <th>计费方式</th>
+          <th>支持的计费细分</th>
+          <th>月调用量Q（万次）</th>
+          <th>价格（元/次）</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="4">按月调用次数执行累计阶梯计费</td>
+          <td rowspan="4">在线表格识别OCR</td>
+          <td>0 &lt; Q ≤ 10</td>
+          <td>0.10</td>
+        </tr>
+        <tr>
+          <td>10 &lt; Q ≤ 100</td>
+          <td>0.09</td>
+        </tr>
+        <tr>
+          <td>100 &lt; Q ≤ 200</td>
+          <td>0.08</td>
+        </tr>
+        <tr>
+          <td>Q &gt; 200</td>
+          <td>0.06</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<link rel="stylesheet" href="/common/price-table-ocr-table/main.build.css?timestamp=1683701873202" />
+              <!--表格识别资源包计费-->
+<div class="price-table-ocr-table-package">
+  <div class="table-wrapper">
+    <table>
+      <thead>
+        <tr>
+          <th>资源包规格</th>
+          <th>资源包有效时长</th>
+          <th>价格</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1万次</td>
+          <td>30天</td>
+          <td>510元</td>
+        </tr>
+        <tr>
+          <td>50万次</td>
+          <td>360天</td>
+          <td>24900元</td>
+        </tr>
+        <tr>
+          <td>100万次</td>
+          <td>360天</td>
+          <td>48000元</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<link
+  rel="stylesheet"
+  href="/common/price-table-ocr-table-package/main.build.css?timestamp=1683701873202"
+/>
+            </div>
+            <a id="pricing-table-href" href="/DOCSIRMA/html/文字识别OCR/产品定价/表格OCR服务/表格OCR服务-产品定价.html">
+                <div class="more-visit">
+                    <span class="more-detail-text">更多详情</span>
+                </div>
+            </a>
+
+        </div>
+    </div>
+    <!-- End Content Pricing -->
+
+    <!-- Start Content Document -->
+    <div id="document" align="center" style="background: #fff;">
+        <div align="center" style="width:1200px;height:434px;margin:0 auto;">
+            <div class="document-title">
+            </div>
+            <div id="p5-content">
+                <div class="p5-block">
+                    <div class="android bg">
+                    </div>
+                    <div>
+                        <a class="p5-a" href="/DOCSIRMA/html/文字识别OCR/Android_SDK文档/表格OCR服务/表格OCR服务-Android_SDK文档.html" target="_blank">Android SDK 接入指南</a>
+                    </div>
+                </div>
+                <div class="p5-block mid">
+                    <div class="ios bg">
+                    </div>
+                    <div>
+                        <a class="p5-a" href="/DOCSIRMA/html/文字识别OCR/IOS_SDK文档/表格OCR服务/表格OCR服务-IOS_SDK文档.html" target="_blank">iOS SDK 接入指南</a>
+                    </div>
+                </div>
+                <div class="p5-block">
+                    <div class="api bg">
+                    </div>
+                    <div>
+                        <a class="p5-a" href="/DOCSIRMA/html/文字识别OCR/API文档/表格OCR服务/表格OCR服务-API文档.html" target="_blank">API 接入指南</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Content Documnet -->
+
+    <!-- 合作案例 -->
+    <div id="case" align="center" style="background: #fff;">
+        <div align="center" style="width:1200px;height:357px;margin:0 auto;">
+            <div class="case-title"></div>
+            <div class="case-container">
+                <div class="slidee-content">
+                    <div>
+                        <img class="p4-img" src="images/product-ocr-table/logo_youling.png" alt="表格识别客户案例：优零科技"/>
+                    </div>
+                    <div class="p4-t">
+                        优零科技
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- End 合作案例 -->
+</div>
+<!-- End Content -->
+<div id="overlay-partner-detail">
+  <div id="overlay-partner-inner-detail">
+    <img
+      id="partner-info-close-btn"
+      src="https://shared.ydstatic.com/ead/zhiyun/guanwang/partner_cdn/ic_close_normal.png"
+      width="32"
+      height="32"
+    />
+    <div class="class-header-container">
+      <img
+        src="/common/popup-overlay/title.png"
+        width="120"
+        height="30"
+      />
+    </div>
+    <div class="top-dash-border"></div>
+    <form id="partner-info-form-id" action="#">
+      <div class="class-item-container">
+        <div class="normalbtn-container">
+          <label class="radio-inline"
+            ><input type="radio" name="channel" value="0" checked />是</label
+          >
+          <label class="radio-inline"
+            ><input type="radio" name="channel" value="1" />否</label
+          >
+        </div>
+        <div class="class-item-name">是否为渠道商：</div>
+      </div>
+      <div class="class-item-container">
+        <select
+          id="serviceTypeOption"
+          class="normalbtn-servicetype selectpicker"
+          title="请选择服务类型"
+          name="service"
+          multiple
+        >
+        </select>
+        <div class="class-item-name red-mark">服务类型：</div>
+        <p class="error-hint service-type">服务类型未选择，请重新选择</p>
+      </div>
+      <div class="class-item-container">
+        <input
+          id="classification-detail"
+          type="text"
+          name="service-detail"
+          class="inputbox-style"
+          placeholder="  具体语种或者离/在线需求"
+          maxlength="50"
+        />
+        <div class="class-item-name">详细分类：</div>
+      </div>
+      <div class="class-item-container">
+        <select
+          id="partnerRegionOption"
+          class="selectpicker normalbtn"
+          title="请选择所属区域"
+          name="area"
+        >
+          <!--<option value="" disabled  selected>请选择所属区域</option>-->
+        </select>
+        <div class="class-item-name red-mark">所属地区：</div>
+        <p class="error-hint region-option">所属地区未选择，请重新选择</p>
+      </div>
+      <div class="class-item-container">
+        <select
+          id="partnerIndustryOption"
+          class="selectpicker normalbtn"
+          title="请选择所属行业"
+          name="industry"
+        >
+          <!--<option value="" disabled selected>请选择所属行业</option>-->
+        </select>
+        <div class="class-item-name red-mark">所属行业：</div>
+        <p class="error-hint industry-option">所属行业未选择，请重新选择</p>
+      </div>
+      <div class="class-item-container">
+        <input
+          id="partner-company-name"
+          type="text"
+          class="inputbox-style"
+          name="company"
+          placeholder="  团队或者公司名（必填）"
+          maxlength="50"
+        />
+        <div class="class-item-name red-mark">公司名称：</div>
+        <p class="error-hint company-name">请填写公司名称</p>
+      </div>
+      <div class="class-item-container">
+        <textarea
+          id="partner-company-intro"
+          class="textarea-style"
+          name="company-intro"
+          row="5"
+          placeholder="  团队主营业务简介（50字以内）"
+          maxlength="50"
+        ></textarea>
+        <div class="class-item-name">业务简介：</div>
+      </div>
+      <div id="partner-situation" class="class-item-container">
+        <textarea
+          id="partner-company-scenario"
+          class="textarea-style"
+          name="scenario"
+          row="5"
+          placeholder="想要合作服务的需求使用场景介绍（100字以内）"
+          maxlength="100"
+        ></textarea>
+        <div class="class-item-name red-mark">使用场景：</div>
+        <p class="error-hint use-senary">请填写使用场景</p>
+      </div>
+      <div id="partner-quantity" class="class-item-container">
+        <input
+          id="partner-mag"
+          type="text"
+          class="inputbox-style"
+          name="magnitude"
+          placeholder="  预估使用量级"
+          maxlength="50"
+        />
+        <div class="class-item-name">使用量级：</div>
+      </div>
+      <div class="class-item-container">
+        <input
+          id="partner-name"
+          type="text"
+          class="inputbox-style"
+          placeholder="  姓名或称呼（必填）"
+          name="name"
+          maxlength="50"
+        />
+        <div class="class-item-name red-mark">联系人姓名：</div>
+        <p class="error-hint contact-name">请填写联系人姓名</p>
+      </div>
+      <div class="class-item-container">
+        <input
+          id="partner-cell"
+          type=""
+          class="inputbox-style"
+          name="cell"
+          placeholder="  手机或者固定电话（必填)"
+          maxlength="20"
+        />
+        <div class="class-item-name red-mark">联系人电话：</div>
+        <p class="error-hint contact-tell">请填写联系人电话</p>
+      </div>
+      <div class="class-item-container">
+        <input
+          id="partner-email"
+          type="email"
+          class="inputbox-style"
+          name="email"
+          placeholder="  常用邮箱（必填)"
+          pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?"
+          maxlength="50"
+        />
+        <div class="class-item-name red-mark">联系人邮箱：</div>
+        <p class="error-hint contact-mail">请填写联系人邮箱</p>
+      </div>
+      <div class="class-item-container">
+        <select
+          id="partnerJobOption"
+          class="selectpicker normalbtn"
+          title="请选择职务"
+          name="jobTitle"
+        >
+          <!--<option value="" disabled  selected>请选择职务</option>-->
+          <option value="开发人员">开发人员</option>
+          <option value="市场商务">市场商务</option>
+          <option value="产品运营">产品运营</option>
+          <option value="其他">其他</option>
+        </select>
+        <div class="class-item-name red-mark">联系人职务：</div>
+        <p class="error-hint contact-work">联系人职务未选择，请重新选择</p>
+      </div>
+      <div class="class-item-container">
+        <select
+          id="partnerChannelOption"
+          class="selectpicker normalbtn"
+          title="请选择来源渠道"
+          name="channel-selection"
+        >
+          <!--<option value="" disabled selected>请选择来源渠道</option>-->
+          <option value="搜索引擎">搜索引擎</option>
+          <option value="有道官网">有道官网</option>
+          <option value="展会/技术交流会议">展会/技术交流会议</option>
+          <option value="微信小程序或者公众号">微信小程序或者公众号</option>
+          <option value="他人推荐">他人推荐</option>
+          <option value="推送文章">推送文章</option>
+          <option value="其他">其他</option>
+        </select>
+        <div class="class-item-name red-mark">来源渠道：</div>
+        <p class="error-hint channel-err">来源渠道未选择，请重新选择</p>
+      </div>
+      <div class="class-item-container">
+        <div class="normalbtn-container">
+          <input
+            id="partner-verification"
+            type="text"
+            name="verification"
+            maxlength="10"
+            style="width:208px; height: 40px; background: #ffffff; border: 1px solid #F0F2F5; border-radius: 4px; margin-right: 8px;outline: none;"
+            placeholder="  输入验证码"
+          />
+          <img
+            id="verification-code"
+            src=""
+            width="90"
+            height="40"
+            alt="verificatiton pics"
+            style="border: 1px solid #F0F2F5; border-radius: 4px;"
+          />
+          <div
+            id="verification-refresh"
+            style="cursor: pointer; border: 1px solid #F0F2F5; border-radius: 4px;"
+          >
+            <img
+              src="https://shared.ydstatic.com/ead/zhiyun/guanwang/partner_cdn/ic_Refresh_normal.png"
+              width="24"
+              height="24"
+              style="margin: 8px;"
+            />
+          </div>
+        </div>
+        <div class="class-item-name red-mark">验证码：</div>
+        <p class="error-hint verification-code">请填写正确验证码</p>
+      </div>
+      <div class="bottom-btn-container">
+        <button
+          type="button"
+          class="btn btn-secondary cancel partner-info-cancel-btn"
+          id="overlay-cancel"
+        >
+          取消
+        </button>
+        <button type="submit" class="btn btn-primary partner-info-submit-btn">
+          立即提交
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+<link rel="stylesheet" href="js/bootstrap-select/bootstrap-select.min.css" />
+<link rel="stylesheet" href="/common/popup-overlay/main.css" />
+<script src="js/js.cookie.min.js"></script>
+<!-- 相关库依赖, 务必在 页面的 head 标签中引入
+  <script src="jquery2.js" cache="false"></script>
+  <script src="op/js/app.v2.js"></script>
+-->
+<script src="/js/bootstrap-select/bootstrap-select.min.js"></script>
+<!-- 组件逻辑没有单独抽出来，依赖 js/gw-common.js -->
+<style>
+	#partner-info-form:hover{
+		color: #2962FF;
+	}
+</style>
+<div style="background-color: #121B34; margin: 0 auto;" align="center">
+
+	<div style="width: 1200px;height: 48px ;border-top: 1px solid rgba(255,255,255,0.1);"></div>
+
+	<table border="0" cellpadding="0" cellspacing="0" width="1200px">
+
+
+		<tr>
+
+
+			<td align="left" valign="top" style="width:300px">
+				<div class="footer-box" style="color: #ffffff; width: 300px; height:84px">
+
+
+					<div style="font-family: MicrosoftYaHei-Bold;font-weight: 600;font-size: 15px;color: rgba(255,255,255,0.90);line-height: 14px;">
+						有道智云平台介绍
+					</div>
+					<div
+							style="font-family: MicrosoftYaHei;margin-top:16px;font-size: 13px;color: rgba(255,255,255,0.6);letter-spacing: 0;line-height: 20px;">
+						网易有道旗下一个为开发者、企业和政府机构等提供自然语言翻译、文字识别OCR等服务以及行业解决方案的云服务平台。致力于提供安全，可靠和高效的云服务。
+					</div>
+
+				</div>
+
+			</td>
+
+			<td align="left" valign="top" style="width:300px">
+				<div style="color: #ffffff; width: 300px;">
+
+
+					<div style="font-family: MicrosoftYaHei-Bold;font-weight: 600;font-size: 15px;color: rgba(255,255,255,0.90);line-height: 14px;">
+						联系方式
+					</div>
+					<div
+							style="font-family: MicrosoftYaHei;margin-top:16px;font-size: 13px;color: rgba(255,255,255,0.60);letter-spacing: 0;line-height: 20px;">
+						<a id="partner-info-form" style="cursor: pointer; text-decoration: none;position: relative;display: inline-block;width: 65px;color: #4275FF;">
+							合作咨询
+							<img src="https://shared.ydstatic.com/ead/zhiyun/guanwang/images/ic_arrow_blue_hover.png" class="footer_icon_arrow_partner" alt="" style="position: absolute;top: 6px; right: 0;width: 12px;height: 12px;">
+						</a>
+						<br />
+						联系电话：010-8255-8901
+						<br />
+						商务合作：<span id="eBusiness"></span>
+						<br />
+						投诉反馈：<span id="eService"></span>
+						<br />
+						地&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;址：北京市海淀区西北旺东路10号院 中关村软件园二期西区7号 网易（北京）公司
+					</div>
+
+				</div>
+			</td>
+
+			<td align="left" valign="top" style="width:180px;">
+				<div style="color: #ffffff; width: 150px;">
+
+					<div style="color: #ffffff; width: 150px;">
+
+
+						<div style="font-family: MicrosoftYaHei-Bold;font-size: 15px; font-weight: 600;color: rgba(255,255,255,0.90);line-height: 14px;">
+							友情链接
+						</div>
+						<div
+								style="font-family: MicrosoftYaHei;margin-top:16px;font-size: 13px;color: rgba(255,255,255,0.60);letter-spacing: 0;line-height: 20px;">
+							<a style="color:  rgba(255,255,255,0.70);" rel="nofollow" href="http://www.youdao.com" target="_blank" >有道首页</a>
+							<br />
+							<a style="color: rgba(255,255,255,0.70);" rel="nofollow" href="http://dsp.youdao.com" target="_blank">有道移动广告产品</a>
+							<br />
+							<a style="color: rgba(255,255,255,0.70);" rel="nofollow" href="http://cidian.youdao.com/" target="_blank">有道词典</a>
+							<br />
+							<a style="color: rgba(255,255,255,0.70);" rel="nofollow" href="https://study.163.com/" target="_blank">网易云课堂</a>
+							<br />
+							<a style="color: rgba(255,255,255,0.70);" rel="nofollow" href="http://tongdao.youdao.com/index.html" target="_blank">同道计划</a>
+							<br />
+							<a style="color: rgba(255,255,255,0.70);" rel="nofollow" href="https://dun.163.com/?from=youdao" target="_blank">网易易盾</a>
+						</div>
+
+					</div>
+
+				</div>
+			</td>
+
+
+
+			<td style="width:100px;" align="left" valign="top">
+				<div style="color: #ffffff; width: 100px;">
+
+
+					<div style="font-family: MicrosoftYaHei-Bold;font-weight: 600;font-size: 15px;color: rgba(255,255,255,0.90);line-height: 14px;">
+						微信公众号
+					</div>
+					<div
+							style="font-size: 14px; margin-top: 16px; line-height: 25px;">
+						<img src="gw/erweima.jpg" style="width: 100px; height: 100px; border-radius: 6px;" />
+					</div>
+
+				</div>
+			</td>
+
+			<td style="width:100px;" align="left" valign="top">
+				<div style="color: #ffffff; width: 100px;">
+
+
+					<div style="font-family: MicrosoftYaHei-Bold;font-weight: 600;font-size: 15px;color: rgba(255,255,255,0.90);line-height: 14px;">
+						微信小程序
+					</div>
+					<div
+							style="font-size: 14px; margin-top: 16px; line-height: 25px;">
+						<img src="gw/pic_qr_code.png" style="width: 100px; height: 100px;border-radius:6px;" />
+					</div>
+
+				</div>
+			</td>
+
+
+		</tr>
+	</table>
+
+	<div style="height: 40px; width: 60px;">
+		&nbsp;
+	</div>
+	<div style="height: 26px; width: 1200px;border-top:1px solid rgba(255, 255, 255, 0.1);">
+		&nbsp;
+	</div>
+
+	<div style="display:flex;width:1200px;margin:0 auto;">
+		<p style="color: rgba(255, 255, 255, 0.9);margin: 0 24px 0 0;">热门服务</p>
+		<a style="color:  rgba(255,255,255,0.70);margin-right:24px;" href="/product-fanyi-text.s" target="_blank">文本翻译</a>
+		<a style="color:  rgba(255,255,255,0.70);margin-right:24px;" href="/product-fanyi-picture.s" target="_blank">图片翻译</a>
+		<a style="color:  rgba(255,255,255,0.70);margin-right:24px;" href="/product-ocr-print.s" target="_blank">通用文字识别</a>
+		<a style="color:  rgba(255,255,255,0.70);margin-right:24px;" href="/product-ocr-hand.s" target="_blank">手写体文字识别</a>
+		<a style="color:  rgba(255,255,255,0.70);margin-right:24px;" href="/product-ocr-table.s" target="_blank">表格识别</a>
+		<a style="color:  rgba(255,255,255,0.70);margin-right:24px;" href="/product-assess.s" target="_blank">语音测评</a>
+		<a style="color:  rgba(255,255,255,0.70);margin-right:24px;" href="/product-tts.s" target="_blank">语音合成 </a>
+		<a style="color:  rgba(255,255,255,0.70);margin-right:24px;" href="/product-asr.s" target="_blank">短语音识别 </a>
+		<a style="color:  rgba(255,255,255,0.70);margin-right:24px;" href="/english-correction.s" target="_blank">英语作文批改</a>
+		<a style="color:  rgba(255,255,255,0.70);margin-right:24px;" href="/doc-trans.s" target="_blank">文档翻译</a>
+	</div>
+
+	<div style="height: 30px; width: 60px;">
+		&nbsp;
+	</div>
+
+	<div style="display:flex;width:1200px;margin:0 auto;">
+        <a style="color:  #4275FF;margin-right:24px;" href="https://www.12377.cn" target="_blank">网上有害信息举报</a>
+        <p style="color: rgba(255,255,255,0.70);margin: 0 24px 0 0;">举报邮箱：youdao_jubao@rd.netease.com</p>
+        <p style="color: rgba(255,255,255,0.70);margin: 0 24px 0 0;">举报电话：010-8255-8901</p>
+    </div>
+
+	<div style="height: 30px; width: 60px;">
+		&nbsp;
+	</div>
+
+	<div
+			style="width: 100%; color: rgba(255,255,255,0.40); font-size: 12px; line-height: 12px;"
+			align="center">
+		©2020 网易公司 京ICP证080268号
+	</div>
+
+	<div style="height: 20px; width: 60px;">
+		&nbsp;
+	</div>
+
+</div>
+  <!-- copy from https://wyyd11.qiyukf.com/admin/setting/pc -->
+<script>
+  (function(w, d, n, a, j) {
+    w[n] =
+      w[n] ||
+      function() {
+        (w[n].a = w[n].a || []).push(arguments);
+      };
+    j = d.createElement('script');
+    j.async = true;
+    j.src = 'https://qiyukf.com/script/71ab075cd6980d04224002539db35b74.js';
+    d.body.appendChild(j);
+  })(window, document, 'ysf');
+</script>
+<script src="/common/qi-yu/on-ready.js" cache="false"></script>
+<div class="fixed-service-panel">
+  <ul>
+    <li class="service-online">
+      <img class="icon" src="/common/fixed-service-panel/ic_service_normal.png" />
+      <p class="text-title">在线客服</p>
+    </li>
+    <li class="concat">
+      <img class="icon" src="/common/fixed-service-panel/ic_cooperation_normal.png" />
+      <p class="text-title">合作咨询</p>
+    </li>
+    <li class="wechat">
+      <img class="icon" src="/common/fixed-service-panel/ic_procedure_normal.png" />
+      <p class="text-title mini-progress">小程序</p>
+      <div class="coper-qr-code">
+        <div>
+          <img
+            src="/common/fixed-service-panel/QRcode@2x.png"
+            alt="智云小程序"
+          />
+        </div>
+      </div>
+    </li>
+    <li class="questionnaire">
+      <img class="icon" src="/common/fixed-service-panel/ic_survey_normal.png" />
+      <p class="text-title">问卷调查</p>
+    </li>
+  </ul>
+</div>
+<link rel="stylesheet" href="/common/fixed-service-panel/main.build.css?timestamp=1683701873202" />
+<script src="/common/fixed-service-panel/main.build.js?timestamp=1683701873202"></script>
+
+<script src="js/sly.min.js" cache="false"></script>
+
+</body>
+</html>

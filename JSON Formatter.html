@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en" data-id="jf">
+<head>
+<title>JSON Formatter &amp; Validator</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta lang="en" name="description" content="The JSON Formatter &amp; Validator beautifies and debugs JSON data with advanced formatting and validation algorithms." />
+<meta lang="en" name="keywords" content="JSON Formatter &amp; Validator,JSON Validator,JSON Formatter,JSON Format,Debug JSON,Pretty Print JSON,Validate JSON,JSON Pretty Printer,JSON Beautifier,Beautify JSON" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="INDEX, FOLLOW" />
+<link rel="preconnect" href="https://curiousconcept.com/" crossorigin>
+<link rel="dns-prefetch" href="https://curiousconcept.com/">
+<link rel="preconnect" href="https://cdnjs.cloudflare.com/" crossorigin>
+<link rel="dns-prefetch" href="https://cdnjs.cloudflare.com/">
+<link rel="apple-touch-icon" sizes="180x180" href="/icons/jf/apple-touch-icon.g79xknzqx7c.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/icons/jf/favicon-32x32.g79xknzqx7c.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/icons/jf/favicon-16x16.g79xknzqx7c.png">
+<link rel="manifest" href="/icons/jf/site.g79xknzqx7c.webmanifest">
+<link rel="mask-icon" href="/icons/jf/safari-pinned-tab.g79xknzqx7c.svg" color="#2980b9">
+<link rel="shortcut icon" href="/icons/jf/favicon.g79xknzqx7c.ico">
+<meta name="msapplication-TileColor" content="#2980b9">
+<meta name="msapplication-TileImage" content="/icons/jf/mstile-144x144.g79xknzqx7c.png">
+<meta name="msapplication-config" content="/icons/jf/browserconfig.g79xknzqx7c.xml">
+<meta name="theme-color" content="#2980b9">
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="JSON Formatter &amp; Validator" />
+<meta name="twitter:description" content="Format and validate JSON data so that it can easily be read by human beings." />
+<meta name="twitter:image" content="https://jsonformatter.curiousconcept.com/icons/jf/mstile-144x144.b0ef4bd01d6cb25ab71ae707ed7ac226.png" />
+<meta name="twitter:url" content="https://jsonformatter.curiousconcept.com">
+<meta name="twitter:creator" content="@curiousconcept">
+
+<meta property="og:title" content="JSON Formatter &amp; Validator" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://jsonformatter.curiousconcept.com" />
+<meta property="og:image" content="https://jsonformatter.curiousconcept.com/icons/jf/mstile-144x144.b0ef4bd01d6cb25ab71ae707ed7ac226.png" />
+<meta property="og:description" content="Format and validate JSON data so that it can easily be read by human beings." />
+
+<script type="application/ld+json">
+        {
+            "@context": "http://schema.org/",
+            "@type": "WebSite",
+            "name": "JSON Formatter &amp; Validator",
+            "image": "https://jsonformatter.curiousconcept.com/icons/jf/mstile-144x144.b0ef4bd01d6cb25ab71ae707ed7ac226.png",
+            "url": "https://jsonformatter.curiousconcept.com",
+            "description": "The JSON Formatter &amp; Validator beautifies and debugs JSON data with advanced formatting and validation algorithms.",
+            "isPartOf": {
+                "@type": "Website",
+                "name": "Curious Concept",
+                "url": "https://curiousconcept.com"
+            },
+            "sameAs" : [
+                "https://twitter.com/curiousconcept"
+            ]
+        }
+        </script>
+<style type="text/css" media="all">.button{-webkit-touch-callout:none}.select:not(.is-multiple):not(.is-loading):after{border:3px solid transparent;border-radius:2px;border-right:0;border-top:0;content:" ";display:block;height:.625em;margin-top:-.4375em;position:absolute;top:50%;transform:rotate(-45deg);transform-origin:center;width:.625em}.progress:not(:last-child),.title:not(:last-child){margin-bottom:1.5rem}.modal,.modal-background{bottom:0;left:0;position:absolute;right:0;top:0}.button,.input,.select select,.textarea{-moz-appearance:none;-webkit-appearance:none;align-items:center;border:1px solid transparent;border-radius:4px;box-shadow:none;display:inline-flex;font-size:1rem;height:2.5em;justify-content:flex-start;line-height:1.5;padding:calc(.5em - 1px) calc(.75em - 1px);position:relative;vertical-align:top}.textarea:focus{outline:0}body,h1,h2,h3,hr,html,li,p,textarea,ul{margin:0;padding:0}h1,h2,h3{font-size:100%;font-weight:400}ul{list-style:none}button,input,select,textarea{margin:0}html{box-sizing:border-box}*,:after,:before{box-sizing:inherit}html{background-color:#fff;font-size:16px;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;min-width:300px;overflow-x:hidden;overflow-y:scroll;text-rendering:optimizeLegibility;-webkit-text-size-adjust:100%;-moz-text-size-adjust:100%;-ms-text-size-adjust:100%;text-size-adjust:100%}section{display:block}body,button,input,select,textarea{font-family:Ubuntu,Arial,Helvetica,Verdana,sans-serif}body{color:#4a4a4a;font-size:1em;font-weight:300;line-height:1.5}a{color:#2980b9;text-decoration:none}hr{background-color:#ccc;border:none;display:block;height:1px;margin:1.5rem auto}input[type=checkbox]{vertical-align:baseline}span{font-style:inherit;font-weight:inherit}strong{color:inherit;font-weight:700}.has-text-centered{text-align:center!important}@media print,screen and (min-width:769px){.has-text-centered-tablet{text-align:center!important}}@media screen and (min-width:1024px){.has-text-centered-desktop{text-align:center!important}}.is-hidden{display:none!important}.is-sr-only{border:none!important;clip:rect(0,0,0,0)!important;height:.01em!important;overflow:hidden!important;padding:0!important;position:absolute!important;white-space:nowrap!important;width:.01em!important}@media screen and (max-width:1023px){.is-hidden-touch{display:none!important}}@media screen and (min-width:1024px){.is-hidden-desktop{display:none!important}}.button{background-color:#fff;border-color:#dbdbdb;border-width:1px;color:inherit;justify-content:center;padding:calc(.5em - 1px) 1em;text-align:center;white-space:nowrap}.button .icon{height:1.5em;width:1.5em}.button .icon:first-child:not(:last-child){margin-left:calc(-.5em - 1px);margin-right:.25em}.button .icon:first-child:last-child{margin-left:calc(-.5em - 1px);margin-right:calc(-.5em - 1px)}.button.is-text{background-color:transparent;border-color:transparent;color:#4a4a4a;text-decoration:underline}.button.is-dark{background-color:#363636;border-color:transparent;color:#eee}.button.is-action{background-color:#3498db;border-color:transparent;color:#fff}.button.is-support{background-color:#f1c40f;border-color:transparent;color:#555}.button.is-small{border-radius:2px;font-size:.75rem}.button.is-medium{font-size:1.25rem}.buttons{align-items:center;display:flex;flex-wrap:wrap;justify-content:flex-start}.buttons .button{margin-bottom:.5rem}.buttons .button:not(:last-child):not(.is-fullwidth){margin-right:.5rem}.buttons:last-child{margin-bottom:-.5rem}.buttons:not(:last-child){margin-bottom:1rem}.buttons.has-addons .button:not(:first-child){border-bottom-left-radius:0;border-top-left-radius:0}.buttons.has-addons .button:not(:last-child){border-bottom-right-radius:0;border-top-right-radius:0;margin-right:-1px}.buttons.has-addons .button:last-child{margin-right:0}.container{flex-grow:1;margin:0 auto;position:relative;width:auto}@media screen and (min-width:1024px){.container{max-width:960px}}@media screen and (min-width:1216px){.container{max-width:1152px}}.content p:not(:last-child){margin-bottom:1em}.icon{align-items:center;display:inline-flex;justify-content:center;height:1.5rem;width:1.5rem}.icon.is-large{height:3rem;width:3rem}.notification{background-color:#fafafa;border-radius:4px;padding:1.25rem 2.5rem 1.25rem 1.5rem;position:relative}.notification .title{color:currentColor}.progress{-moz-appearance:none;-webkit-appearance:none;border:none;border-radius:290486px;display:block;height:1rem;overflow:hidden;padding:0;width:100%}.progress::-webkit-progress-bar{background-color:#ededed}.progress::-webkit-progress-value{background-color:#3498db}.progress::-moz-progress-bar{background-color:#3498db}.progress::-ms-fill{background-color:#3498db;border:none}.title{word-break:break-word}.title span{font-weight:inherit}.title{color:inherit;font-size:2.5em;font-weight:600;line-height:1.125}.input,.select select,.textarea{background-color:#fff;border-color:transparent;border-radius:4px;color:#4a4a4a}.input::-moz-placeholder,.select select::-moz-placeholder,.textarea::-moz-placeholder{color:#aaa}.input::-webkit-input-placeholder,.select select::-webkit-input-placeholder,.textarea::-webkit-input-placeholder{color:#aaa}.input:-moz-placeholder,.select select:-moz-placeholder,.textarea:-moz-placeholder{color:#aaa}.input:-ms-input-placeholder,.select select:-ms-input-placeholder,.textarea:-ms-input-placeholder{color:#aaa}.textarea:focus{border-color:transparent;box-shadow:0 transparent}.input,.textarea{box-shadow:none;max-width:100%;width:100%}.textarea{display:block;max-width:100%;min-width:100%;padding:calc(.75em - 1px);resize:vertical}.textarea:not([rows]){max-height:40em;min-height:8em}.textarea[rows]{height:auto}.checkbox{display:inline-block;line-height:1.25;position:relative}.select{display:inline-block;max-width:100%;position:relative;vertical-align:top}.select:not(.is-multiple){height:2.5em}.select:not(.is-multiple):not(.is-loading):after{border-color:#2980b9;right:1.125em;z-index:4}.select select{display:block;font-size:1em;max-width:100%;outline:0}.select select::-ms-expand{display:none}.select select:not([multiple]){padding-right:2.5em}.select.is-fullwidth,.select.is-fullwidth select{width:100%}.label{color:inherit;display:block;font-size:1rem;font-weight:700}.label:not(:last-child){margin-bottom:.5em}.field:not(:last-child){margin-bottom:.75rem}.field.is-grouped{display:flex;justify-content:flex-start}.field.is-grouped>.control{flex-shrink:0}.field.is-grouped>.control:not(:last-child){margin-bottom:0;margin-right:.75rem}.field.is-grouped.is-grouped-centered{justify-content:center}.control{box-sizing:border-box;clear:both;font-size:1rem;position:relative;text-align:left}.modal{align-items:center;display:none;flex-direction:column;justify-content:center;overflow:hidden;position:fixed;z-index:40}.modal-background{background-color:rgba(10,10,10,.86)}.modal-content{margin:0 20px;max-height:calc(100vh - 160px);overflow:auto;position:relative;width:100%}@media print,screen and (min-width:769px){.modal-content{margin:0 auto;max-height:calc(100vh - 40px);width:640px}}.navbar{background-color:#f8f8f8;min-height:3.125rem;position:relative;z-index:30}.navbar>.container{align-items:stretch;display:flex;min-height:3.125rem;width:100%}.navbar.is-fixed-top{left:0;position:fixed;right:0;z-index:30;top:0}.navbar-brand{align-items:stretch;display:flex;flex-shrink:0;min-height:3.125rem}.navbar-burger{color:#4a4a4a;display:block;height:3.125rem;position:relative;width:3.125rem;margin-left:auto}.navbar-burger span{background-color:currentColor;display:block;height:1px;left:calc(50% - 8px);position:absolute;transform-origin:center;width:16px}.navbar-burger span:first-child{top:calc(50% - 6px)}.navbar-burger span:nth-child(2){top:calc(50% - 1px)}.navbar-burger span:nth-child(3){top:calc(50% + 4px)}.navbar-menu{display:none}.navbar-item,.navbar-link{color:#4a4a4a;display:block;line-height:1.5;padding:.5rem .75rem;position:relative}.navbar-item .icon:only-child,.navbar-link .icon:only-child{margin-left:-.25rem;margin-right:-.25rem}.navbar-item{display:block;flex-grow:0;flex-shrink:0}.navbar-item.has-dropdown{padding:0}.navbar-dropdown{font-size:.875rem;padding-bottom:.5rem;padding-top:.5rem}.navbar-dropdown .navbar-item{padding-left:1.5rem;padding-right:1.5rem}.navbar-divider{background-color:#fafafa;border:none;display:none;height:2px;margin:.5rem 0}@media screen and (max-width:1023px){.navbar>.container{display:block}.navbar-brand .navbar-item{align-items:center;display:flex}.navbar-link:after{display:none}.navbar-menu{background-color:#f8f8f8;box-shadow:0 8px 16px rgba(10,10,10,.1);padding:.5rem 0}.navbar.is-fixed-top .navbar-menu{-webkit-overflow-scrolling:touch;max-height:calc(100vh - 3.125rem);overflow:auto}}@media screen and (min-width:1024px){.navbar,.navbar-end,.navbar-menu,.navbar-start{align-items:stretch;display:flex}.navbar{min-height:3.125rem}.navbar.is-spaced{padding:.625rem 1.5rem}.navbar.is-spaced .navbar-end,.navbar.is-spaced .navbar-start{align-items:center}.navbar.is-spaced .navbar-link,.navbar.is-spaced a.navbar-item{border-radius:4px}.navbar-burger{display:none}.navbar-item,.navbar-link{align-items:center;display:flex}.navbar-item{display:flex}.navbar-item.has-dropdown{align-items:stretch}.navbar-menu{flex-grow:1;flex-shrink:0}.navbar-start{justify-content:flex-start;margin-right:auto}.navbar-end{justify-content:flex-end;margin-left:auto}.navbar-dropdown{background-color:#fff;border-bottom-left-radius:6px;border-bottom-right-radius:6px;border-top:2px solid #dbdbdb;box-shadow:0 8px 8px rgba(10,10,10,.1);display:none;font-size:.875rem;left:0;min-width:100%;position:absolute;top:100%;z-index:20}.navbar-dropdown .navbar-item{padding:.375rem 1rem;white-space:nowrap}.navbar-dropdown a.navbar-item{padding-right:3rem}.navbar-dropdown.is-boxed,.navbar.is-spaced .navbar-dropdown{border-radius:6px;border-top:none;box-shadow:0 8px 8px rgba(10,10,10,.1),0 0 0 1px rgba(10,10,10,.1);display:block;opacity:0;top:calc(100% + -4px);transform:translateY(-5px)}.navbar-divider{display:block}.navbar>.container .navbar-brand{margin-left:-.75rem}.navbar>.container .navbar-menu{margin-right:-.75rem}}.column{display:block;flex-basis:0;flex-grow:1;flex-shrink:1;padding:1rem}.columns.is-mobile>.column.is-narrow{flex:none}.columns.is-mobile>.column.is-12{flex:none;width:100%}@media screen and (max-width:768px){.column.is-12-mobile{flex:none;width:100%}}@media print,screen and (min-width:769px){.column.is-narrow{flex:none}.column.is-10-tablet{flex:none;width:83.33333%}.column.is-12{flex:none;width:100%}}@media screen and (max-width:1023px){.column.is-12-touch{flex:none;width:100%}}@media screen and (min-width:1024px){.column.is-2-desktop{flex:none;width:16.66667%}.column.is-8-desktop{flex:none;width:66.66667%}}@media screen and (min-width:1216px){.column.is-6-widescreen{flex:none;width:50%}}.columns{margin-left:-1rem;margin-right:-1rem;margin-top:-1rem}.columns:last-child{margin-bottom:-1rem}.columns:not(:last-child){margin-bottom:.5rem}.columns.is-centered{justify-content:center}.columns.is-mobile{display:flex}.columns.is-multiline{flex-wrap:wrap}.columns.is-vcentered{align-items:center}@media print,screen and (min-width:769px){.columns:not(.is-desktop){display:flex}}.section{padding:3.5rem 1.5rem 4.5rem}.CodeMirror{font-family:monospace;height:300px;color:#000;direction:ltr}.CodeMirror{position:relative;overflow:hidden;background:#fff}:root{--balloon-color:#333;--balloon-font-size:12px;--balloon-move:0px}button[aria-label][data-balloon-pos]{overflow:visible}[aria-label][data-balloon-pos]{position:relative}[aria-label][data-balloon-pos]:after{opacity:0;text-indent:0;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Open Sans,Helvetica Neue,sans-serif;font-weight:400;font-style:normal;text-shadow:none;font-size:var(--balloon-font-size);background:var(--balloon-color);border-radius:2px;color:#fff;content:attr(aria-label);padding:.5em 1em;position:absolute;white-space:nowrap;z-index:10}[aria-label][data-balloon-pos]:before{width:0;height:0;border:5px solid transparent;border-top:5px solid var(--balloon-color);opacity:0;content:"";position:absolute;z-index:10}[aria-label][data-balloon-pos][data-balloon-pos=up]:after{bottom:100%;left:50%;margin-bottom:10px;transform:translate(-50%,var(--balloon-move));transform-origin:top}[aria-label][data-balloon-pos][data-balloon-pos=up]:before{bottom:100%;left:50%;transform:translate(-50%,var(--balloon-move));transform-origin:top}[aria-label][data-balloon-pos][data-balloon-pos=down]:after{left:50%;margin-top:10px;top:100%;transform:translate(-50%,calc(var(--balloon-move)*-1))}[aria-label][data-balloon-pos][data-balloon-pos=down]:before{width:0;height:0;border:5px solid transparent;border-bottom:5px solid var(--balloon-color);left:50%;top:100%;transform:translate(-50%,calc(var(--balloon-move)*-1))}[aria-label][data-balloon-pos][data-balloon-pos=left]:after{margin-right:10px;right:100%;top:50%;transform:translate(var(--balloon-move),-50%)}[aria-label][data-balloon-pos][data-balloon-pos=left]:before{width:0;height:0;border:5px solid transparent;border-left:5px solid var(--balloon-color);right:100%;top:50%;transform:translate(var(--balloon-move),-50%)}[aria-label][data-balloon-pos][data-balloon-length=large]:after{white-space:normal;width:260px}.buttons.is-vertical{flex-direction:column;align-items:flex-start}.buttons.is-vertical .button{margin-bottom:0}.buttons.is-vertical:last-child{margin-bottom:0}.buttons.has-addons.is-vertical .button:last-child{margin-bottom:0}.buttons.has-addons.is-vertical .button:not(:last-child){margin-right:0;margin-bottom:-1px;border-bottom-right-radius:0;border-bottom-left-radius:0;border-top-right-radius:4px}.buttons.has-addons.is-vertical .button:not(:last-child).is-small{border-top-right-radius:2px}.buttons.has-addons.is-vertical .button:not(:first-child){border-top-left-radius:0;border-top-right-radius:0;border-bottom-left-radius:4px}.buttons.has-addons.is-vertical .button:not(:first-child).is-small{border-bottom-left-radius:2px}.button{font-weight:700}.button.is-small{font-size:.875rem}.button.is-transparent{background-color:transparent;border-color:transparent;color:#4a4a4a;font-weight:inherit}.button.is-text{height:auto;padding:0;margin:0;line-height:inherit;font-weight:inherit;font-size:inherit;color:#2980b9;text-decoration:none;vertical-align:inherit;border-width:0}.button.is-support .icon{color:#e74c3c}#input .buttons.is-vertical{position:absolute;bottom:3px;right:20px}#input .buttons.is-vertical .button{color:#2980b9}[aria-label][data-balloon-pos]:after{font-family:inherit;font-weight:300;font-size:.875rem;border-radius:4px;padding:.25rem .75rem;background-color:#333;color:#eee}[aria-label][data-balloon-pos][data-balloon-pos=down]:before{border-bottom-color:#333}[aria-label][data-balloon-pos][data-balloon-pos=up]:before{border-top-color:#333}[aria-label][data-balloon-pos][data-balloon-pos=left]:before{border-left-color:#333}.navbar{border-bottom:1px solid #e7e7e7}.navbar-divider{max-width:none}h1.navbar-item{margin:0;padding:0}@media screen and (max-width:1023px){.navbar.is-fixed-top .navbar-menu{box-shadow:none}}.navbar-burger span{height:.05em}.navbar>.container{max-width:1140px}.section.is-primary{background-color:#2980b9;color:#fff}.section:first-of-type{padding-top:6.75rem}@media screen and (min-width:1024px){.section:first-of-type{padding-top:7.875rem}}.section#input p{font-size:1.125rem}.hint{font-size:1.125em}.hint .icon{height:5em;width:5em}.hint .icon>*{font-size:5em}#input textarea{resize:vertical;height:316px;min-height:316px;overflow-y:scroll}#input .hint .button{color:inherit}#input .hint .button:after{content:"";position:absolute;display:block;border-bottom:1px dotted #fff;left:0;bottom:1px;right:0}.button[name=view-fix-info]{color:hsla(0,0%,100%,.5);width:1.375rem;position:relative;top:1px}.button[name=view-fix-info] .icon{font-size:.85rem;margin-top:.125rem}#input .options .field.is-grouped{justify-content:center}#input .options .field.is-grouped>.control:not(:last-child){margin-right:.25rem}@media screen and (min-width:1024px){#input .columns:last-child .column:last-child{padding-top:0}}#input .container{max-width:1140px}#input .buttons.is-vertical [aria-label][data-balloon-pos]:before{margin-right:-5px}#input .buttons.is-vertical [aria-label][data-balloon-pos]:after{margin-right:5px}#input .options{padding-top:0}@media screen and (min-width:1024px){#input .options{padding-top:1rem}}#input .control .dropzone,#input .control .loading{position:absolute;top:0;left:0;right:0;bottom:0;align-items:center;justify-content:center;z-index:100;background-color:hsla(0,0%,99.6%,.9);border-radius:4px;flex-direction:column;display:none;font-size:1.125rem}#input .control .dropzone .icon,#input .control .loading .icon{height:5rem;width:5rem;margin-bottom:1rem}#input .control .dropzone .icon svg,#input .control .loading .icon svg{font-size:5rem}#input .control .loading .progress{position:absolute;top:0;left:0;border-radius:4px 4px 0 0;height:6px;background-color:transparent;margin-bottom:0}#input .control .dropzone,#input .control .loading{color:#4a4a4a}#input .control .loading .icon{color:#3498db}.section.results{background-color:#222;padding:0}.result .buttons .button{margin-bottom:0}.button[name=view-result-error]{color:#2980b9!important}.button[name=rename-result]{color:#ccc!important}.button[name=rename-result]:after{content:"";position:absolute;height:1px;display:block;border-bottom:1px dotted #666;left:0;bottom:3px;right:0}.button[name=collapse-node]{padding:0 .75rem!important;color:#2980b9!important;vertical-align:-.15em}.button[name=collapse-node] .icon{height:1em;width:1em}.button[name=collapse-all-nodes] .icon svg:last-child,.button[name=collapse-node] .icon svg:last-child,.button[name=collapse-result] .icon svg:last-child,.button[name=fullscreen-result] .icon svg:last-child{display:none}.results .media{padding:1.25rem 0;border-bottom:1px solid #111}.results .result{padding:20px;border-top:1px solid #333;border-bottom:1px solid #111}.results .messages{background-color:#fff;border-radius:4px;border:1px solid transparent;padding:calc(.75em - 1px);max-height:10em;overflow-x:auto;overflow-y:scroll}.results .messages .message{white-space:nowrap}.results .messages .message .icon{color:#2980b9}.results .messages .message strong{width:5.6em;display:inline-block}.results .messages .message em{font-size:.8em;color:#999}.results .messages .message.is-error .icon{color:#c0392b}.results .messages .message.is-warning .icon{color:#f1c40f}.result .dataholder{position:relative}.result .validation{color:#fff;font-weight:900;background-color:#c0392b;text-align:center;text-transform:uppercase;font-size:1.25rem;border-radius:4px;margin-bottom:1rem}.result .validation.is-valid{background-color:#27ae60}.result .description{overflow:hidden;white-space:nowrap;text-overflow:ellipsis}.result .description input{display:none;padding:0 5px;height:calc(1.75rem - 4px);border-width:0}.result h3{font-size:3em;font-weight:900;line-height:1;color:#fff}.result .url{color:#999;font-style:italic;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.result .buttons{justify-self:right;align-self:center;margin-bottom:0}.result .bottom{margin-top:1rem}.result .dataholder .buttons{position:absolute;bottom:10px;right:29px;z-index:10}.results .label{color:#fff}.section.results .result .container{max-width:944px}.section.results .result .container .columns{flex-wrap:wrap;justify-content:space-between;margin:-.5rem -.5rem 0}@media print,screen and (min-width:769px){.section.results .result .container .columns{flex-wrap:nowrap}}.section.results .result .container .columns .column{padding:.5rem .5rem 0}.section.results .result .container .columns .column:nth-child(2){order:10}@media print,screen and (min-width:769px){.section.results .result .container .columns .column:nth-child(2){order:0;overflow:hidden}}.CodeMirror{min-height:10rem;height:20rem}#contact .field:nth-child(3){display:none}body>div{padding:0!important}.notification{margin-bottom:0!important;width:100%!important;justify-content:center;text-align:center;border-radius:0}@media screen and (min-width:1024px){.notification{width:auto!important;margin:0 1em 1em!important;border-radius:4px}}.media{display:none}@media print,screen and (min-width:769px){.media{display:block}}.partner{overflow:hidden}@media screen and (min-width:1024px){.partner{min-height:90px}}.blocker{display:none}.blocker p{margin:0 15px 15px;color:#ccc}.blocker .button{margin-left:.5rem;margin-right:.5rem}.blocker .button[name=tweet] .icon{color:#1da1f2}.blocker .button[name=facebook] .icon{color:#4267b2}body{background-color:#fafafa}.input,.select select,.select select option,.textarea{font-weight:300}.textarea.is-code{font-family:Roboto Mono,Consolas,Courier New,monospace;font-size:.9rem;line-height:1.45;text-shadow:.015em .015em 0 #666;color:#666;padding:calc(.75rem - 1px)}.textarea:not([rows]){max-height:none}.control{display:flex}hr{max-width:120px}.title{text-transform:uppercase;text-align:center}.content p{font-size:1.125em;line-height:1.65}.columns:not(:last-child){margin-bottom:1.5rem}.label:not(:last-child){margin-bottom:.25rem}.field:not(:last-child){margin-bottom:1rem}.icon{vertical-align:-.125em}.icon svg{height:1em;width:auto;shape-rendering:geometricprecision;transform:scale(1.05)}#input .checkbox input#jsonfix{left:-3000px;position:absolute}#input .checkbox input#jsonfix+.icon{margin-left:.25rem;top:2px;position:relative}#input .checkbox input#jsonfix+.icon svg:first-child{font-size:1.3333em}#input .checkbox input#jsonfix+.icon svg:last-child{position:absolute;color:#2980b9;font-size:.85rem;width:1em;top:.3677em;left:.3677em}#input .checkbox input#jsonfix+.icon:after{content:"";display:block;position:absolute;background-color:#fff;top:4px;right:4px;bottom:4px;left:4px;border-radius:3px}#input .checkbox input#jsonfix:checked+.icon:after{left:100%}@media screen and (min-width:1024px){#input .button[name=view-fix-info][aria-label][data-balloon-pos]:after{left:auto;right:0;transform:translate(0)}#input .button[name=view-fix-info][aria-label][data-balloon-pos]:before{left:auto;right:5px;transform:translate(0)}}</style>
+<link href="https://jsonformatter.curiousconcept.com/css/jf/secondary.34afe53975e272926121769be0775962.css" rel="stylesheet" media="print" onload="this.media='all'; this.onload=null;" />
+<noscript><link href="https://jsonformatter.curiousconcept.com/css/jf/secondary.34afe53975e272926121769be0775962.css" rel="stylesheet" media="all"/></noscript>
+<script type="text/javascript" src="https://cdn.thisiswaldo.com/static/js/4709.js"></script>
+</head>
+<body data-page="index">
+<nav class="navbar is-spaced is-fixed-top" role="navigation" aria-label="main navigation">
+<div class="container">
+<div class="navbar-brand">
+<h1 class="navbar-item">
+<a class="navbar-item" href="#">
+<svg role="img" aria-label="[title + description]" width="180" height="25">
+<title>JSON Formatter &amp; Validator</title>
+<desc>Format and validate JSON data so that it can easily be read by human beings.</desc>
+<use xlink:href="https://jsonformatter.curiousconcept.com/img/master.917a795d19d684610fdd77638881aea1.svg#logo-jsonformatter"></use>
+</svg>
+</a>
+</h1>
+<a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+<span aria-hidden="true"></span>
+<span aria-hidden="true"></span>
+<span aria-hidden="true"></span>
+</a>
+</div>
+<div class="navbar-menu">
+<div class="navbar-start is-hidden-touch">
+<div class="navbar-item has-dropdown is-hoverable">
+<a class="navbar-link is-arrowless">
+<span class="icon">
+<svg>
+<use xlink:href="https://jsonformatter.curiousconcept.com/img/master.917a795d19d684610fdd77638881aea1.svg#caret-down-solid"></use>
+</svg> </span>
+</a>
+<div class="navbar-dropdown is-boxed">
+<a class="navbar-item" href="https://dataconverter.curiousconcept.com">
+<svg width="136" height="15">
+<desc>Mutate: Data Converter</desc>
+<use xlink:href="https://jsonformatter.curiousconcept.com/img/master.917a795d19d684610fdd77638881aea1.svg#logo-dataconverter"></use>
+</svg>
+</a>
+<a class="navbar-item" href="https://jsonpath.curiousconcept.com">
+<svg width="154" height="15">
+<desc>JSONPath Expression Tester</desc>
+<use xlink:href="https://jsonformatter.curiousconcept.com/img/master.917a795d19d684610fdd77638881aea1.svg#logo-jsonpath"></use>
+</svg>
+</a>
+<a class="navbar-item" href="https://jsonselect.curiousconcept.com">
+<svg width="179" height="15">
+<desc>JSONSelect Expression Tester</desc>
+<use xlink:href="https://jsonformatter.curiousconcept.com/img/master.917a795d19d684610fdd77638881aea1.svg#logo-jsonselect"></use>
+</svg>
+</a>
+<a class="navbar-item" href="https://xpath.curiousconcept.com">
+<svg width="118" height="15">
+<desc>XPath Expression Tester</desc>
+<use xlink:href="https://jsonformatter.curiousconcept.com/img/master.917a795d19d684610fdd77638881aea1.svg#logo-xpath"></use>
+</svg>
+</a>
+<hr class="navbar-divider" />
+<a class="navbar-item" href="https://zuq.curiousconcept.com">
+<svg width="124" height="19">
+<desc>ZUQ: Alvin McDonald&#039;s Initials Encoder</desc>
+<use xlink:href="https://jsonformatter.curiousconcept.com/img/master.917a795d19d684610fdd77638881aea1.svg#logo-zuq"></use>
+</svg>
+</a>
+</div>
+</div>
+</div>
+<div class="navbar-end">
+<a class="navbar-item" href="#about">About</a>
+<a class="navbar-item" href="#learn">Learn</a>
+<a class="navbar-item" href="#bookmarklet">Bookmarklet</a>
+<a class="navbar-item" href="#faq">FAQ</a>
+<a class="navbar-item" href="#changelog">Changelog</a>
+<a class="navbar-item is-hidden-desktop" href="https://curiousconcept.com">Other Tools</a>
+<a class="navbar-item" href="#contact">Contact</a>
+<a class="navbar-item" href="https://twitter.com/intent/user?screen_name=curiousconcept">
+<span class="icon">
+<svg>
+<use xlink:href="https://jsonformatter.curiousconcept.com/img/master.917a795d19d684610fdd77638881aea1.svg#twitter-brands"></use>
+</svg> </span>
+</a>
+</div>
+</div>
+</nav> <section class="section is-primary" id="input">
+<form class="container">
+<div class="columns is-mobile is-centered is-multiline is-vcentered">
+<div class="column is-2-desktop is-hidden-touch hint has-text-centered">
+<span class="icon">
+<svg>
+<use xlink:href="https://jsonformatter.curiousconcept.com/img/master.917a795d19d684610fdd77638881aea1.svg#share-solid"></use>
+</svg> </span>
+<br />
+<br />
+<p>Paste in JSON or a URL, drop a file, <button type="button" class="button is-text" name="browse">browse</button>, or load an <button type="button" class="button is-text" name="example">example</button> to begin.</p>
+</div>
+<div class="column is-12-touch is-8-desktop">
+<div class="field">
+<label class="label">JSON Data/URL</label>
+<div class="control">
+<div class="dropzone">
+<span class="icon">
+<svg>
+<use xlink:href="https://jsonformatter.curiousconcept.com/img/master.917a795d19d684610fdd77638881aea1.svg#file-upload-solid"></use>
+</svg> </span>
+Drop your JSON file here.
+</div>
+<div class="loading">
+<progress class="progress" value="15" max="100"></progress>
+<span class="icon">
+<svg>
+<use xlink:href="https://jsonformatter.curiousconcept.com/img/master.917a795d19d684610fdd77638881aea1.svg#file-upload-solid"></use>
+</svg> </span>
+Loading...
+</div>
+<textarea class="textarea is-code will-clear" id="data" name="data" data-gramm_editor="false" spellcheck="false" autofocus placeholder='{"Choose Kindness":"❤️"}' rows="5" data-example='{"store":{"book":[{"category":"reference","author":"Nigel Rees","title":"Sayings of the Century","price":8.95},{"category":"fiction","author":"Evelyn Waugh","title":"Sword of Honour","price":12.99},{"category":"fiction","author":"J. R. R. Tolkien","title":"The Lord of the Rings","isbn":"0-395-19395-8","price":22.99}],"bicycle":{"color":"red","price":19.95}}}'></textarea>
+<div class="buttons has-addons is-vertical">
+<button class="button is-small is-transparent" type="button" name="browse" aria-label="Load File" data-balloon-pos="left">
+<span class="icon">
+<svg>
+<use xlink:href="https://jsonformatter.curiousconcept.com/img/master.917a795d19d684610fdd77638881aea1.svg#folder-open-regular"></use>
+</svg> </span>
+</button>
+<button class="button is-small is-transparent" type="button" name="clear" aria-label="Clear" data-balloon-pos="left">
+<span class="icon">
+<svg>
+<use xlink:href="https://jsonformatter.curiousconcept.com/img/master.917a795d19d684610fdd77638881aea1.svg#trash-alt-regular"></use>
+</svg> </span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class="column is-12-mobile is-2-desktop options has-text-centered-desktop">
+<div class="field">
+<label class="label">JSON Template</label>
+<div class="control">
+<div class="select is-fullwidth">
+<select id="jsontemplate" name="jsontemplate" data-remember>
+<option value="0">4 Space Tab</option>
+<option value="1" selected>3 Space Tab</option>
+<option value="2">2 Space Tab</option>
+<option value="3">Compact</option>
+<option value="4">1 Tab Tab</option>
+</select>
+</div>
+</div>
+</div>
+<div class="field">
+<label class="label">JSON Specification</label>
+<div class="control">
+<div class="select is-fullwidth">
+<select id="jsonspec" name="jsonspec" data-remember>
+<option value="4" selected>RFC 8259</option>
+<option value="2">RFC 7159</option>
+<option value="1">RFC 4627</option>
+<option value="3">ECMA-404</option>
+<option value="0">Skip Validation</option>
+</select>
+</div>
+</div>
+</div>
+<div class="field is-grouped">
+<div class="control">
+<label class="checkbox label" for="jsonfix">
+<input type="checkbox" name="jsonfix" id="jsonfix" data-remember checked>
+Fix JSON
+<span class="icon">
+<svg>
+<use xlink:href="https://jsonformatter.curiousconcept.com/img/master.917a795d19d684610fdd77638881aea1.svg#square-solid"></use>
+</svg> <svg>
+<use xlink:href="https://jsonformatter.curiousconcept.com/img/master.917a795d19d684610fdd77638881aea1.svg#check-solid"></use>
+</svg> </span>
+</label>
+</div>
+<div class="control">
+<button type="button" class="button is-text" name="view-fix-info" data-balloon-length="large" data-balloon-pos="down" aria-label="Repairs common JSON errors by replacing incorrect quotes, adding missing quotes, correcting numeric keys, lowercasing literals, escaping unescaped characters, and removing comments and trailing commas.">
+<span class="icon">
+<svg>
+<use xlink:href="https://jsonformatter.curiousconcept.com/img/master.917a795d19d684610fdd77638881aea1.svg#question-solid"></use>
+</svg> </span>
+</button>
+</div>
+</div>
+<input type="hidden" name="autoprocess" value="" />
+</div>
+<div class="column is-12">
+<div class="field is-grouped is-grouped-centered">
+<div class="control">
+<button type="button" name="process" class="button is-action is-medium">Process</button>
+</div>
+</div>
+</div>
+</div>
+</form>
+</section> <section class="section results">
+<div class="media">
+<div class="container">
+<div class="has-text-centered partner">
+<div id="waldo-tag-4710"></div>
+<div class="blocker content">
+<p>Adblocker eh?&nbsp;&nbsp;No problem.&nbsp;&nbsp;Please consider these other ways of supporting our work:</p>
+<a target="_blank" class="button is-support" name="support" href="https://curiousconcept.com/donate">
+<span class="icon">
+<svg>
+<use xlink:href="https://jsonformatter.curiousconcept.com/img/master.917a795d19d684610fdd77638881aea1.svg#heart-solid"></use>
+</svg> </span>
+<span>Donate</span>
+</a>
+<a target="_blank" class="button is-dark" name="facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fjsonformatter.curiousconcept.com">
+<span class="icon">
+<svg>
+<use xlink:href="https://jsonformatter.curiousconcept.com/img/master.917a795d19d684610fdd77638881aea1.svg#facebook-brands"></use>
+</svg> </span>
+<span>Share</span>
+</a>
+<a target="_blank" class="button is-dark" name="reddit" href="http://www.reddit.com/submit?url=https%3A%2F%2Fjsonformatter.curiousconcept.com&title=JSON%20Formatter%20%26%20Validator">
+<span class="icon">
+<svg>
+<use xlink:href="https://jsonformatter.curiousconcept.com/img/master.917a795d19d684610fdd77638881aea1.svg#reddit-alien-brands"></use>
+</svg> </span>
+<span>Post</span>
+</a>
+<a target="_blank" class="button is-dark" name="tweet" href="https://twitter.com/intent/tweet?text=I%20%E2%9D%A4%EF%B8%8F%20the%20%40curiousconcept%20JSON%20Formatter%20%26%20Validator%21%20%28https%3A%2F%2Fjsonformatter.curiousconcept.com%29.">
+<span class="icon">
+<svg>
+<use xlink:href="https://jsonformatter.curiousconcept.com/img/master.917a795d19d684610fdd77638881aea1.svg#twitter-brands"></use>
+</svg> </span>
+<span>Tweet</span>
+</a>
+</div> </div>
+</div>
+</div> <div class="results">
+</div>
+<div class="templates is-hidden">
+<div class="result">
+<div class="container">
+<div class="columns is-mobile">
+<div class="column is-narrow">
+<h3></h3>
+</div>
+<div class="column is-12-mobile">
+<div class="description">
+<button class="button is-text" name="rename-result"></button>
+<input class="input" type="text" placeholder="">
+</div>
+<div class="url"></div>
+</div>
+<div class="column is-narrow">
+<div class="buttons has-addons">
+<button class="button is-dark" name="copy-result" aria-label="Copy to Clipboard" data-balloon-pos="up">
+<span class="icon">
+<svg>
+<use xlink:href="https://jsonformatter.curiousconcept.com/img/master.917a795d19d684610fdd77638881aea1.svg#paste-solid"></use>
+</svg> </span>
+</button>
+<button class="button is-dark" name="download-result" aria-label="Download JSON" data-balloon-pos="up">
+<span class="icon">
+<svg>
+<use xlink:href="https://jsonformatter.curiousconcept.com/img/master.917a795d19d684610fdd77638881aea1.svg#file-download-solid"></use>
+</svg> </span>
+</button>
+<button class="button is-dark" name="convert-result" aria-label="Convert JSON" data-balloon-pos="up">
+<span class="icon">
+<svg>
+<use xlink:href="https://jsonformatter.curiousconcept.com/img/master.917a795d19d684610fdd77638881aea1.svg#icon-data-converter"></use>
+</svg> </span>
+</button>
+<button class="button is-dark" name="query-result" aria-label="Query JSON" data-balloon-pos="up">
+<span class="icon">
+<svg>
+<use xlink:href="https://jsonformatter.curiousconcept.com/img/master.917a795d19d684610fdd77638881aea1.svg#dollar-sign-solid"></use>
+</svg> </span>
+</button>
+<button class="button is-dark" name="highlight-errors" aria-label="Hide Errors" data-balloon-pos="up">
+<span class="icon">
+<svg>
+<use xlink:href="https://jsonformatter.curiousconcept.com/img/master.917a795d19d684610fdd77638881aea1.svg#exclamation-circle-solid"></use>
+</svg> </span>
+</button>
+<button class="button is-dark" name="collapse-all-nodes" aria-label="Collapse Nodes" data-balloon-pos="up">
+<span class="icon">
+<svg>
+<use xlink:href="https://jsonformatter.curiousconcept.com/img/master.917a795d19d684610fdd77638881aea1.svg#minus-square-solid"></use>
+</svg> <svg>
+<use xlink:href="https://jsonformatter.curiousconcept.com/img/master.917a795d19d684610fdd77638881aea1.svg#plus-square-solid"></use>
+</svg> </span>
+</button>
+<button class="button is-dark" name="collapse-result" aria-label="Collapse Result" data-balloon-pos="up">
+<span class="icon">
+<svg>
+<use xlink:href="https://jsonformatter.curiousconcept.com/img/master.917a795d19d684610fdd77638881aea1.svg#caret-square-up-solid"></use>
+</svg> <svg>
+<use xlink:href="https://jsonformatter.curiousconcept.com/img/master.917a795d19d684610fdd77638881aea1.svg#caret-square-down-solid"></use>
+</svg> </span>
+</button>
+<button class="button is-dark" name="close" aria-label="Close" data-balloon-pos="up">
+<span class="icon">
+<svg>
+<use xlink:href="https://jsonformatter.curiousconcept.com/img/master.917a795d19d684610fdd77638881aea1.svg#times-solid"></use>
+</svg> </span>
+</button>
+</div>
+</div>
+</div>
+<div class="bottom">
+<div class="validation is-valid">Valid JSON (RFC1000)</div>
+<div class="field">
+<label class="label">Fixer/Validator Output</label>
+<ul class="messages"></ul>
+</div>
+<div class="field">
+<label class="label">Formatted JSON Data</label>
+<div class="dataholder">
+<div class="CodeMirror textarea is-code"></div>
+<div class="buttons has-addons">
+<button class="button is-dark" name="shrink-result" aria-label="Shrink Result" data-balloon-pos="up">
+<span class="icon">
+<svg>
+<use xlink:href="https://jsonformatter.curiousconcept.com/img/master.917a795d19d684610fdd77638881aea1.svg#minus-solid"></use>
+</svg> </span>
+</button>
+<button class="button is-dark" name="grow-result" aria-label="Grow Result" data-balloon-pos="up">
+<span class="icon">
+<svg>
+<use xlink:href="https://jsonformatter.curiousconcept.com/img/master.917a795d19d684610fdd77638881aea1.svg#plus-solid"></use>
+</svg> </span>
+</button>
+<button class="button is-dark" name="fullscreen-result" aria-label="Fullscreen" data-balloon-pos="up">
+<span class="icon">
+<svg>
+<use xlink:href="https://jsonformatter.curiousconcept.com/img/master.917a795d19d684610fdd77638881aea1.svg#expand-solid"></use>
+</svg> <svg>
+<use xlink:href="https://jsonformatter.curiousconcept.com/img/master.917a795d19d684610fdd77638881aea1.svg#compress-solid"></use>
+</svg> </span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="buttons">
+<button class="button is-text" name="collapse-node">
+<span class="icon">
+<svg>
+<use xlink:href="https://jsonformatter.curiousconcept.com/img/master.917a795d19d684610fdd77638881aea1.svg#minus-square-regular"></use>
+</svg> <svg>
+<use xlink:href="https://jsonformatter.curiousconcept.com/img/master.917a795d19d684610fdd77638881aea1.svg#plus-square-regular"></use>
+</svg> </span>
+</button>
+</div>
+<ul class="messages">
+<li class="message is-info">
+<span class="icon">
+<svg>
+<use xlink:href="https://jsonformatter.curiousconcept.com/img/master.917a795d19d684610fdd77638881aea1.svg#info-circle-solid"></use>
+</svg> </span>
+<strong>Info:</strong>
+<span></span>
+</li>
+<li class="message is-error">
+<span class="icon">
+<svg>
+<use xlink:href="https://jsonformatter.curiousconcept.com/img/master.917a795d19d684610fdd77638881aea1.svg#exclamation-circle-solid"></use>
+</svg> </span>
+<strong>Error:</strong>
+<button class="button is-text" name="view-result-error" data-structure="0"></button>
+<em></em>
+</li>
+<li class="message is-warning">
+<span class="icon">
+<svg>
+<use xlink:href="https://jsonformatter.curiousconcept.com/img/master.917a795d19d684610fdd77638881aea1.svg#exclamation-triangle-solid"></use>
+</svg> </span>
+<strong>Warning:</strong>
+<button class="button is-text" name="view-result-error" data-structure="0"></button>
+<em></em>
+</li>
+</ul>
+</div>
+</section> <section class="section" id="about">
+<div class="container">
+<h2 class="title">About</h2>
+<hr />
+<div class="columns is-centered">
+<div class="column is-10-tablet is-8-desktop is-6-widescreen">
+<div class="content has-text-centered-tablet">
+<p>The <a href="#" title="JSON Formatter &amp; Validator">JSON Formatter</a> was created to help folks with debugging. As JSON data is often output without line breaks to save space, it can be extremely difficult to actually read and make sense of it. This tool hoped to solve the problem by formatting and beautifying the JSON data so that it is easy to read and debug by human beings.</p>
+<p>To further expand the debugging capabilities, advanced JSON validation was soon added following the description set out by Douglas Crockford of <a title="Visit json.org" href="http://json.org/">json.org</a> in <a title="Visit the RFC 4627 JSON Specification" href="http://www.ietf.org/rfc/rfc4627.txt?number=4627">RFC 4627</a>. It has since been updated to allow validation of multiple JSON standards, including both current specifications <a title="Visit the RFC 8259 JSON Specification" href="https://tools.ietf.org/html/rfc8259">RFC 8259</a> and <a title="Visit the ECMA-404 JSON Specification" href="http://www.ecma-international.org/publications/files/ECMA-ST/ECMA-404.pdf">ECMA-404</a>.</p>
+<p>Most recently, the capability to fix common JSON errors was added. If enabled, it will replace incorrect quotes, add missing quotes, correct numeric keys, lowercase literals, escape unescaped characters, and remove comments and trailing commas.</p>
+</div>
+</div>
+</div>
+</div>
+</section> <section class="section is-white-ter" id="learn">
+<div class="container">
+<h2 class="title">Learn About JSON</h2>
+<hr />
+<div class="columns is-centered is-multiline">
+<div class="column is-10-tablet is-6-desktop is-5-widescreen content">
+<p>JSON or JavaScript Object Notation is a language-independent open data format that uses human-readable text to express data objects consisting of attribute-value pairs.</p>
+<p>Although originally derived from the JavaScript scripting language, JSON data can be generated and parsed with a wide variety of programming languages including JavaScript, PHP, Python, Ruby, and Java.</p>
+</div>
+<div class="column is-10-tablet is-4-desktop is-3-widescreen content">
+<p>To learn more about JSON check out some of the following links.</p>
+<ul class="is-icon">
+<li><span class="icon"><svg>
+<use xlink:href="https://jsonformatter.curiousconcept.com/img/master.917a795d19d684610fdd77638881aea1.svg#external-link-alt-solid"></use>
+</svg> </span><a title="Visit json.org" href="http://json.org/">json.org</a></li>
+<li><span class="icon"><svg>
+<use xlink:href="https://jsonformatter.curiousconcept.com/img/master.917a795d19d684610fdd77638881aea1.svg#external-link-alt-solid"></use>
+</svg> </span><a title="Visit Wikipedia's JSON Entry" href="https://en.wikipedia.org/wiki/JSON">Wikipedia - JSON</a></li>
+<li><span class="icon"><svg>
+<use xlink:href="https://jsonformatter.curiousconcept.com/img/master.917a795d19d684610fdd77638881aea1.svg#external-link-alt-solid"></use>
+</svg> </span><a title="Visit w3schools.com's JSON Tutorial" href="https://www.w3schools.com/js/js_json_intro.asp" rel="nofollow">w3schools.com - JSON Tutorial</a></li>
+<li><span class="icon"><svg>
+<use xlink:href="https://jsonformatter.curiousconcept.com/img/master.917a795d19d684610fdd77638881aea1.svg#external-link-alt-solid"></use>
+</svg> </span><a title="Visit the blog post that started JSONP" href="http://bob.ippoli.to/archives/2005/12/05/remote-json-jsonp/">bob.ippoli.to - Remote JSON - JSONP</a></li>
+<li><span class="icon"><svg>
+<use xlink:href="https://jsonformatter.curiousconcept.com/img/master.917a795d19d684610fdd77638881aea1.svg#external-link-alt-solid"></use>
+</svg> </span><a title="Visit Wikipedia's JSONP Entry" href="https://en.wikipedia.org/wiki/JSON#JSONP">Wikipedia - JSONP</a></li>
+</ul>
+</div>
+</div>
+</div>
+</section> <section class="section is-primary" id="bookmarklet">
+<div class="container">
+<h2 class="title">Bookmarklet</h2>
+<hr />
+<div class="columns is-centered">
+<div class="column is-10-tablet is-8-desktop is-6-widescreen">
+<div class="content has-text-centered">
+<p>Install the JSON Formatter &amp; Validator Bookmarklet to quickly and easily format and validate any public JSON URL with a single click.</p>
+<p>
+<br />
+<a class="bookmarklet button is-action is-outlined" href="javascript:(function(){ window.open('https://jsonformatter.curiousconcept.com?process=true&data='+encodeURI(location.href)); })();">Format &amp; Validate JSON</a>
+<br /><br />
+<small>To install, just drag the button above into your bookmarks toolbar.</small>
+</p>
+</div>
+</div>
+</div>
+</div>
+</section> <section class="section " id="faq">
+<div class="container">
+<h2 class="title">FAQ</h2>
+<hr />
+<div class="columns is-centered">
+<div class="column is-10-tablet is-8-desktop is-6-widescreen">
+<div class="content">
+<p class="has-text-centered">Have questions? These are the answers to the questions we are most frequently asked.</p>
+<br />
+<br />
+<dl>
+<dt id="query-parameters">Can I pass my JSON data in the URL?</dt>
+<dd>
+<p>Yes! You can populate and process your JSON data automatically by submitting a GET or POST request (<span class="icon"><svg>
+<use xlink:href="https://jsonformatter.curiousconcept.com/img/master.917a795d19d684610fdd77638881aea1.svg#external-link-alt-solid"></use>
+</svg></span><a href='https://jsonformatter.curiousconcept.com?data=%7B%22Much%20JSON%21%22%3A%22So%20Wow%21%22%7D&amp;process=true' target="_blank">example</a>) with the following query parameters:</p>
+<table class="table is-narrow">
+<tr>
+<td><code>data</code></td>
+<td>JSON Data or a URL</td>
+</tr>
+<tr>
+<td><code>template</code></td>
+<td><code>fourspace</code>, <code>threespace</code>, <code>twospace</code>, <code>compact</code>, or <code>onetab</code></td>
+</tr>
+<tr>
+<td><code>spec</code></td>
+<td><code>rfc8259</code>, <code>rfc7159</code>, <code>rfc4627</code>, <code>ecma404</code>, or <code>skip</code></td>
+</tr>
+<tr>
+<td><code>fix</code></td>
+<td><code>true</code> or <code>false</code></td>
+</tr>
+<tr>
+<td><code>process</code></td>
+<td><code>true</code> or <code>false</code></td>
+</tr>
+</table>
+</dd>
+<dt>Which JSON specification should I choose?</dt>
+<dd>
+<p>When in doubt, our recommendation is to validate JSON with the latest specification, RFC 8259, as it will ensure the highest level of compatibility.</p>
+</dd>
+<dt id="json-saved">Is any of my JSON data recorded or saved?</dt>
+<dd>
+<p>Absolutely not! Your data is merely processed and returned directly to you. For more information visit our <a href="https://curiousconcept.com/privacy" target="_blank" title="Read our Privacy Policy">Privacy Policy</a>.</p>
+</dd>
+<dt>Is the JSON Formatter &amp; Validator available offline?</dt>
+<dd>
+<p>In order to keep focused on providing the best JSON beautifier and validator online, we do not offer an offline version.</p>
+</dd>
+<dt>Can I donate to the project?</dt>
+<dd>
+<p>Definitely! Although you are in no way obligated, we genuinely appreciate every contribution we receive.</p>
+<p class="has-text-centered" style="margin-left: -2em;">
+<a target="_blank" class="button is-support is-medium" href="https://curiousconcept.com/donate">
+<span class="icon">
+<svg>
+<use xlink:href="https://jsonformatter.curiousconcept.com/img/master.917a795d19d684610fdd77638881aea1.svg#heart-solid"></use>
+</svg> </span>
+<span>Donate</span>
+</a>
+</p>
+<p>A big <strong style="font-weight:400;">thank you</strong> goes out to all the donors who have already contributed. We are humbled by your kindness and generosity.</p>
+</dd>
+</dl>
+<br />
+<br />
+<p class="has-text-centered">Still have questions? Please <a href="#contact">contact us</a>.</p>
+</div>
+</div>
+</div>
+</div>
+</section> <section class="section is-white-ter" id="changelog">
+<div class="container">
+<h2 class="title">Changelog</h2>
+<hr />
+<div class="columns is-centered">
+<div class="column is-8-tablet is-6-desktop is-6-widescreen">
+<div class="content">
+<h3 class="is-size-6 is-uppercase">January 2021</h3>
+<ul>
+<li>Added numeric key correction to fix JSON option. <small>Thanks Karthik.</small></li>
+<li>Added lowercasing of literals to fix JSON option. <small>Thanks Cristian.</small></li>
+</ul>
+<h3 class="is-size-6 is-uppercase">November 2020</h3>
+<ul>
+<li>Added improved error messages.</li>
+<li>Fixed a document error bug. <small>Thanks José.</small></li>
+<li>Fixed a skip validation issue. <small>Thanks Goran &amp; Eliel.</small></li>
+<li>Fixed multiple root element validation. <small>Thanks Tristan.</small></li>
+</ul>
+<h3 class="is-size-6 is-uppercase">October 2020</h3>
+<ul>
+<li>Fixed a failed validation bug. <small>Thanks Tristan.</small></li>
+</ul>
+<h3 class="is-size-6 is-uppercase">August 2020</h3>
+<ul>
+<li>Added compact template wrapping.</li>
+<li>Added performance improvements.</li>
+<li>Added POST support.</li>
+<li>Added improved error handling.</li>
+<li>Updated bookmarklet to use <a href="#query-parameters">query parameters</a>.</li>
+<li>Fixed an overly aggressive duplicate key validation bug. <small>Thanks Mark.</small></li>
+<li>Fixed duplicate error messages.</li>
+<li>Fixed unexpected scrolling on objects and arrays expand/collapse.</li>
+<li>Fixed autofocus.</li>
+<li>Fixed a fullscreen bug.</li>
+</ul>
+<h3 class="is-size-6 is-uppercase">March 2020</h3>
+<ul>
+<li>Added <a href="#faq">Frequently Asked Questions</a>.</li>
+</ul>
+ <h3 class="is-size-6 is-uppercase">February 2020</h3>
+<ul>
+<li>Added an example.</li>
+<li>Added <a href="#query-parameters">URL query parameters</a>.</li>
+<li>Updated frontend.</li>
+<li>Fixed a charset case sensitivity issue. <small>Thanks Muneer.</small></li>
+<li>Fixed a typo. <small>Thanks Melissa.</small></li>
+<li>Fixed a Safari error. <small>Thanks Alexander.</small></li>
+<li>Fixed a selection highlighting issue. <small>Thanks Thomas.</small></li>
+</ul>
+<h3 class="is-size-6 is-uppercase">January 2020</h3>
+<ul>
+<li>Fixed a scrolling performance issue. <small>Thanks Stuart.</small></li>
+</ul>
+<h3 class="is-size-6 is-uppercase">November 2019</h3>
+<ul>
+<li>Added integration with the <a href="https://jsonpath.curiousconcept.com" title="Visit the Mutate&colon; Data Converter">Mutate&colon; Data Converter</a> and the <a href="https://jsonpath.curiousconcept.com" title="Visit the JSONPath Expression Tester">JSONPath Expression Tester</a>, via new convert and query buttons.</li>
+<li>Added drag and drop, and browse, local file loading.</li>
+<li>Added capability to fix common JSON errors. It will optionally replace incorrect quotes, add missing quotes, escape unescaped characters, and remove comments and trailing commas.</li>
+<li>Fixed an object key string comparison issue. <small>Thanks Gwon.</small></li>
+</ul>
+<h3 class="is-size-6 is-uppercase">October 2019</h3>
+<ul>
+<li>Added the latest JSON specification, <a title="Visit the RFC 8259 JSON Specification" href="https://tools.ietf.org/html/rfc8259">RFC 8259</a>.</li>
+<li>Added performance improvements.</li>
+<li>Added limits to validation errors.</li>
+<li>Added limits to object/array depth.</li>
+<li>Updated default JSON specification to RFC 8259.</li>
+<li>Updated validation output message order. Errors appear before warnings.</li>
+<li>Fixed a closing bracket/brace validation issue. <small>Thanks Khurram.</small></li>
+</ul>
+<h3 class="is-size-6 is-uppercase">May 2019</h3>
+<ul>
+<li>Added error highlight toggling. <small>Thanks Raf.</small></li>
+</ul>
+<h3 class="is-size-6 is-uppercase">January 2019</h3>
+<ul>
+<li>Added a single tab, tab template.</li>
+</ul>
+ <h3 class="is-size-6 is-uppercase">December 2018</h3>
+<ul>
+<li>Added JSON validation processing optimizations.</li>
+<li>Added character position to invalid character errors.</li>
+<li>Added additional tooltips.</li>
+<li>Updated external libraries.</li>
+<li>Fixed an issue with fullscreen toggle. <small>Thanks to everyone that reported it.</small></li>
+<li>Fixed an issue when validating JSONP to RFC7159.</li>
+</ul>
+<h3 class="is-size-6 is-uppercase">July 2018</h3>
+<ul>
+<li>Updated broken bob.ippoli.to link. <small>Thanks Rodrigo.</small></li>
+</ul>
+<h3 class="is-size-6 is-uppercase">June 2018</h3>
+<ul>
+<li>Fixed a cookie bug.</li>
+</ul>
+<h3 class="is-size-6 is-uppercase">November 2017</h3>
+<ul>
+<li>Improved images.</li>
+<li>Updated broken Learn About JSON links. <small>Thanks Tony.</small></li>
+</ul>
+<h3 class="is-size-6 is-uppercase">October 2016</h3>
+<ul>
+<li>Switched copy to use <a href="https://clipboardjs.com/" title="Visit clipboard.js">clipboard.js</a></li>
+</ul>
+<h3 class="is-size-6 is-uppercase">July 2016</h3>
+<ul>
+<li>Fixed a RFC 7159 validation bug. <small>Thanks Anonymous.</small></li>
+</ul>
+<h3 class="is-size-6 is-uppercase">November 2015</h3>
+<ul>
+<li>Added the ability to validate additional JSON specifications, <a title="Visit the RFC 7159 JSON Specification" href="https://tools.ietf.org/html/rfc7159">RFC 7159</a> and <a title="Visit the ECMA-404 JSON Specification" href="http://www.ecma-international.org/publications/files/ECMA-ST/ECMA-404.pdf">ECMA-404</a>.</li>
+<li>Added tooltips.</li>
+<li>Improved url validation.</li>
+<li>Fixed a validation bug. <small>Thanks Philipp.</small></li>
+<li>Fixed a parse bug. <small>Thanks Bla.</small></li>
+</ul>
+<h3 class="is-size-6 is-uppercase">October 2015</h3>
+<ul>
+<li>Added the ability expand/collapse all nodes.</li>
+</ul>
+<h3 class="is-size-6 is-uppercase">August 2015</h3>
+<ul>
+<li>Added the ability to rename results.</li>
+ <li>Added the ability to download results.</li>
+<li>Switched to HTTPS.</li>
+<li>Fixed a text rendering bug. <small>Thanks Kyle.</small></li>
+</ul>
+<h3 class="is-size-6 is-uppercase">October 2014</h3>
+<ul>
+<li>Fixed a template collapse/expand bug. <small>Thanks Dmitry.</small></li>
+<li>Fixed a copied result entity bug. <small>Thanks Jim.</small></li>
+</ul>
+<h3 class="is-size-6 is-uppercase">September 2014</h3>
+<ul>
+<li>Added a four space tab template.</li>
+<li>Added a clear button.</li>
+<li>Improved grow/shrink buttons.</li>
+<li>Fixed a clipboard bug.</li>
+</ul>
+<h3 class="is-size-6 is-uppercase">July 2014</h3>
+<ul>
+<li>Redesign of frontend.</li>
+<li>Added cookies to remember options.</li>
+</ul>
+<h3 class="is-size-6 is-uppercase">September 2013</h3>
+<ul>
+<li>Changed hosts to further improve speed.</li>
+</ul>
+<h3 class="is-size-6 is-uppercase">April 2013</h3>
+<ul>
+<li>Added autofocus to JSON Data input.</li>
+<li>Fixed stripping of invisible characters. <small>Thanks Paul.</small></li>
+</ul>
+<h3 class="is-size-6 is-uppercase">March 2013</h3>
+<ul>
+<li>Fixed a typo. <small>Thanks Anonymous.</small></li>
+<li>Added a donation button.</li>
+</ul>
+<h3 class="is-size-6 is-uppercase">February 2013</h3>
+<ul>
+<li>Fixed a number validation bug. <small>Thanks Chris and Anonymous.</small></li>
+</ul>
+<h3 class="is-size-6 is-uppercase">January 2013</h3>
+<ul>
+<li>Updated external libraries.</li>
+<li>Improved caching.</li>
+</ul>
+<h3 class="is-size-6 is-uppercase">May 2011</h3>
+<ul>
+<li>Added ability to collapse/expand objects and arrays.</li>
+<li>Added a two space tab template.</li>
+<li>Fixed bugs reported since latest changes.</li>
+</ul>
+ <h3 class="is-size-6 is-uppercase">February 2011</h3>
+<ul>
+<li>Redesign of frontend.</li>
+<li>Improved validation logic. String validation in particular is greatly improved.</li>
+<li>Improved error messages.</li>
+<li>Added goto error ability.</li>
+<li>Added ability to accept JSONP. Check out this <a title="JSONP Validation Example" href="#http://api.duckduckgo.com/?q=JSON&format=json&callback=exec">example</a>.</li>
+<li>Added ability to pass JSON URL in URL as hash. Check out this <a title="JSON URL Example" href="#http://api.reddit.com/search?q=kittens&limit=2">example</a>.</li>
+<li>Added a <a title="JSON Validator Bookmarklet" href="#bookmarklet">bookmarklet</a>.</li>
+<li>Added a button to copy results to clipboard.</li>
+<li>Removed custom template capability. From now on <a title="Contact" href="#contact">send in template requests &amp; examples</a>.</li>
+<li>Removed Select All button.</li>
+</ul>
+<h3 class="is-size-6 is-uppercase">November 2009</h3>
+<ul>
+<li>Upgraded hosts to improve speed.</li>
+</ul>
+<h3 class="is-size-6 is-uppercase">December 2008</h3>
+<ul>
+<li>Added a Select All button.</li>
+<li>Fixed url validation and output bugs.</li>
+</ul>
+<h3 class="is-size-6 is-uppercase">November 2008</h3>
+<ul>
+<li>Improved JSON formatter.</li>
+<li>Improved JSON parser.</li>
+<li>Redesign of frontend.</li>
+<li>Added multiple results.</li>
+<li>Added templates.</li>
+<li>Added more helpful error messages.</li>
+<li>Added validation.</li>
+<li>Added resizable textareas.</li>
+</ul>
+<h3 class="is-size-6 is-uppercase">January 2007</h3>
+<ul>
+<li>Initial release of the JSON Formatter.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section> <section class="section is-primary" id="contact">
+<div class="container">
+<h2 class="title">Contact</h2>
+<hr />
+<div class="columns is-centered">
+<div class="column is-10-tablet is-8-desktop is-8-widescreen">
+<div class="content has-text-centered-tablet">
+<p>Over the years the JSON Formatter &amp; Validator has been immensely improved through the feedback and suggestions of its users. We encourage you to continue to pass along any new recommendations, requests or bug reports.</p>
+</div>
+</div>
+</div>
+<div class="columns is-centered">
+<div class="column is-8-tablet is-6-desktop is-6-widescreen">
+<form role="form" class="row">
+<div class="field">
+<label class="label is-sr-only" for="name">Name</label>
+<div class="control">
+<input class="input name" type="text" name="name" placeholder="Name">
+</div>
+</div>
+<div class="field">
+<label class="label is-sr-only" for="email">Email Address</label>
+<div class="control">
+<input class="input email" type="email" name="email" placeholder="Email Address">
+</div>
+</div>
+<div class="field">
+<label class="label is-sr-only" for="url">URL</label>
+<div class="control">
+<input class="input url" type="url" name="url" placeholder="URL" autocomplete="nope">
+</div>
+</div>
+<div class="field">
+<label class="label is-sr-only" for="message">Message</label>
+<div class="control">
+<textarea class="textarea message" name="message" rows="6" placeholder="Message"></textarea>
+</div>
+</div>
+<div class="field is-grouped is-grouped-centered">
+<div class="control">
+<button type="button" name="send" class="button is-action is-medium">Send</button>
+</div>
+</div>
+</form>
+</div>
+</div>
+</div>
+</section> <footer class="footer">
+<div class="content has-text-centered">
+<p>© 2007 - 2023 <a href="https://curiousconcept.com">Curious Concept</a> | <a href="https://curiousconcept.com/privacy">Privacy Policy</a></p>
+</div>
+</footer> <div class="modal">
+<div class="modal-background"></div>
+<div class="modal-content">
+<div class="notification has-text-centered">
+<h3 class="title">
+<span class="icon is-large">
+<svg>
+<use xlink:href="https://jsonformatter.curiousconcept.com/img/master.917a795d19d684610fdd77638881aea1.svg#"></use>
+</svg> </span>
+</h3>
+<br />
+<button class="button is-hidden" name=""></button>
+</div>
+</div>
+</div>
+<script async type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=G-T930N46EKS" data-analytics-id="G-T930N46EKS" data-analytics-category="JSON Formatter"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://jsonformatter.curiousconcept.com/js/app.84043e2ca56a7aa183a5decd0b15704b.js"></script>
+</body>
+</html>

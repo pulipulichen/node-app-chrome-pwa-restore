@@ -13,6 +13,24 @@ let main = async function () {
     // break
   }
 
+  // -----
+
+  let pwaSPList = ReadPWA(true)
+  // console.log(pwaList)
+  // return 
+  for (let i = 15; i < pwaSPList.length; i++) {
+    console.log(`${i}/${pwaSPList.length} (${Math.round((i/pwaSPList.length)*100)}%)`)
+    let {target, script} = pwaSPList[i]
+    console.log(target)
+    // console.log(script)
+    // return
+
+    await CreatePWAJavaScript(target, script)
+    // break
+  }
+
+  // -----
+
   let pwaList = ReadPWA()
   // console.log(pwaList)
   // return 
@@ -26,6 +44,7 @@ let main = async function () {
     await CreatePWAJavaScript(target, script)
     // break
   }
+
 }
 
 main()
