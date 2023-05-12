@@ -5,7 +5,10 @@ const sleep = require('./lib/sleep')
 module.exports = async function (url) {
   let cmdOpenChrome = `google-chrome "${url}"`
   await ShellSpawn(cmdOpenChrome)
-  await sleep(20000)
+  await sleep(10000)
+  if (url.startsWith('https://wd.pulipuli.info/')) {
+    await sleep(20000)
+  }
 
   await SendKey(`Escape`, 2)
   await SendKey(`F12`)
