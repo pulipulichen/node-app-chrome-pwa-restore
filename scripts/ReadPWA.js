@@ -27,11 +27,12 @@ module.exports = function (sp = false) {
     }
     let target = row[3]
     let script = row[5]
+    let name = row[0]
     // console.log(target)
     if (!target || target.startsWith('http') === false) {
       return false
     }
-    output.push({target, script})
+    output.push({target, script, name})
   })
 
   return output.filter(onlyUnique);

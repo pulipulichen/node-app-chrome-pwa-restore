@@ -18,6 +18,7 @@
   "homepage": "https://github.com/pulipulichen/node-app-chrome-pwa-restore#readme",
   "dependencies": {
     "node-clipboardy": "1.0.3",
-    "xlsx": "0.18.5"
+    "xlsx": "0.18.5",
+    "ini": "4.1.1"
   }
 }
