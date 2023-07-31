@@ -15,14 +15,20 @@ let main = async function () {
   // 需要登入的
 
   let pwaSPList = ReadPWA(true)
-  pwaSPList = []
+  //pwaSPList = []
   // console.log(pwaList)
 
   // return 
   
   for (let i = 0; i < pwaSPList.length; i++) {
+
     console.log(`${i}/${pwaSPList.length} (${Math.round((i/pwaSPList.length)*100)}%)`)
-    let {target, script} = pwaSPList[i]
+    let {target, script, name} = pwaSPList[i]
+
+    if (IsPWAExisted(name)) {
+      continue
+    }
+
     console.log(target)
     // console.log(script)
     // return
@@ -40,17 +46,18 @@ let main = async function () {
 
   // 要設定的i是該列的列數-2
 
-  start = 0
+  start = 105
   // start = 5
 
   end = pwaList.length
   // end = 10
 
+
   for (let i = start; i < end; i++) {
     console.log(`${i}/${pwaList.length} (${Math.round((i/pwaList.length)*100)}%)`)
     let {target, script, name} = pwaList[i]
     if (IsPWAExisted(name)) {
-      continue
+//       continue
     }
     console.log(target)
     // console.log(script)
@@ -65,9 +72,10 @@ let main = async function () {
   // WDB
 
   let wdbList = ReadWDB()
-  wdbList = []
+//   wdbList = []
 
   for (let i = 0; i < wdbList.length; i++) {
+
     console.log(`${i}/${wdbList.length} (${Math.round((i/wdbList.length)*100)}%)`)
     await CreatePWA(wdbList[i])
     // break
