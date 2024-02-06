@@ -18,14 +18,16 @@ let main = async function () {
   //pwaSPList = []
   // console.log(pwaList)
 
+  // console.log(await IsPWAExisted('日常生活 Life'))
   // return 
   
   for (let i = 0; i < pwaSPList.length; i++) {
 
-    console.log(`${i}/${pwaSPList.length} (${Math.round((i/pwaSPList.length)*100)}%)`)
+    console.log(`pwaSPList: ${i}/${pwaSPList.length} (${Math.round((i/pwaSPList.length)*100)}%)`)
     let {target, script, name} = pwaSPList[i]
 
-    if (IsPWAExisted(name)) {
+    if (await IsPWAExisted(name)) {
+      console.log(`Existed: ${name}`)
       continue
     }
 
@@ -37,6 +39,8 @@ let main = async function () {
     // break
   }
 
+  // return false
+
   // -----
   // 不用登入的
 
@@ -46,18 +50,19 @@ let main = async function () {
 
   // 要設定的i是該列的列數-2
 
-  start = 105
+  // start = 105
   // start = 5
 
-  end = pwaList.length
+  // end = pwaList.length
   // end = 10
 
 
   for (let i = start; i < end; i++) {
-    console.log(`${i}/${pwaList.length} (${Math.round((i/pwaList.length)*100)}%)`)
+    console.log(`ReadPWA: ${i}/${pwaList.length} (${Math.round((i/pwaList.length)*100)}%)`)
     let {target, script, name} = pwaList[i]
-    if (IsPWAExisted(name)) {
-//       continue
+    if (await IsPWAExisted(name)) {
+      console.log(`Existed: ${name}`)
+      continue
     }
     console.log(target)
     // console.log(script)
@@ -75,8 +80,13 @@ let main = async function () {
 //   wdbList = []
 
   for (let i = 0; i < wdbList.length; i++) {
-
-    console.log(`${i}/${wdbList.length} (${Math.round((i/wdbList.length)*100)}%)`)
+    // let {target, script, name} = wdbList[i]
+    // console.log(wdbList[i])
+    // if (IsPWAExisted(name)) {
+    //   console.log(`Existed: ${name}`)
+    //   continue
+    // }
+    console.log(`ReadWDB: ${i}/${wdbList.length} (${Math.round((i/wdbList.length)*100)}%)`)
     await CreatePWA(wdbList[i])
     // break
   }
