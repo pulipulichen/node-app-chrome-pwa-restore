@@ -51,9 +51,8 @@ let main = async function () {
   // 要設定的i是該列的列數-2
 
   // start = 105
-  // start = 5
-
-  // end = pwaList.length
+  start = 0
+  end = pwaList.length
   // end = 10
 
 
@@ -80,14 +79,14 @@ let main = async function () {
 //   wdbList = []
 
   for (let i = 0; i < wdbList.length; i++) {
-    // let {target, script, name} = wdbList[i]
-    // console.log(wdbList[i])
-    // if (IsPWAExisted(name)) {
-    //   console.log(`Existed: ${name}`)
-    //   continue
-    // }
+    let {name, url} = wdbList[i]
+    console.log(wdbList[i])
+    if (await IsPWAExisted(name)) {
+      console.log(`Existed: ${name}`)
+      continue
+    }
     console.log(`ReadWDB: ${i}/${wdbList.length} (${Math.round((i/wdbList.length)*100)}%)`)
-    await CreatePWA(wdbList[i])
+    await CreatePWA(url)
     // break
   }
 }

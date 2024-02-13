@@ -9,6 +9,9 @@ https://docs.google.com/spreadsheets/d/124Pr4-MxS79D6JstTgotfEfJHMyhqvxQP9TKOoPk
 2. 裝好list-sp
 https://docs.google.com/spreadsheets/d/124Pr4-MxS79D6JstTgotfEfJHMyhqvxQP9TKOoPkr8k/edit#gid=2084907523
 
+3. 裝好並確保啟用
+https://chromewebstore.google.com/detail/always-disable-content-se/ffelghdomoehpceihalcnbmnodohkibj?hl=zh-TW
+
 ----
 
 # 正式啟動
@@ -27,3 +30,12 @@ https://docs.google.com/spreadsheets/d/124Pr4-MxS79D6JstTgotfEfJHMyhqvxQP9TKOoPk
 
 6. 放著去睡覺
 
+----
+
+# Q&A
+
+## 明明已經新增了PWA，但是選單卻搜尋不出來，怎麼辦？
+
+1. 移除原本的PWA。
+2. 再新增一次。
+3. 這樣應該就可以了。

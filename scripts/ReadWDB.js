@@ -16,14 +16,23 @@ module.exports = function () {
 
   let output = []
 
-  data.forEach((row) => {
-    row.forEach((value) => {
-      if ((typeof(value) === 'string') && 
-        (value.startsWith('https://wd.pulipuli.info/')
-          || value.startsWith('https://pulipulichen.github.io/')
-          || value.startsWith('https://blog.pulipuli.info')) ) {
-        output.push(value)
-      }
+  data.forEach((row, i) => {
+    // row.forEach((value) => {
+    //   if ((typeof(value) === 'string') && 
+    //     (value.startsWith('https://wd.pulipuli.info/')
+    //       || value.startsWith('https://pulipulichen.github.io/')
+    //       || value.startsWith('https://blog.pulipuli.info')) ) {
+    //     output.push(value)
+    //   }
+    // })
+
+    if (i === 0) {
+      return false
+    }
+
+    output.push({
+      name: row[0],
+      url: row[1]
     })
   })
 
