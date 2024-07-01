@@ -24,9 +24,9 @@ https://chromewebstore.google.com/detail/always-disable-content-se/ffelghdomoehp
 https://docs.google.com/spreadsheets/d/124Pr4-MxS79D6JstTgotfEfJHMyhqvxQP9TKOoPkr8k/edit#gid=1584034170
 
 4. 下載ods到APP ICON LIST.ods
-https://docs.google.com/spreadsheets/d/124Pr4-MxS79D6JstTgotfEfJHMyhqvxQP9TKOoPkr8k/edit#gid=1148775058
+[https://docs.google.com/spreadsheets/d/124Pr4-MxS79D6JstTgotfEfJHMyhqvxQP9TKOoPkr8k/edit#gid=1148775058](https://docs.google.com/spreadsheets/d/124Pr4-MxS79D6JstTgotfEfJHMyhqvxQP9TKOoPkr8k/export?format=ods)
 
-5. start
+5. `./start.sh`
 
 6. 放著去睡覺
 
