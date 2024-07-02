@@ -5,6 +5,11 @@ https://docs.google.com/spreadsheets/d/124Pr4-MxS79D6JstTgotfEfJHMyhqvxQP9TKOoPk
 # 準備
 
 1. 裝好Google Chrome。同步並登入
+https://drive.google.com/file/d/1e6yEkaQwyEfEfNkcTZusGv-m33rSgBXE/view?usp=drive_link
+
+````
+sudo apt-get install -y ./google-chrome-stable_current_amd64-115.0.5790.110-1.deb --allow-downgrades
+````
 
 2. 裝好list-sp
 https://docs.google.com/spreadsheets/d/124Pr4-MxS79D6JstTgotfEfJHMyhqvxQP9TKOoPkr8k/edit#gid=2084907523
@@ -39,3 +44,13 @@ https://docs.google.com/spreadsheets/d/124Pr4-MxS79D6JstTgotfEfJHMyhqvxQP9TKOoPk
 1. 移除原本的PWA。
 2. 再新增一次。
 3. 這樣應該就可以了。
+
+----
+
+# 復原擴充套件
+
+https://docs.google.com/document/d/1Mf1aA8ioJ_stauPqG7X-7x-e3ugpR85QXIcUtyVHzZc/edit?usp=sharing
+
+# 備份擴充套件
+
+https://docs.google.com/document/d/1mGv9Tkv0vn3vugSeBTAGs2u7do4csuZK8GZ4fPHJcnQ/edit?usp=sharing

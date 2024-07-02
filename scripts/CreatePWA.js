@@ -30,10 +30,10 @@ module.exports = async function (url) {
 
   await SendKey(`Alt+f`)
   await sleep(1000)
-  await SendKey(`Up`, 5) // for ver 126
+  await SendKey(`Up`, 7) // for ver 115
   await SendKey(`Right`)
   await sleep(1000)
-  await SendKey(`Up`, 5)
+  await SendKey(`Down`) // for ver 115
   await SendKey(`Return`)
   await sleep(5000)
   await SendKey(`Tab`)
