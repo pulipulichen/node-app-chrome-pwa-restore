@@ -10,7 +10,8 @@ function initNames () {
   // }
 
   return new Promise(async (resolve, reject) => {
-    const directoryPath = path.join(process.env.HOME, '.local/share/applications');
+    const directoryPath =   
+     path.join(process.env.HOME, '.local/share/applications');
     // const filePattern = 'chrome-*-Default.desktop';
 
     names = []
